@@ -314,6 +314,11 @@ lessons will guide you to assemble the robot car and absorb the knowledge of
 electronics and machinery step by step. I reckon that you could hardly sit still
 and itch to have a go now. Let’s get started.
 
+**If you want to go directly to the step of installing the robot, please click this link**
+
+[assembly-guide](https://ks0470-4wd-bt-multi-purpose-robot-car-v20-kit-for-arduino.readthedocs.io/en/latest/KS0470-Arduino.html#assembly-guide)
+
+
 Note: (G), marked on each sensor and module, is the negative pole and connected
 to “G”, ”-”or “GND”on the sensor shield or control board ; (V) is the positive
 pole and linked with V , VCC, + or 5V on the sensor shield or control board.
@@ -4479,7 +4484,7 @@ Jumper Capx8
 
 
 
- Project 15: Multi-purpose Bluetooth Robot
+### Project 15: Multi-purpose Bluetooth Robot
 
 ![](media/46414c9b978c52160b6a2cfb3a729114.jpeg)
 
