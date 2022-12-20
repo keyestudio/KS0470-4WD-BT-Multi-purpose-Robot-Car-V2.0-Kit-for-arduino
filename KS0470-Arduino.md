@@ -2,7 +2,7 @@
 
 ![](media/9d69921bdd194725ffc6e00596643ea9.png)
 
-## **Introduction**
+## 1.Introduction
 
 Nowadays, technological education such as VR, kids programming, and artificial
 intelligence, has become a mainstream in educational industry. Therefore, people
@@ -30,7 +30,7 @@ including the use of right components and the wiring methods. For example, the
 supply power applied in the hook-up diagram is external power , so you will have
 to use external power rather than USB cable .**
 
-## **2. Features**
+## 2. Features
 
 1. Multi-purpose function: Obstacle avoidance, following, IR remote control,
     Bluetooth control, ultrasonic following and facial emoticons display.
@@ -47,7 +47,7 @@ and sensor shield.
 
 6. Basic programming：C language code of Arduino IDE.
 
-## **3. Specification**
+## 3. Specification
 
 Working voltage: 5v
 
@@ -73,424 +73,239 @@ Bluetooth control: support both Android and iOS system
 
 ## 4. Product List
 
-## 5. Assembly Guide
+## 5. Install Arduino IDE and Driver
 
-**Note: Peel the plastic film off the board first when installing the smart
-car.**
-
-### **Step 1:Mount the Bottom PCB**
-
-Prepare the parts as follows:
-
-Gear Motor x4
-
-Fixed Part x4
-
-M3 Nickel Plated Nut x10
-
-M3x6mm Round-head Screw x14
-
-4WD Bottom PCB x1
-
-Tracking Sensor x1
-
-Wheel x4
-
-5P Dupont Wire x1
-
-M3x40mm Copper Pillarx6
-
-M3x30m Round-head Screw x8
-
-M3x8mm Round-head Screw x2
-
-![](media/844097e35f95d61f6615721195c5bb11.png)
-![](media/203fae8eb1c4c3c0de069c6be0b524b6.png)
-![](media/e57feed72a66b4490674f77ec2c35a69.png)
-![](media/7a24e3bbeacad6b81e8cb8f06f4fccf5.png)
-![](media/d495a2067ecb5574601c20bb9ed147df.jpeg)
-![](media/322632dc1b2b68141ce0032999f287ed.jpeg)
-
-### **Step 2: Install Dot Matrix**
-
-Prepare the parts as follows:
-
-8X16 LED Panel x1
-
-4WD Baffle
-
-4P Wire x1
-
-M2x8mm Round-head Screw x4
-
-M2 Nut x4
-
-![](media/b3eff797f6993199671558e69d63ba4d.png)
-![](media/c8bf3b074f441f58683384fe4695be97.png)
-
-### **Step 3: Install the Plastic Platform of Servo**
-
-- Prepare the parts as follows:
-
-Servo x1
-
-M2x4 Screw x1
-
-Black Cable Tiex2
-
-Ultrasonic Sensorx1
-
-Black Plastic Platform x1
-
-M1.2x4 Tapping Screw x4
-
-M2x8 Tapping Screw x2
-
-![](media/b86186c2d44737305a389a887da27ac7.png)
-
-You can find M1.2x4 screws inside the bag of the servo platform
-
-![](media/bf0388c9dad49671aba90f30229d928b.png)
-
-![](media/6246bf8c9de981303761b60fe5dfb44b.png)
-
-/*
-
-Set the 90-degree code,Copy the code and upload it to the development board. The
-steering gear connected to port D9 will rotate to 90 °
-
-*/
-
-\#define servoPin 9 //servo Pin
-
-int pos; //the angle variable of servo
-
-int pulsewidth; // pulse width variable of servo
-
-void setup() {
-
-pinMode(servoPin, OUTPUT); //set servo pin to OUTPUT
-
-procedure(0); //set the angle of servo to 0°
-
-}
-
-void loop() {
-
-procedure(90); // tell servo to go to position in variable 90°
-
-}
-
-// function to control servo
-
-void procedure(int myangle) {
-
-pulsewidth = myangle x 11 + 500; //calculate the value of pulse width
-
-digitalWrite(servoPin,HIGH);
-
-delayMicroseconds(pulsewidth); //The duration of high level is pulse width
-
-digitalWrite(servoPin,LOW);
-
-delay((20 - pulsewidth / 1000)); // the cycle is 20ms, the low level last for
-the rest of time
-
-}
-
-![](media/3311f103f869ac9a889cdca0e2c95092.png)
-![](media/8040617db413660fce1fa198e9d55fb6.png)
-
-### **Step 4: Assemble Battery Holder**
-
-Prepare the parts as follows:
-
-Top PCB x1
-
-M3 Nut x3
-
-Motor Driver Board x1
-
-Control Board x1
-
-IR Receiver Module x1
-
-M3x10mm Copper Pillar x8
-
-M3x8mm Round-head Screw x1
-
-M3x6mm Round-head Screw x16
-
-M3x10mm Flat-head Screw x2
-
-6 AA Battery Holder x1
-
-![](media/ec3a41b4aac22880546b5daf94b41528.png)
-![](media/c62c0c411242b1fd2e91e09251a41d87.png)
-
-![](media/07cc493126354de3183d52207146a3bb.png)
-![](media/4498a936be382b036939ae9dfda90e38.png)
-![](media/f13c77fc3f962cdac2cc3a4576b68953.png)
-
-### **Step 5: Mount the Top PCB**
-
-  Prepare the parts as follows:
-
-Bluetooth Module x1
-
-M3x6MM Round-head Screw x6
-
-Jumper Capx8
-
-![](media/84a90512abefa00026e56aed45dc2634.png)
-![](media/aadc76c26e9a0ab58c5b489a8cfbe817.png)
-![](media/e8938aabe40608b0758c5f9a486a2dd4.png)
-![](media/b2a0e51863d03a2a33942744d435c682.jpeg)
-
-### **Step 6: Hook-up Guide**
-
-![](media/1feb6b2d1e8980dfcaede0a033a8975e.png)
-
-![](media/e822af8fafcef23ccc79d78e89788394.png)
-
-![](media/1c596b883ed770ab09b1e01eb392b435.png)
-![](media/abf52c065c9df72ac19e796112d1c7df.png)
-![](media/a5f5b7aa1933a265847fe5716dd73589.png)
-![](media/5677eb49ccc74577bc9eb759c788bf85.jpeg)
-
-### **6. Install Arduino IDE and Driver**
-
-1. **Installing Arduino IDE**
+ **Installing Arduino IDE**
 
 When you get control board, you need to download Arduino IDE and driver firstly.
 
 You could download Arduino IDE from the official website:
 
-<https://www.arduino.cc/>, click the **SOFTWARE** on the browse bar,
-click“DOWNLOADS” to enter download page, as shown below:
+<https://www.arduino.cc/>, click the **SOFTWARE** on the browse bar to enter download page, as shown below:
 
-![](media/4636aac9aca9b3aa9d86580caac51b81.png)
+![](media/83a843a56d49e93ec9f99bfb33fee269.png)
 
-There are various versions of IDE for Arduino. Just download a version
-compatible with your system. Here we will show you how to download and install
-the windows version of Arduino IDE.
+There are various versions of IDE for Arduino. Just download a version compatible with your system. Here we will show you how to download and install the windows version of Arduino IDE.
 
-![](media/3d3e36e47f8c7009155f0e8cc256ead1.png)
+![](media/fac59eb6f401fa9e6ce711bb5f3f62f2.png)
 
-There are two versions of IDE for WINDOWS system. You can choose between the
-installer (.exe) and the Zip file. For installer, it can be directly downloaded,
-without the need of installing it manually. However, for Zip package, you will
-need to install the driver manually.
+You can choose between the Installer (.exe) and the Zip packages. We suggest you use the first one that installs directly everything you need to use the Arduino Software (IDE), including the drivers. With the Zip package you need to install the drivers manually. The Zip file is also useful if you want to create a portable installation.
 
-![](media/745910f7138b08d5cbcb557f194b0679.png)
+![](media/0ab58d5303a100e9638be44131a34b51.png)
 
-Click JUST DOWNLOAD.
+You just need to click JUST DOWNLOAD.
 
-1. **Keyestudio V4.0 Development Board**
+  **Keyestudio V4.0 Development Board**
 
-You need to know that keyestudio V4.0 development board is the core of this
-smart car.
+You need to know that keyestudio V4.0 development board is the core of this smart car.
 
-![](media/d48e310dbb7f60760a02fbd88c17d97a.png)
+![UNO](media/d48e310dbb7f60760a02fbd88c17d97a.png)
 
-Keyestudio V4.0 development board is based on ATmega328P MCU, and with a cp2102
-Chip as a UART-to-USB converter.
+keyestudio V4.0 development board is an Arduino uno-compatible board, which is based on ATmega328P MCU, and with a cp2102 Chip as a UART-to-USB converter.
 
-![](media/308315eef3c603cdf0e8babfc4d9c297.jpeg)
+![KS0497 新主板_画板 1](media/d1d8b8703109cc5f953ec723ac57804d.jpeg)
 
-It has 14 digital input/output pins (of which 6 can be used as PWM outputs), 6
-analog inputs, a 16 MHz quartz crystal, a USB connection, a power jack, 2 ICSP
-headers and a reset button.
+It has 14 digital input/output pins (of which 6 can be used as PWM outputs), 6 analog inputs, a 16 MHz quartz crystal, a USB connection, a power jack, 2 ICSP headers and a reset button.
 
-![](media/bc609cfdb8f102e95dd298121e8eae01.jpeg)
+![3](media/bc609cfdb8f102e95dd298121e8eae01.jpeg)
 
-We can power it with USB cable, the external DC power jack (DC 7-12V) or female
-headers Vin/ GND(DC 7-12V) .
+It contains everything needed to support the microcontroller. Simply connect it to a computer with a USB cable or power it via an external DC power jack (DC 7-12V) or via female headers Vin/ GND(DC 7-12V) to get started.
 
-| Micro controller            | ATmega328P-PU                           |
-| --------------------------- | --------------------------------------- |
-| Operating Voltage           | 5V                                      |
-| Input Voltage (recommended) | DC7-12V                                 |
-| Digital I/O Pins            | 14 (D0-D13) (of which 6 provide PWM output) |
-| PWM Digital I/O Pins        | 6 (D3, D5, D6, D9, D10, D11)            |
-| Analog Input Pins           | 6 (A0-A5)                               |
-| DC Current per I/O Pin      | 20 mA                                   |
-| DC Current for 3.3V Pin     | 50 mA                                   |
-| Flash Memory                | 32 KB (ATmega328P-PU)                   |
-| SRAM                        | 2 KB (ATmega328P-PU)                    |
-| EEPROM                      | 1 KB (ATmega328P-PU)                    |
-| Clock Speed                 | 16 MHz                                  |
-| LED_BUILTIN                 | D13                                     |
+| Microcontroller             | ATmega328P-PU                                            |
+|-----------------------------|----------------------------------------------------------|
+| Operating Voltage           | 5V                                                       |
+| Input Voltage (recommended) | DC7-12V                                                  |
+| Digital I/O Pins            | 14 (D0-D13)  (of which 6 provide PWM output)             |
+| PWM Digital I/O Pins        | 6 (D3, D5, D6, D9, D10, D11)                             |
+| Analog Input Pins           | 6 (A0-A5)                                                |
+| DC Current per I/O Pin      | 20 mA                                                    |
+| DC Current for 3.3V Pin     | 50 mA                                                    |
+| Flash Memory                | 32 KB (ATmega328P-PU) of which 0.5 KB used by bootloader |
+| SRAM                        | 2 KB (ATmega328P-PU)                                     |
+| EEPROM                      | 1 KB (ATmega328P-PU)                                     |
+| Clock Speed                 | 16 MHz                                                   |
+| LED_BUILTIN                 | D13                                                      |
 
-1. **Installing Driver of V4.0 Board**
+  **Installing the driver for Windows system**
 
-Let’s install the driver of keyestudio V4.0 board. The USB-TTL chip on V4.0
-board adopts CP2102 serial chip. The driver program of this chip is included in
-Arduino 1.8 version and above, which is convenient. Plugging on USB port of
-board, the computer can recognize the hardware and automatically install the
-driver of CP2102.
+Let’s install the driver of keyestudio V4.0 board. The USB-TTL chip on V4.0 board adopts CP2102 serial chip.
 
-If you install unsuccessfully, or intend to install manually, please open the
-device manager of computer. Right click Computer----- Properties----- Device
-Manager
+Windows system
 
-![](media/afa5b0dde9342bd7ad9f385333cb6f55.png)
+![](media/b5cebd0e0a088eddf38f52c83bff3150.png)
 
-The yellow exclamation mark on the page implies an unsuccessful installation and
-you should double click the hardware and update the driver.
+You can download the driver of the CP2101 in the following link.
 
-![](media/c26ca0ef1bf1506c815b6e3e239cf525.png)
+<https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads>
 
-Click“OK”to enter the following page. Click“browse my computer for updated
-driver software”
+For Windows system, you can select the first driver to download and upzip it.
 
-![](media/4ec7a5ea3c8a1fd9663eef4768b687c5.png)
+![](media/4df300d69be9b7dd8f60e4bc1142e3b8.png)
 
-Click “Browse”, then search the driver of CP2102 and click “Next”,
+![](media/eb9a5fa40edeab575e7b4d8a26d710f6.png)
 
-There is a DRIVERS folder in Arduino software installed
-package（![](media/f50a31a59716594afbd7c2254cfd521e.png)）, open driver folder
-and check the driver of CP210X series chips.
+Then open the device manager of computer. Right click Computer----- Properties----- Device Manager
 
-![](media/417de936fa9720c7a7427c4d07718292.png)
+![](media/5d3921d98a5be791b0b5166164b389e7.png)
 
-When opening the device manager, we will find the yellow exclamation mark
-disappear. The driver of CP2102 is installed successfully.
+The yellow exclamation mark on the page implies that the driver of CP2101 isn’t installed. Next, you should double-click the hardware to update the driver.
 
-![](media/efce0ba96c48d853f302730b4d481ee9.jpeg)
+![](media/0946d3e3d322e66303a5e3fec0bb53c0.png)
 
-![](media/2f751d5f4e4c0c18fa862c589eaaf0da.jpeg)
+Click“OK”to enter the following page, click“browse my computer for updated driver software”. As shown below:
 
-1. **Install Other Visions of Driver**
+![](media/abff63e491413339a985a0a03df21106.png)
 
-If your development board is Arduino board, install the driver as follows:
+Navigate to the CP210x_Universal_Windows_Driver unzip folder that you have downloaded and click Next.
 
-Step 1: Plug in the development board, click Computer----- Properties-----
-Device Manager, you could see the unknown device is shown.
+![未标题-1](media/270dc5d39d10f389d1cf212f0e5e7b40.jpeg)
 
-![](media/e492989170473f2e77a97902f996d1ba.png)
+![](media/1e888fdeb85783a123b6948dffa44a97.png)
 
-Step 2: Update the driver
+Open device manager, you will find the yellow exclamation mark disappear. The driver of CP2102 is installed successfully.
 
-![](media/d7f62064e3eef1a4926cbc609253af5c.png)
+![123](media/9b8ddc1c8af12e5f363817d49cea8571.png)
 
-Step 3: click“browse my computer for updated driver software”
+  **Installing the driver for MAC system**
 
-![](media/9fd75e90e09605342e00b47bdd416654.png)
+**MAC system**
 
-Step 4: find out the folder where the ARDUINO software is installed, click
-**drivers** folder and tap“Next”
+![](media/aee40e1614afae9be6b0ffa78bcb833c.png)
 
-![](media/9e9be87771ff1b78050d7f05f48063df.png)
+You can download the driver of the CP2101 in the following link.
 
-Step 5: the driver is installed successfully.
+<https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads>
 
-![](media/56f5dff1b1242a47b9244357f5519ede.png)
+For MacOS system, you can select the this driver to download and upzip it.
 
-The device manager shows the serial port of Arduino.
+![](media/28a72783e9df9fb397a9ac2ba435e716.png)
 
-![](media/09e91fee277b7a69b8ad57ffa3294d48.png)
+Open the driver folder and double-click SiLabsUSBDriverDisk.dmg file.
 
-1. **Arduino IDE Setting**
+![{B226126D-C3F1-8402-1361-7E6AB44E7078}](media/59c91402aeb0941e301acb8c8aa36141.jpeg)
 
-Click![](media/675ae7298ce0973df720b2fbbb514caa.png)icon，and open Arduino IDE.
+4.You will view following files as follows:
 
-![](media/e9a2d59afcff8121d18d8767326baa42.png)
+![{5C3FCA68-7405-460C-91BE-E0775E4B2429}](media/cf395759ef97b05784c65b2514f728fc.jpeg)
 
-When downloading the sketch to the board, you must select the correct name of
-Arduino board that matches the board connected to your computer. As shown below;
+5\. Double-click Install CP210x VCP Driver, tick Don’t warn me and click Open
 
-![](media/84317a7babddff172520b99756dc1f85.png)
+![{59DB6F00-1A8B-3450-CDAA-ED2D7CAA65D6}](media/56ad0368ee8f50fef217428c1e7c00c5.jpeg)
 
-Then select the correct COM port (you can see the corresponding COM port after
-the driver is successfully installed)
+Click Continue
 
-![](media/bcd36a3d3e1209c16866e554089832d5.png)
+![{E3881FC6-7F40-B173-AA22-2A2A8A36ECAB}](media/88a3949d8e7d10d631a8fffa2b9df108.jpeg)
 
-![](media/2598b31529ac4bff88630522b97b6c41.png)
+Click Continue and Agree
 
-A- Used to verify whether there is any compiling mistakes or not.
+![{5D5929F6-B53A-0C03-7919-49AA20E7738D}](media/28e8013fdde7914820515697181f1ec7.jpeg)
 
-B- Used to upload the sketch to your Arduino board.
+Click Continue and enter your user password.
 
-C- Used to create shortcut window of a new sketch.
+![{15F1B01F-B066-9615-0B44-D5039DF02484}](media/d610b36b30a7847d9562143531ff1bde.jpeg)
 
-D- Used to directly open an example sketch.
+![{B4E122B5-21D3-E930-1D2B-70E00ED504BE}](media/b4e122b521d3e9301d2b70e00ed504be.jpeg)
 
-E- Used to save the sketch.
+9.Select Open Security Preferences
 
-F- Used to send the serial data received from board to the serial monitor.
+![](media/f97f0c1a960ddda5c2a98f52386f0462.png)
 
-1. **Start First Program**
+Click the lock then enter your user’s password to authorize.
 
-Open the file to select **Example**, and click **BASIC**>**BLINK**, as shown
-below:
+![{7B313247-7D6D-C1AD-1403-5E14567A2208}](media/41ae5006b276caa2a752f49858e01bf6.jpeg)
 
-![](media/2a6a0b8b8e2585776e01873caf10a1b0.png)
+![{E8F637A3-A951-0AA8-F90C-65820D4D1CD8}](media/e8f637a3a9510aa8f90c65820d4d1cd8.jpeg)
 
-![](media/6030cde1341c3432f0f4b1fb6c92e49e.png)
+Then click Allow
 
-Set the correct **COM port,** and the corresponding board and COM port are shown
-on the lower right of IDE.
+![{2A6CFC15-8C4A-2409-CA08-34BF16BD4C9A}](media/8d87ad5fd228acf0a28dc22b9d91194b.jpeg)
 
-![](media/5c4521f3fa5c4f4c0a5c9d1581ab1580.png)
+12.Back to installation page, and wait to install.
 
-Click![](media/ddd21c81338ae1f6b7f84de2a3caecf0.png)to start compiling the
-program, and check errors.
+![{47734125-C9FF-7E42-674B-4FD59872EB1C}](media/952736d011b3ac0a628df0a5473af00f.jpeg)
 
-![](media/9948cd36a3b39cb57fd2bea79540c4b7.png)
+Successfully installed ![{46A164EF-E3D2-CBE2-8CAC-B67C253E68AB}](media/7c26ef0b6e1d36b49c1d80dc4f153707.jpeg)
 
-Click![](media/9c9158a5d49baa740ea2f0048f655017.png)to upload the program
+  **Arduino IDE Setting**
 
-![](media/60e002aacf662c1ecf88ad3ecd85e6ca.png)
+Click![](media/9035a01879f001b75827e908d7dceb2d.png)icon，open Arduino IDE.
 
-After the program is uploaded successfully, the onboard LED blinks.
-Congratulation, you finish the first program.
+![](media/843b5bb2d4c1d33c215e8d0c76c07abf.png)
 
-**7. How to Add a Library?**
+To avoid the errors when uploading the program to the board, you need to select the correct Arduino board that matches the board connected to your computer.
 
-**(1) What are Libraries ?**
+Then come back to the Arduino software, you should click Tools→Board, select the board. (as shown below)
 
-[Libraries](https://www.arduino.cc/en/Reference/Libraries) are a collection of
-code that make it easy for you to connect a sensor,display, module, etc.
+![](media/01f0cdcc5418a5676cd69a34abf2ff9c.png)
 
-For example, the built-in LiquidCrystal library helps talk to LCD displays.
-There are hundreds of additional libraries available on the Internet for
-download.
+Then select the correct COM port (you can see the corresponding COM port after the driver is successfully installed)
 
-The built-in libraries and some of these additional libraries are listed in the
-reference.
+![](media/9fd19e4ad9b31ad017e31c7c2c1d0018.png)
 
-**(2) How to Install a Library ?**
+Before uploading the program to the board, let’s demonstrate the function of each symbol in the Arduino IDE toolbar.
 
-Here we will introduce the most simple way to add libraries .
+![](media/9035c37073325fa802cbcc7476d08ef6.png)
 
-xxStep 1：xxAfter downloading well the Arduino IDE, you can right-click the
-icon of Arduino IDE.
+1- Used to verify whether there is any compiling mistakes or not.
 
-Find the option "Open file location"
+2- Used to upload the sketch to your Arduino board.
 
-![](media/f1d5fd3883e0997ca46dcf8513733c46.png)
+3- Used to send the serial data received from board to the serial plottle.
 
-**Step 2:** Click Open file location >libraries
+4- Used to send the serial data received from board to the serial monitor.
 
-![](media/a67a5b5921be4dbc1b0ce92627111d15.png)
+  **Start First Program**
 
-xxStep 3：xxNext, find out the“libraries” folder of 4WD robot car(seen in
-the link: <https://fs.keyestudio.com/KS0470>)
+Open the file to select Example, choose BLINK from BASIC, as shown below:
 
-![](media/841bbceb44e412e92549b4fdbd6b41af.png)
+![](media/faa29181fe4a6619dd549ae84e05e247.png) ![](media/798b6b704d8c3d405bfa7b12fb9739f5.png)
 
-![](media/ef1b83857c96180894ec50512fcf6316.png)
+Set board and COM port, the corresponding board and COM port are shown on the lower right of IDE.
 
-You just need to replicate and paste IRremove and SR04 folders into the
-libraries folder of Arduino IDE.
+![](media/fd3a4ab756755975944bfe310fdb4f46.png)
 
-Then the libraries of 4wd robot car are installed successfully, as shown below:
+Click![](media/ddd21c81338ae1f6b7f84de2a3caecf0.png)to start compiling the program, check errors.
 
-![](media/ac17a08d6170e5a954b50a4d0b962211.png)
+![](media/41214d64128dbd9374a07460d64b3616.png)
 
-## **8. Projects**
+Click![](media/9c9158a5d49baa740ea2f0048f655017.png)to upload the program, upload successfully.
+
+![](media/ee1957edf30584f010dd748405f14095.png)
+
+Upload the program successfully, the onboard LED lights on for 1s, lights off for 1s. Congratulation, you have finished the first program.
+
+## 6. How to Add Libraries?
+
+**What are Libraries ?**
+
+[Libraries](https://www.arduino.cc/en/Reference/Libraries) are a collection of code that makes it easy for you to drive a sensor,display, module, etc.
+
+For example, the built-in LiquidCrystal library helps talk to LCD displays. There are hundreds of additional libraries available on the Internet for download.
+
+The built-in libraries and some of these additional libraries are listed in the reference.
+
+<https://www.arduino.cc/en/Reference/Libraries>
+
+**Add ZIP Libraries**
+
+When you want to add a zip library, you need to download it as a ZIP file, put in the proper directory. The Libraries needed to run the mini tank can be found on：<https://fs.keyestudio.com/KS0470>
+
+![](media/4b0da333184024dfdb4c49829c7c289b.png)
+
+Click Sketch----\>Include Library—\>Add.ZIP Library，then Then navigate to the library file you downloaded and click "open."
+
+![](media/baef5ce61ba8567f4a18fec16a2e3dae.png)
+
+![](media/f282f53c0ef16c9c9480dbeed9845eb3.png)![](media/c1b0c4c29ee89a4b3aad64066d367b5b.png)
+
+Import the library. You can find it in the include library list.
+
+![](media/eb248a126de694796fda2587983859aa.png)
+
+
+Then the libraries of 4wd robot car are installed successfully。
+
+## 7. Projects
 
 ![](media/bbafde79f8909da728d42983e722b9e5.jpeg)
 
@@ -503,7 +318,7 @@ Note: (G), marked on each sensor and module, is the negative pole and connected
 to “G”, ”-”or “GND”on the sensor shield or control board ; (V) is the positive
 pole and linked with V , VCC, + or 5V on the sensor shield or control board.
 
-### **Project 1: LED Blink**
+### Project 1: LED Blink
 
 ![](media/4c5aa10c3eda7ed4c970b514f5d08da4.png)
 
@@ -622,7 +437,7 @@ delay(100); // wait for 0.1 second
 The test result shows that the LED flashes faster. Therefore, we can draw a
 conclusion that pins and time delaying affect flash frequency.
 
-### **Project 2: Adjust LED Brightness**
+### Project 2: Adjust LED Brightness
 
 1. **Description**
 
@@ -826,7 +641,7 @@ delay (30); // delay 30MS
 
 Upload the code to development board, LED flashes more slowly.
 
-## Project 3 : The Working Principle of Line Tracking Sensor
+### Project 3 : The Working Principle of Line Tracking Sensor
 
 **(1) Description：**
 
@@ -1078,7 +893,7 @@ delay(2000);
 Upload the code to development board, we could observe the brightness of LED
 when covering the line tracking sensor or getting close to it by hand.
 
-### **Project 4: Servo Control**
+### Project 4: Servo Control
 
 ![](media/124d7635f2d87c781a2bcfbfec309dde.png)
 
@@ -1296,7 +1111,7 @@ range is from 0° to 180°
 Note: The above written format is“servo variable name, specific statement（）”,
 for instance: myservo.attach(9)
 
-## Project 5: Ultrasonic Sensor
+### Project 5: Ultrasonic Sensor
 
 1. **Description**
 
@@ -1585,7 +1400,7 @@ else digitalWrite(3, LOW);
 Upload test code to development board and block ultrasonic sensor by hand, then
 check if LED is on
 
-### **Project 6: IR Reception**
+### Project 6: IR Reception
 
 1. **Description**
 
@@ -1800,7 +1615,7 @@ irrecv.resume(); // receive the next value
 Upload code to development board, press“OK”key on remote control to make LED on
 and off.
 
-### **Project 7: Bluetooth Remote Control**
+### Project 7: Bluetooth Remote Control
 
 1. **Description**
 
@@ -2061,7 +1876,7 @@ Click“Write”on APP, when you enter 1, LED will be on;when you input 0, it wi
 be off. (Remember to remove the Bluetooth module after finishing experiment.
 Otherwise, burning code will be affected)
 
-## Project 8: Motor Driving and Speed Control
+### Project 8: Motor Driving and Speed Control
 
 1.**(1) Description**
 
@@ -2345,7 +2160,7 @@ delay(2000);//delay in 2s
 
 After uploading the code successfully, do you find the motors rotate faster?
 
-### **Project 9: 8x16 LED Board**
+### Project 9: 8x16 LED Board
 
 ![](media/2c6708cb4d9bb775c0b6001b47ad0392.jpeg)
 
@@ -3146,7 +2961,7 @@ board on the keyestudio V4.0 board and wire it according to connection diagram.
 After power-on, the DIP switch will be dialed to the “ON” end, and the smart car
 can walk along the black line.
 
-### **Project 11: Ultrasonic Follow Robot**
+### Project 11: Ultrasonic Follow Robot
 
 ![](media/c0304f731522e9765457cc777c43bd4c.jpeg)
 
@@ -3311,7 +3126,7 @@ analogWrite(MR_PWM,0);//set PWM control speed of A motor to 0
 Uploading the code to the development board, and plugging in, dot matrix will
 display a smile facial pattern and follow the obstacle to move.
 
-## Project 12: Ultrasonic Avoiding Robot
+### Project 12: Ultrasonic Avoiding Robot
 
  ![](media/d1dbb527157f94f736ee0c56087a48bb.jpeg)
 
@@ -3720,7 +3535,7 @@ Upload the code on the keyestudio V4.0 board and wire according to connection
 diagram. After the DIP switch is dialed to the right end, the smart car can
 automatically avoid obstacles.
 
-## Project 13: IR Remote Control Robot
+### Project 13: IR Remote Control Robot
 
  ![](media/c2a1fc96d1e5412db2ed7beb2530bd6b.jpeg)
 
@@ -4063,7 +3878,7 @@ end, we can use the infrared remote control to control the movement of the smart
 car . At the same time, the 8X16 LED light board displays the corresponding
 state pattern.
 
-## Project 14: Bluetooth Remote Control
+### Project 14: Bluetooth Remote Control
 
 ![](media/4cde06efb2694232042823050f425225.png)
 
@@ -4076,7 +3891,7 @@ module as a Slave and the cellphone as a Host.
 keyes BT car is an APP rolled out by keyestudio team. You can control the robot
 car by it readily.
 
-2.**(2) Test APP**
+2.**Test APP**
 
 Special note: before uploading the test code, you need to remove the Bluetooth
 module. Otherwise, the test code will fail to upload. You can reconnect the
@@ -4477,11 +4292,198 @@ and wire them according to the connection diagram. After power-on, the DIP
 switch will be dialed to the“ON”end. And after connecting Bluetooth
 successfully, we can use the APP to control the smart car to move.
 
-## Project 15: Multi-purpose Bluetooth Robot
+### Assembly Guide
+
+**Note: Peel the plastic film off the board first when installing the smart
+car.**
+
+ **Step 1:Mount the Bottom PCB**
+
+Prepare the parts as follows:
+
+Gear Motor x4
+
+Fixed Part x4
+
+M3 Nickel Plated Nut x10
+
+M3x6mm Round-head Screw x14
+
+4WD Bottom PCB x1
+
+Tracking Sensor x1
+
+Wheel x4
+
+5P Dupont Wire x1
+
+M3x40mm Copper Pillarx6
+
+M3x30m Round-head Screw x8
+
+M3x8mm Round-head Screw x2
+
+![](media/844097e35f95d61f6615721195c5bb11.png)
+![](media/203fae8eb1c4c3c0de069c6be0b524b6.png)
+![](media/e57feed72a66b4490674f77ec2c35a69.png)
+![](media/7a24e3bbeacad6b81e8cb8f06f4fccf5.png)
+![](media/d495a2067ecb5574601c20bb9ed147df.jpeg)
+![](media/322632dc1b2b68141ce0032999f287ed.jpeg)
+
+ **Step 2: Install Dot Matrix**
+
+Prepare the parts as follows:
+
+8X16 LED Panel x1
+
+4WD Baffle
+
+4P Wire x1
+
+M2x8mm Round-head Screw x4
+
+M2 Nut x4
+
+![](media/b3eff797f6993199671558e69d63ba4d.png)
+![](media/c8bf3b074f441f58683384fe4695be97.png)
+
+ **Step 3: Install the Plastic Platform of Servo**
+
+- Prepare the parts as follows:
+
+Servo x1
+
+M2x4 Screw x1
+
+Black Cable Tiex2
+
+Ultrasonic Sensorx1
+
+Black Plastic Platform x1
+
+M1.2x4 Tapping Screw x4
+
+M2x8 Tapping Screw x2
+
+![](media/b86186c2d44737305a389a887da27ac7.png)
+
+You can find M1.2x4 screws inside the bag of the servo platform
+
+![](media/bf0388c9dad49671aba90f30229d928b.png)
+
+![](media/6246bf8c9de981303761b60fe5dfb44b.png)
+
+/*
+
+Set the 90-degree code,Copy the code and upload it to the development board. The
+steering gear connected to port D9 will rotate to 90 °
+
+*/
+
+\#define servoPin 9 //servo Pin
+
+int pos; //the angle variable of servo
+
+int pulsewidth; // pulse width variable of servo
+
+void setup() {
+
+pinMode(servoPin, OUTPUT); //set servo pin to OUTPUT
+
+procedure(0); //set the angle of servo to 0°
+
+}
+
+void loop() {
+
+procedure(90); // tell servo to go to position in variable 90°
+
+}
+
+// function to control servo
+
+void procedure(int myangle) {
+
+pulsewidth = myangle x 11 + 500; //calculate the value of pulse width
+
+digitalWrite(servoPin,HIGH);
+
+delayMicroseconds(pulsewidth); //The duration of high level is pulse width
+
+digitalWrite(servoPin,LOW);
+
+delay((20 - pulsewidth / 1000)); // the cycle is 20ms, the low level last for
+the rest of time
+
+}
+
+![](media/3311f103f869ac9a889cdca0e2c95092.png)
+![](media/8040617db413660fce1fa198e9d55fb6.png)
+
+ **Step 4: Assemble Battery Holder**
+
+Prepare the parts as follows:
+
+Top PCB x1
+
+M3 Nut x3
+
+Motor Driver Board x1
+
+Control Board x1
+
+IR Receiver Module x1
+
+M3x10mm Copper Pillar x8
+
+M3x8mm Round-head Screw x1
+
+M3x6mm Round-head Screw x16
+
+M3x10mm Flat-head Screw x2
+
+6 AA Battery Holder x1
+
+![](media/ec3a41b4aac22880546b5daf94b41528.png)
+![](media/c62c0c411242b1fd2e91e09251a41d87.png)
+
+![](media/07cc493126354de3183d52207146a3bb.png)
+![](media/4498a936be382b036939ae9dfda90e38.png)
+![](media/f13c77fc3f962cdac2cc3a4576b68953.png)
+
+ **Step 5: Mount the Top PCB**
+
+  Prepare the parts as follows:
+
+Bluetooth Module x1
+
+M3x6MM Round-head Screw x6
+
+Jumper Capx8
+
+![](media/84a90512abefa00026e56aed45dc2634.png)
+![](media/aadc76c26e9a0ab58c5b489a8cfbe817.png)
+![](media/e8938aabe40608b0758c5f9a486a2dd4.png)
+![](media/b2a0e51863d03a2a33942744d435c682.jpeg)
+
+ **Step 6: Hook-up Guide**
+
+![](media/1feb6b2d1e8980dfcaede0a033a8975e.png)
+
+![](media/e822af8fafcef23ccc79d78e89788394.png)
+
+![](media/1c596b883ed770ab09b1e01eb392b435.png)
+![](media/abf52c065c9df72ac19e796112d1c7df.png)
+![](media/a5f5b7aa1933a265847fe5716dd73589.png)
+![](media/5677eb49ccc74577bc9eb759c788bf85.jpeg)
+
+
+
+ Project 15: Multi-purpose Bluetooth Robot
 
 ![](media/46414c9b978c52160b6a2cfb3a729114.jpeg)
 
-1. **Description**
+ **Description**
 
 In previous projects, the robot car only performs a single function. However, in
 this lesson, we will integrate all of its functions via Bluetooth control.
@@ -4490,11 +4492,11 @@ Here is a simple flow chart of multi-purpose robot car for your reference.
 
 ![](media/350df6f452683134aca3b5b1a1fcf576.jpeg)
 
-1. **Connection Diagram**
+ **Connection Diagram**
 
 ![](media/451fb2a74f78543fc685f64087583dec.png)
 
-1. **Test Code**
+ **Test Code**
 
 /*
 
@@ -5114,14 +5116,14 @@ delayMicroseconds(3);
 
 }//
 
-1. **Test Result**
+ **Test Result**
 
 Uploading code to development board, plugging in and turning on it , the 4WD
 robot can not only go forward and back but turn left and right. Moreover, it is
 known that the mobile APP, connected to Bluetooth successfully, can be used to
 control the movement of the robot.
 
-## **9. Resources**
+## 8. Resources
 
 Wiki page: <https://wiki.keyestudio.com/Main_Page>
 
