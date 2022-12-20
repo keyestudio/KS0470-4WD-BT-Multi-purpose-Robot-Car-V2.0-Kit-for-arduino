@@ -73,6 +73,48 @@ Bluetooth control: support both Android and iOS system
 
 ## 4. Product List
 
+| No | Name                                     | QTY |                  Picture                       |
+|----|------------------------------------------|-----|------------------------------------------------|
+| 1  | Keyestudio V4.0 Board                    | 1   | ![](media/d48e310dbb7f60760a02fbd88c17d97a.png)|
+| 2  | Keyestudio Motor Driver Shield| 1        |     | ![](media/93521a0a4605adc2b9281fa7b7d04ed7.png)|
+| 3  | Keyestudio HM-10 Bluetooth-4.0           | 1   | ![](media/dd96bc6b421d7e5d90c5d6bba17792b1.png)|
+| 4  | Red LED Module                           | 1   | ![](media/9ac3c56be4e52c0623161ba8e4587ea1.png)|
+| 5  | HC-SR04 Ultrasonic Sensor                | 1   | ![](media/8b0ad8e263bcb737b26ada117df09ecc.png)|
+| 6  | Keyestudio Line Tracking Sensor          | 1   | ![](media/e7da5f48ae919f1f1753d8e8e76efff2.png)|
+| 7  | Keyestudio IR Receiver Sensor            | 1   | ![](media/0f924b1c78d9cc8060f3c6852453535b.png)|
+| 8  | Keyestudio 8\*16 LED  Dot Matrix         | 1   | ![](media/3af9611e13767b37b476ba8f739ae473.jpeg)|
+|    |  4pinDupont Line                         |     |                                                |
+| 9  | Keyestudio 9G Servo                      | 1   | ![](media/77f3347d5a1c38f2dc5de72175eb9e47.png)|
+| 10 | Keyestudio Remote Control                | 1   | ![](media/1cb7f343e485d1d92e6dc9b49c2216c6.png)|
+| 11 | USB Cable                                | 1   | ![](media/ae4255fe8683fbb2e083c83b98385707.png)|
+| 12 | 18650 Battery Holder                     | 1   | ![](media/8379a88fb269abe60cd0ad4dcb052865.png)|
+| 13 | 6 AA Battery Holder                      | 1   | ![](media/f7ec53e22f42b997a091e0ecb449f174.png)|
+| 14 | Servo Platform                           | 1   | ![](media/74067fcc6690270d218a4f80e8b1c440.png)|
+| 15 | 15CM F-F 5P 24AWG Dupont Wire            | 1   | ![](media/1c9f1cbb4758ce5b6a2476f6bd11bbd9.png)|
+| 16 | 8cm F-F 3P 24AWG  Dupont Wire            | 1   | ![](media/2b85ad6d4c8ce57776917db066e92176.png)|
+| 17 | 4P to 1P Female  DuPont Wire             | 1   | ![](media/a101e1a54334970d4ed17fdb00bf0efb.png)|
+| 18 | Acrylic Board                            | 1   | ![](media/9c27a4cf322fa28124af2828ef711273.png)|
+| 19 | Keyestudio 4WD Smart Car V2.0 Top Board  | 1   | ![](media/2fb841793bcccf3bc2d5a0c1103d62dc.png)|
+| 20 | Keyestudio 4WD Smart Car V2.0 Bottom PCB | 1   | ![](media/782fca2e92c4c94957e7e94513365d02.png)|
+| 21 | Fixed Parts                              | 4   | ![](media/31da46b304fa5546d457f444e6f24a95.png)|
+| 22 | Wheel                                    | 4   |  ![](media/de153b270a2635a082af13f6c530aac2.png)|
+| 23 | M3\*10MM Dual-pass  Copper Bush          | 10  | ![](media/792d8043677d2c3fe52bf52d87623734.png)|
+| 24 | M3\*40MM Dual-pass  Copper Bush          | 4   | ![](media/484d02a86e672277bf844de19f99d952.png)|
+| 25 | M3\*30MM Round Head Screws               | 8   | ![](media/80af09d425cfdc4788c441042c553346.png)|
+| 26 | M3\*6MM Round Head Screws                | 40  | ![](media/05a777927510346c0201f5fdfec45bda.png) |
+| 27 | M3 Nickel Plated Nuts                    | 16  | ![](media/3665fc5a77e96330bd56e9e00dda8c93.png)|
+| 28 | M2X8MM Round Head Screws                 | 6   | ![](media/36abc1252edb2c3b025a3b6169eb55cf.png)|
+| 29 | M3\*8MM Round Head Screws                | 4   | ![](media/2f7b5616f43002e2903a3e7eec952bfa.png)|
+| 30 | M2 Nickel Plated Nuts                    | 6   | ![](media/350883d58fb992c8eacd3ce8aad07976.png)|
+| 31 | M3\*10MM Flat Screws                     | 3   | ![](media/2b3cb9d8641675d829315e14c653be59.png)|
+| 32 |  Motor (with welding wire)               | 4   | ![](media/e3da11c3b300de4832244417c4c5742a.png)|
+| 33 | 3\*40MM Screwdriver                      | 1   | ![](media/6f607f8a0a22498bb852e087daecb0e3.png)|
+| 34 | Black Nylon Ties 3\*100MM                | 6   | ![](media/c22c1a490f3363434fd8bf89f8548a43.png)|
+| 35 |  Winding Pipe                            | 1   | ![](media/788270753c70f082e38bf81533d62930.png)|
+| 36 | 3Pin F-F Dupont Wire (20CM)              | 3   | ![](media/be2a3616b359252f404e044020057833.png)|
+| 37 | Decorative Board                         |     | ![](media/0bc4857c242851f3abcef83bc854bf22.png)|
+
+
 ## 5. Install Arduino IDE and Driver
 
  **Installing Arduino IDE**
