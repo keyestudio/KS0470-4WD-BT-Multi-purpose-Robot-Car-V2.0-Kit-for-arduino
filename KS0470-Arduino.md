@@ -400,37 +400,24 @@ G of shield;“+”is linked with 5V; S end is attached to D3.
 
 1. **Test Code：**
 
-/*
+    /*
+     keyestudio 4wd BT Car V2
+     lesson 1.1
+     Blink
+     http://www.keyestudio.com
+    */
+    void setup()
+     { 
+        pinMode(9, OUTPUT);// initialize digital pin 3 as an output.
+    }
+    void loop() // the loop function runs over and over again forever
+    {  digitalWrite(9, HIGH); // turn the LED on (HIGH is the voltage level)
+       delay(1000); // wait for a second
+       digitalWrite(9, LOW); // turn the LED off by making the voltage LOW
+       delay(1000); // wait for a second
+    }//*******************************************************************
 
-keyestudio 4wd BT Car V2
 
-lesson 1.1
-
-Blink
-
-<http://www.keyestudio.com>
-
-*/
-
-void setup()
-
-{
-
-pinMode(3, OUTPUT);// initialize digital pin 3 as an output.
-
-}
-
-void loop() // the loop function runs over and over again forever
-
-{ digitalWrite(3, HIGH); // turn the LED on (HIGH is the voltage level)
-
-delay(1000); // wait for a second
-
-digitalWrite(3, LOW); // turn the LED off by making the voltage LOW
-
-delay(1000); // wait for a second
-
-}//
 
 1. **Test Result**
 
@@ -449,37 +436,22 @@ or LOW(output 0V)
 We have succeeded in blinking LED. Next, let’s observe what will happen to the
 LED if we modify pins and delay time.
 
-/*
-
-keyestudio 4wd BT Car V2
-
-lesson 1.2
-
-delay
-
-<http://www.keyestudio.com>
-
-*/
-
-void setup() { // initialize digital pin 11 as an output.
-
-pinMode(3, OUTPUT);
-
-}
-
-// the loop function runs over and over again forever
-
-void loop()
-
-{ digitalWrite(3, HIGH); // turn the LED on (HIGH is the voltage level)
-
-delay(100); // wait for 0.1 second
-
-digitalWrite(3, LOW); // turn the LED off by making the voltage LOW
-
-delay(100); // wait for 0.1 second
-
-}//
+    /*
+     keyestudio 4wd BT Car V2
+     lesson 1.2
+     delay
+     http://www.keyestudio.com
+    */
+    void setup() {  // initialize digital pin 11 as an output.
+       pinMode(9, OUTPUT);
+    }
+    // the loop function runs over and over again forever
+    void loop()
+     { digitalWrite(9, HIGH); // turn the LED on (HIGH is the voltage level)
+       delay(100); // wait for 0.1 second
+       digitalWrite(9, LOW); // turn the LED off by making the voltage LOW
+       delay(100); // wait for 0.1 second
+    }//****************************************************************
 
 The test result shows that the LED flashes faster. Therefore, we can draw a
 conclusion that pins and time delaying affect flash frequency.
@@ -524,47 +496,28 @@ control.
 
 1. **Test Code：**
 
-/*
+    /*
+     keyestudio 4wd BT Car V2
+     lesson 2.1
+     pwm
+     http://www.keyestudio.com
+    */
+    int ledPin = 9; // Define the LED pin at D9
+    int value;
+    void setup () {
+      pinMode (ledPin, OUTPUT); // initialize ledpin as an output.
+    }
+    void loop () {
+      for (value = 0; value <255; value = value + 1) {
+        analogWrite (ledPin, value); // LED lights gradually light up
+        delay (5); // delay 5MS
+      }
+      for (value = 255; value> 0; value = value-1) {
+        analogWrite (ledPin, value); // LED gradually goes out
+        delay (5); // delay 5MS
+      }
+    }
 
-keyestudio 4wd BT Car V2
-
-lesson 2.1
-
-pwm
-
-<http://www.keyestudio.com>
-
-*/
-
-int ledPin = 3; // Define the LED pin at D3
-
-int value;
-
-void setup () {
-
-pinMode (ledPin, OUTPUT); // initialize ledpin as an output.
-
-}
-
-void loop () {
-
-for (value = 0; value \<255; value = value + 1) {
-
-analogWrite (ledPin, value); // LED lights gradually light up
-
-delay (5); // delay 5MS
-
-}
-
-for (value = 255; value> 0; value = value-1) {
-
-analogWrite (ledPin, value); // LED gradually goes out
-
-delay (5); // delay 5MS
-
-}
-
-}
 
 5.**Test Result**
 
@@ -646,45 +599,27 @@ wait to learn next project.
 Let’s modify the value of delay and remain the pin unchanged, then observe how
 LED changes.
 
-/*
+    /*
+     keyestudio 4wd BT Car V2
+     lesson 2.2
+     pwm
+     http://www.keyestudio.com
+    */
+    int ledPin = 9; // Define the LED pin at D9
+    void setup(){
+      pinMode (ledPin, OUTPUT); // initialize ledpin as an output.
+    }
+    void loop(){
+      for (int value = 0; value <255; value = value + 1){
+        analogWrite (ledPin, value); // LED lights gradually light up
+        delay (30); // delay 30MS
+      }
+      for(int value=255; value>0;value=value-1){
+        analogWrite (ledPin, value); // LED gradually goes out
+        delay (30); // delay 30MS
+      }
+    }//**********************************************************
 
-keyestudio 4wd BT Car V2
-
-lesson 2.2
-
-pwm
-
-<http://www.keyestudio.com>
-
-*/
-
-int ledPin = 3; // Define the LED pin at D3
-
-void setup(){
-
-pinMode (ledPin, OUTPUT); // initialize ledpin as an output.
-
-}
-
-void loop(){
-
-for (int value = 0; value \<255; value = value + 1){
-
-analogWrite (ledPin, value); // LED lights gradually light up
-
-delay (30); // delay 30MS
-
-}
-
-for(int value=255; value\>0;value=value-1){
-
-analogWrite (ledPin, value); // LED gradually goes out
-
-delay (30); // delay 30MS
-
-}
-
-}//
 
 Upload the code to development board, LED flashes more slowly.
 
@@ -734,65 +669,37 @@ the sensitivity is the best.
 
 1. **Test Code：**
 
-/*
+    /*
+    keyestudio 4wd BT Car V2
+    lesson 3.1 
+     Line Track sensor
+     http://www.keyestudio.com
+    */
+    int L_pin = 11;  //pins of  left line tracking sensor
+    int M_pin = 7;  //pins of  middle line tracking sensor
+    int R_pin = 8;  //pins of  right  line tracking sensor
+    int val_L,val_R,val_M;// define these variables
+    void setup()
+    {
+      Serial.begin(9600); // initialize serial communication at 9600 bits per second
+      pinMode(L_pin,INPUT); // make the L_pin as an input
+      pinMode(M_pin,INPUT); // make the M_pin as an input
+      pinMode(R_pin,INPUT); // make the R_pin as an input
+    }
+    void loop() 
+    { 
+      val_L = digitalRead(L_pin);//read the L_pin:
+      val_R = digitalRead(R_pin);//read the R_pin:
+      val_M = digitalRead(M_pin);//read the M_pin:
+      Serial.print("left:");
+      Serial.print(val_L);
+      Serial.print(" middle:");
+      Serial.print(val_M);
+      Serial.print(" right:");
+      Serial.println(val_R);
+      delay(500);// delay in between reads for stability
+    }//****************************************************************************
 
-keyestudio 4wd BT Car V2
-
-lesson 3.1
-
-Line Track sensor
-
-<http://www.keyestudio.com>
-
-*/
-
-int L_pin = 6; //pins of left line tracking sensor
-
-int M_pin = 7; //pins of middle line tracking sensor
-
-int R_pin = 8; //pins of right line tracking sensor
-
-int val_L,val_R,val_M;// define these variables
-
-void setup()
-
-{
-
-Serial.begin(9600); // initialize serial communication at 9600 bits per second
-
-pinMode(L_pin,INPUT); // make the L_pin as an input
-
-pinMode(M_pin,INPUT); // make the M_pin as an input
-
-pinMode(R_pin,INPUT); // make the R_pin as an input
-
-}
-
-void loop()
-
-{
-
-val_L = digitalRead(L_pin);//read the L_pin:
-
-val_R = digitalRead(R_pin);//read the R_pin:
-
-val_M = digitalRead(M_pin);//read the M_pin:
-
-Serial.print("left:");
-
-Serial.print(val_L);
-
-Serial.print(" middle:");
-
-Serial.print(val_M);
-
-Serial.print(" right:");
-
-Serial.println(val_R);
-
-delay(500);// delay in between reads for stability
-
-}//
 
 1. **Test Result：**
 
@@ -821,121 +728,68 @@ control LED by line tracking sensor.
 
 Test Code
 
-/*
+    /*
+    keyestudio 4wd BT Car V2
+    lesson 3.2
+     Line Track sensor
+     http://www.keyestudio.com
+    */
+    int L_pin = 11;  //pins of  left line tracking sensor
+    int M_pin = 7;  //pins of  middle line tracking sensor
+    int R_pin = 8;  //pins of  right  line tracking sensor
+    int val_L,val_R,val_M;// define the variables of three sensors 
+    void setup()
+    {
+      Serial.begin(9600); // initialize serial communication at 9600 bits per second
+      pinMode(L_pin,INPUT); // make the L_pin as an input
+      pinMode(M_pin,INPUT); // make the M_pin as an input
+      pinMode(R_pin,INPUT); // make the R_pin as an input
+      pinMode(9, OUTPUT);
+    }
+    void loop() 
+    { 
+      val_L = digitalRead(L_pin);//read the L_pin:
+      val_R = digitalRead(R_pin);//read the R_pin:
+      val_M = digitalRead(M_pin);//read the M_pin:
+      Serial.print("left:");
+      Serial.print(val_L);
+      Serial.print(" middle:");
+      Serial.print(val_M);
+      Serial.print(" right:");
+      Serial.println(val_R);
+    
+      if (val_L == HIGH)//if left line tracking sensor detects signals
+      { 
+        digitalWrite(9, LOW);//LED is off
+      } 
+      else//if left line tracking sensor doesn’t detect signals
+      { 
+        digitalWrite(9, HIGH);//LED lights up
+        delay(2000); 
+      }
+       
+      if (val_R == HIGH)//if right line tracking sensor detects signals
+      {
+        digitalWrite(9, LOW);//LED is off
+      }
+      else//if right line tracking sensor doesn’t detect signals
+      {
+        digitalWrite(9, HIGH);//LED lights up
+        delay(2000); 
+      }
+        
+      if (val_M == HIGH)//if middle line tracking sensor detects signals
+      {
+        digitalWrite(9, LOW);//LED is off
+      }
+      else//if middle line tracking sensor doesn’t detect signals
+      {
+        digitalWrite(9, HIGH);//LED lights up
+        delay(2000); 
+      }
+    }
+    //****************************************************************************
 
-keyestudio 4wd BT Car V2
-
-lesson 3.2
-
-Line Track sensor
-
-<http://www.keyestudio.com>
-
-*/
-
-int L_pin = 6; //pins of left line tracking sensor
-
-int M_pin = 7; //pins of middle line tracking sensor
-
-int R_pin = 8; //pins of right line tracking sensor
-
-int val_L,val_R,val_M;// define the variables of three sensors
-
-void setup()
-
-{
-
-Serial.begin(9600); // initialize serial communication at 9600 bits per second
-
-pinMode(L_pin,INPUT); // make the L_pin as an input
-
-pinMode(M_pin,INPUT); // make the M_pin as an input
-
-pinMode(R_pin,INPUT); // make the R_pin as an input
-
-pinMode(3, OUTPUT);
-
-}
-
-void loop()
-
-{
-
-val_L = digitalRead(L_pin);//read the L_pin:
-
-val_R = digitalRead(R_pin);//read the R_pin:
-
-val_M = digitalRead(M_pin);//read the M_pin:
-
-Serial.print("left:");
-
-Serial.print(val_L);
-
-Serial.print(" middle:");
-
-Serial.print(val_M);
-
-Serial.print(" right:");
-
-Serial.println(val_R);
-
-if (val_L == HIGH)//if left line tracking sensor detects signals
-
-{
-
-digitalWrite(3, LOW);//LED is off
-
-}
-
-else//if left line tracking sensor doesn’t detect signals
-
-{
-
-digitalWrite(3, HIGH);//LED lights up
-
-delay(2000);
-
-}
-
-if (val_R == HIGH)//if right line tracking sensor detects signals
-
-{
-
-digitalWrite(3, LOW);//LED is off
-
-}
-
-else//if right line tracking sensor doesn’t detect signals
-
-{
-
-digitalWrite(3, HIGH);//LED lights up
-
-delay(2000);
-
-}
-
-if (val_M == HIGH)//if middle line tracking sensor detects signals
-
-{
-
-digitalWrite(3, LOW);//LED is off
-
-}
-
-else//if middle line tracking sensor doesn’t detect signals
-
-{
-
-digitalWrite(3, HIGH);//LED lights up
-
-delay(2000);
-
-}
-
-}
-
-//
 
 Upload the code to development board, we could observe the brightness of LED
 when covering the line tracking sensor or getting close to it by hand.
@@ -1010,68 +864,39 @@ enough. If without connected power, the development board could be burnt.
 
 1. **Test Code1**
 
-/*
+    /*
+    keyestudio 4wd BT Car V2
+    lesson 4.1
+    Servo
+    http://www.keyestudio.com
+    */
+    #define servoPin 10  //servo Pin
+    int pos; //the angle variable of servo
+    int pulsewidth; // pulse width variable of servo
+    void setup() {
+      pinMode(servoPin, OUTPUT);  //set the pins of servo to output
+      procedure(0); // set the angle of servo to 0 degree
+    }
+    void loop() {
+      for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
+        // in steps of 1 degree
+        procedure(pos);              // tell servo to go to position in variable 'pos'
+        delay(15);                   //control the rotation speed of servo
+    
+      }
+      for (pos = 180; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
+        procedure(pos);              // tell servo to go to position in variable 'pos'
+        delay(15);                    
+      }}
+    // function to control servo
+    void procedure(int myangle) {
+      pulsewidth = myangle * 11 + 500;  //calculate the value of pulse width
+      digitalWrite(servoPin,HIGH);
+      delayMicroseconds(pulsewidth);   //The duration of high level is pulse width
+      digitalWrite(servoPin,LOW);
+      delay((20 - pulsewidth / 1000));  // the cycle is 20ms, the low level last for the rest of time
+    }//**********************************************************************************
 
-keyestudio 4wd BT Car V2
-
-lesson 4.1
-
-Servo
-
-<http://www.keyestudio.com>
-
-*/
-
-\#define servoPin 10 //servo Pin
-
-int pos; //the angle variable of servo
-
-int pulsewidth; // pulse width variable of servo
-
-void setup() {
-
-pinMode(servoPin, OUTPUT); //set the pins of servo to output
-
-procedure(0); // set the angle of servo to 0 degree
-
-}
-
-void loop() {
-
-for (pos = 0; pos \<= 180; pos += 1) { // goes from 0 degrees to 180 degrees
-
-// in steps of 1 degree
-
-procedure(pos); // tell servo to go to position in variable 'pos'
-
-delay(15); //control the rotation speed of servo
-
-}
-
-for (pos = 180; pos \>= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
-
-procedure(pos); // tell servo to go to position in variable 'pos'
-
-delay(15);
-
-}}
-
-// function to control servo
-
-void procedure(int myangle) {
-
-pulsewidth = myangle x 11 + 500; //calculate the value of pulse width
-
-digitalWrite(servoPin,HIGH);
-
-delayMicroseconds(pulsewidth); //The duration of high level is pulse width
-
-digitalWrite(servoPin,LOW);
-
-delay((20 - pulsewidth / 1000)); // the cycle is 20ms, the low level last for
-the rest of time
-
-}//
 
 Upload code successfully, servo swings forth and back in the range of 0° to 180°
 
@@ -1086,53 +911,30 @@ The library file of servo is used in the following code
 
 1. **Test Code2**
 
-/*
+    /*
+     keyestudio 4wd BT Car V2
+     lesson 4.2
+     servo
+     http://www.keyestudio.com
+    */
+    #include <Servo.h>
+    Servo myservo;  // create servo object to control a servo
+    // twelve servo objects can be created on most boards
+    int pos = 0;    // variable to store the servo position
+    void setup() {
+      myservo.attach(10);  // attaches the servo on pin 9 to the servo object
+    }
+    void loop() {
+      for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
+        // in steps of 1 degree
+        myservo.write(pos);              // tell servo to go to position in variable 'pos'
+        delay(15);                       // waits 15ms for the servo to reach the position
+      }
+      for (pos = 180; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
+        myservo.write(pos);              // tell servo to go to position in variable 'pos'
+        delay(15);                       // waits 15ms for the servo to reach the position
+      }}//************************************************************************
 
-keyestudio 4wd BT Car V2
-
-lesson 4.2
-
-servo
-
-<http://www.keyestudio.com>
-
-*/
-
-\#include \<Servo.h\>
-
-Servo myservo; // create servo object to control a servo
-
-// twelve servo objects can be created on most boards
-
-int pos = 0; // variable to store the servo position
-
-void setup() {
-
-myservo.attach(10); // attaches the servo on pin 9 to the servo object
-
-}
-
-void loop() {
-
-for (pos = 0; pos \<= 180; pos += 1) { // goes from 0 degrees to 180 degrees
-
-// in steps of 1 degree
-
-myservo.write(pos); // tell servo to go to position in variable 'pos'
-
-delay(15); // waits 15ms for the servo to reach the position
-
-}
-
-for (pos = 180; pos \>= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
-
-myservo.write(pos); // tell servo to go to position in variable 'pos'
-
-delay(15); // waits 15ms for the servo to reach the position
-
-}}
-
-//
 
 1. **Test Result**
 
@@ -1214,15 +1016,15 @@ ultrasonic wave = (speed x time)/2
 1. Use method and timing chart of ultrasonic module:
 
 2. Setting the delay time of Trig pin of SR04 to 10μs at least, which can
-    trigger it to detect distance.
+trigger it to detect distance.
 
 3. After triggering, the module will automatically send eight 40KHz ultrasonic
-    pulses and detect whether there is a signal return. This step will be
-    completed automatically by the module.
+pulses and detect whether there is a signal return. This step will be
+completed automatically by the module.
 
 4. If the signal returns, the Echo pin will output a high level, and the
-    duration of the high level is the time from the transmission of the
-    ultrasonic wave to the return.
+duration of the high level is the time from the transmission of the
+ultrasonic wave to the return.
 
 ![](media/ba43be6007d9fe3aab0bb609868af640.png)
 
@@ -1248,83 +1050,46 @@ Gnd → Gnd(G)
 
 1. **Test Code**
 
-/*
+    /*
+     keyestudio 4wd BT Car V2
+     lesson 5
+     Ultrasonic sensor
+     http://www.keyestudio.com
+    */ 
+    int trigPin = 12;    // Trigger
+    int echoPin = 13;    // Echo
+    long duration, cm, inches;
+     void setup() {
+      //Serial Port begin
+      Serial.begin (9600);
+      //Define inputs and outputs
+      pinMode(trigPin, OUTPUT);
+      pinMode(echoPin, INPUT);
+    }
+    void loop() {
+      // The sensor is triggered by a HIGH pulse of 10 or more microseconds.
+      // Give a short LOW pulse beforehand to ensure a clean HIGH pulse:
+      digitalWrite(trigPin, LOW);
+      delayMicroseconds(2);
+      digitalWrite(trigPin, HIGH);
+      delayMicroseconds(10);
+      digitalWrite(trigPin, LOW);
+       // Read the signal from the sensor: a HIGH pulse whose
+      // duration is the time (in microseconds) from the sending
+      // of the ping to the reception of its echo off of an object.
+      duration = pulseIn(echoPin, HIGH);
+       // Convert the time into a distance
+      cm = (duration/2) / 29.1;     // Divide by 29.1 or multiply by 0.0343
+      inches = (duration/2) / 74;   // Divide by 74 or multiply by 0.0135
+        Serial.print(inches);
+      Serial.print("in, ");
+      Serial.print(cm);
+      Serial.print("cm");
+      Serial.println();
+      delay(50);
+    }
+    //**************************************************************************
 
-keyestudio 4wd BT Car V2
-
-lesson 5
-
-Ultrasonic sensor
-
-<http://www.keyestudio.com>
-
-*/
-
-int trigPin = 12; // Trigger
-
-int echoPin = 13; // Echo
-
-long duration, cm, inches;
-
-void setup() {
-
-//Serial Port begin
-
-Serial.begin (9600);
-
-//Define inputs and outputs
-
-pinMode(trigPin, OUTPUT);
-
-pinMode(echoPin, INPUT);
-
-}
-
-void loop() {
-
-// The sensor is triggered by a HIGH pulse of 10 or more microseconds.
-
-// Give a short LOW pulse beforehand to ensure a clean HIGH pulse:
-
-digitalWrite(trigPin, LOW);
-
-delayMicroseconds(2);
-
-digitalWrite(trigPin, HIGH);
-
-delayMicroseconds(10);
-
-digitalWrite(trigPin, LOW);
-
-// Read the signal from the sensor: a HIGH pulse whose
-
-// duration is the time (in microseconds) from the sending
-
-// of the ping to the reception of its echo off of an object.
-
-duration = pulseIn(echoPin, HIGH);
-
-// Convert the time into a distance
-
-cm = (duration/2) / 29.1; // Divide by 29.1 or multiply by 0.0343
-
-inches = (duration/2) / 74; // Divide by 74 or multiply by 0.0135
-
-Serial.print(inches);
-
-Serial.print("in, ");
-
-Serial.print(cm);
-
-Serial.print("cm");
-
-Serial.println();
-
-delay(50);
-
-}
-
-//
 
 1. **Test Result**
 
@@ -1364,85 +1129,48 @@ light module to the D3 pin.
 
 ![](media/0e611ce1d0da30a4422fad1eefee17ba.png)
 
-/*
+    /*
+     keyestudio 4wd BT Car V2
+     lesson 5.2
+     Ultrasonic LED
+     http://www.keyestudio.com
+    */ 
+    int trigPin = 12;    // Trigger
+    int echoPin = 13;    // Echo
+    long duration, cm, inches;
+    void setup() {
+      Serial.begin (9600);  //Serial Port begin
+      pinMode(trigPin, OUTPUT);  //Define inputs and outputs
+      pinMode(echoPin, INPUT);
+      pinMode(9, OUTPUT);
+    }
+     void loop() 
+    {
+      // The sensor is triggered by a HIGH pulse of 10 or more microseconds.
+      // Give a short LOW pulse beforehand to ensure a clean HIGH pulse:
+      digitalWrite(trigPin, LOW);
+      delayMicroseconds(2);
+      digitalWrite(trigPin, HIGH);
+      delayMicroseconds(10);
+      digitalWrite(trigPin, LOW);
+      // Read the signal from the sensor: a HIGH pulse whose
+      // duration is the time (in microseconds) from the sending
+      // of the ping to the reception of its echo off of an object.
+      duration = pulseIn(echoPin, HIGH);
+      // Convert the time into a distance
+      cm = (duration/2) / 29.1;     // Divide by 29.1 or multiply by 0.0343
+      inches = (duration/2) / 74;   // Divide by 74 or multiply by 0.0135
+      Serial.print(inches);
+      Serial.print("in, ");
+      Serial.print(cm);
+      Serial.print("cm");
+      Serial.println();
+      delay(50);
+    if (cm>=2 && cm<=10)
+    digitalWrite(9, HIGH);
+    else digitalWrite(9, LOW);
+    }//****************************************************************
 
-keyestudio 4wd BT Car V2
-
-lesson 5.2
-
-Ultrasonic LED
-
-<http://www.keyestudio.com>
-
-*/
-
-int trigPin = 12; // Trigger
-
-int echoPin = 13; // Echo
-
-long duration, cm, inches;
-
-void setup() {
-
-Serial.begin (9600); //Serial Port begin
-
-pinMode(trigPin, OUTPUT); //Define inputs and outputs
-
-pinMode(echoPin, INPUT);
-
-pinMode(3, OUTPUT);
-
-}
-
-void loop()
-
-{
-
-// The sensor is triggered by a HIGH pulse of 10 or more microseconds.
-
-// Give a short LOW pulse beforehand to ensure a clean HIGH pulse:
-
-digitalWrite(trigPin, LOW);
-
-delayMicroseconds(2);
-
-digitalWrite(trigPin, HIGH);
-
-delayMicroseconds(10);
-
-digitalWrite(trigPin, LOW);
-
-// Read the signal from the sensor: a HIGH pulse whose
-
-// duration is the time (in microseconds) from the sending
-
-// of the ping to the reception of its echo off of an object.
-
-duration = pulseIn(echoPin, HIGH);
-
-// Convert the time into a distance
-
-cm = (duration/2) / 29.1; // Divide by 29.1 or multiply by 0.0343
-
-inches = (duration/2) / 74; // Divide by 74 or multiply by 0.0135
-
-Serial.print(inches);
-
-Serial.print("in, ");
-
-Serial.print(cm);
-
-Serial.print("cm");
-
-Serial.println();
-
-delay(50);
-
-if (cm\>=2 && cm\<=10)digitalWrite(3, HIGH);
-
-else digitalWrite(3, LOW);
-
-}//
 
 Upload test code to development board and block ultrasonic sensor by hand, then
 check if LED is on
@@ -1518,55 +1246,30 @@ can be regarded as digital ports. A0 equals to D14, A1 is equivalent to digital
 Firstly import library file of IR receiver module(refer to how to import Arduino
 library file) before designing code.
 
-/*
+    /*
+     keyestudio 4wd BT Car V2
+     lesson 6.1
+     IRremote
+     http://www.keyestudio.com
+    */ 
+    #include <IRremote.h>     // IRremote library statement
+    int RECV_PIN = 3;        //define the pins of IR receiver as 3
+    IRrecv irrecv(RECV_PIN);   
+    decode_results results;   // decode results exist in the“result” of “decode results”
+    void setup()  
+      {  
+          Serial.begin(9600);  
+          irrecv.enableIRIn(); // Enable receiver
+      }  
+     void loop() {  
+        if (irrecv.decode(&results))//decode successfully, receive a set of infrared signals
+        {  
+          Serial.println(results.value, HEX);//Wrap word in 16 HEX to output and receive code 
+          irrecv.resume(); // Receive the next value
+        }  
+        delay(100);  
+      } //*******************************************************
 
-keyestudio 4wd BT Car V2
-
-lesson 6.1
-
-IRremote
-
-<http://www.keyestudio.com>
-
-*/
-
-\#include \<IRremote.h\> // IRremote library statement
-
-int RECV_PIN = A0; //define the pins of IR receiver as A0
-
-IRrecv irrecv(RECV_PIN);
-
-decode_results results; // decode results exist in the“result” of “decode
-results”
-
-void setup()
-
-{
-
-Serial.begin(9600);
-
-irrecv.enableIRIn(); // Enable receiver
-
-}
-
-void loop() {
-
-if (irrecv.decode(&results))//decode successfully, receive a set of infrared
-signals
-
-{
-
-Serial.println(results.value, HEX);//Wrap word in 16 HEX to output and receive
-code
-
-irrecv.resume(); // Receive the next value
-
-}
-
-delay(100);
-
-}
-//
 
 1. **Test Result**
 
@@ -1600,64 +1303,36 @@ and off.
 
 ![](media/72c3128aef5346425a02723f6ebe73ec.png)
 
-/* keyestudio 4wd BT Car V2
+    /* keyestudio 4wd BT Car V2
+    lesson 6.2
+    IRremote
+    http://www.keyestudio.com
+    */ 
+    #include <IRremote.h>
+    int RECV_PIN = 3;//define the pin of IR receiver as 3
+    int LED_PIN=9;// define the pin of LED as pin 9
+    int a=0;
+    IRrecv irrecv(RECV_PIN);
+    decode_results results;
+    void setup()
+    {Serial.begin(9600);
+      irrecv.enableIRIn(); //  Initialize the IR receiver 
+      pinMode(LED_PIN,OUTPUT);//set pin 3 of LED to OUTPUT
+    }
+    void loop() {
+      if (irrecv.decode(&results)) {
+    if(results.value==0xFF02FD &a==0) //according to the above key value, press“OK”on remote control , LED will be controlled
+    {digitalWrite(LED_PIN,HIGH);//LED will be on
+    a=1;
+    }
+    else if(results.value==0xFF02FD &a==1) //press again
+    {
+    digitalWrite(LED_PIN,LOW);//LED will go off
+    a=0;
+    }
+        irrecv.resume(); // receive the next value
+      }}//*******************************************************
 
-lesson 6.2
-
-IRremote
-
-<http://www.keyestudio.com>
-
-*/
-
-\#include \<IRremote.h\>
-
-int RECV_PIN = A0;//define the pin of IR receiver as A0
-
-int LED_PIN=3;// define the pin of LED as pin 3
-
-int a=0;
-
-IRrecv irrecv(RECV_PIN);
-
-decode_results results;
-
-void setup()
-
-{Serial.begin(9600);
-
-irrecv.enableIRIn(); // Initialize the IR receiver
-
-pinMode(LED_PIN,OUTPUT);//set pin 3 of LED to OUTPUT
-
-}
-
-void loop() {
-
-if (irrecv.decode(&results)) {
-
-if(results.value==0xFF02FD \&a==0) //according to the above key value,
-press“OK”on remote control , LED will be controlled
-
-{digitalWrite(LED_PIN,HIGH);//LED will be on
-
-a=1;
-
-}
-
-else if(results.value==0xFF02FD \&a==1) //press again
-
-{
-
-digitalWrite(LED_PIN,LOW);//LED will go off
-
-a=0;
-
-}
-
-irrecv.resume(); // receive the next value
-
-}}//
 
 Upload code to development board, press“OK”key on remote control to make LED on
 and off.
@@ -1736,40 +1411,27 @@ insert it before uploading test code.**
 
 1. **Test Code**
 
-/*
+    /*
+     keyestudio 4wd BT Car V2.0
+     lesson 7.1
+     bluetooth 
+    http://www.keyestudio.com
+    */
+    
+    char ble_val; //character variable, used to save the value received by Bluetooth 
+    
+    void setup() {
+      Serial.begin(9600);
+    }
+    void loop() {
+      if(Serial.available() > 0)  //make sure if there is data in serial buffer
+    
+      {
+        ble_val = Serial.read();  //Read data from serial buffer
+        Serial.println(ble_val);  //Print
+      }}
+    //**********************************************************************
 
-keyestudio 4wd BT Car V2.0
-
-lesson 7.1
-
-bluetooth
-
-<http://www.keyestudio.com>
-
-*/
-
-char ble_val; //character variable, used to store the value received by
-Bluetooth
-
-void setup() {
-
-Serial.begin(9600);
-
-}
-
-void loop() {
-
-if(Serial.available() \> 0) //make sure if there is data in serial buffer
-
-{
-
-ble_val = Serial.read(); //Read data from serial buffer
-
-Serial.println(ble_val); //Print
-
-}}
-
-//
 
 (There will be contradiction between serial communication of code and
 communication of Bluetooth when uploading code. Therefore, don’t link Bluetooth
@@ -1856,65 +1518,37 @@ D3 is connected to a LED, as shown below:
 
 ![](media/e668a67832bf9980fb13038235c80f23.png)
 
-/*
+    /*
+     keyestudio 4wd BT Car V2.0
+     lesson 7.2
+     Bluetooth 
+     http://www.keyestudio.com
+    */ 
+    int ledpin=9;
+    void setup()
+    {
+      Serial.begin(9600);
+      pinMode(ledpin,OUTPUT);
+    }
+    void loop()
+    {
+      int i;
+      if (Serial.available())
+      {
+        i=Serial.read();
+        Serial.println("DATA RECEIVED:");
+        if(i=='1')
+        {
+          digitalWrite(ledpin,1);
+          Serial.println("led on");
+        }
+        if(i=='0')
+        {
+          digitalWrite(ledpin,0);
+          Serial.println("led off");
+        }}}
+    //****************************************************************************
 
-keyestudio 4wd BT Car V2.0
-
-lesson 7.2
-
-Bluetooth
-
-<http://www.keyestudio.com>
-
-*/
-
-int ledpin=3;
-
-void setup()
-
-{
-
-Serial.begin(9600);
-
-pinMode(ledpin,OUTPUT);
-
-}
-
-void loop()
-
-{
-
-int i;
-
-if (Serial.available())
-
-{
-
-i=Serial.read();
-
-Serial.println("DATA RECEIVED:");
-
-if(i=='1')
-
-{
-
-digitalWrite(ledpin,1);
-
-Serial.println("led on");
-
-}
-
-if(i=='0')
-
-{
-
-digitalWrite(ledpin,0);
-
-Serial.println("led off");
-
-}}}
-
-//
 
 ![](media/f6088ac1921dfb67f4fc949dac719e41.png)!
 [2](media/767ed0b7d1876e63ff109d8a355209ac.png)
@@ -1994,101 +1628,60 @@ diagram**
 
 6.**(6) Test Code**
 
-/*
+    /*
+     keyestudio 4wd BT Car V2.0
+     lesson 8
+     motor driver shield
+     http://www.keyestudio.com
+    */ 
+    #define ML_Ctrl 4     // define the direction control pin of B motor
+    #define ML_PWM 5   //define the PWM control pin of B motor
+    #define MR_Ctrl 2    //define direction control pin of A motor
+    #define MR_PWM 6   //define the PWM control pin of A motor
+    void setup()
+    {
+      pinMode(ML_Ctrl, OUTPUT);//define direction control pin of B motor as output
+      pinMode(ML_PWM, OUTPUT);//define PWM control pin of B motor as output
+      pinMode(MR_Ctrl, OUTPUT);//define direction control pin of A motor as output.
+      pinMode(MR_PWM, OUTPUT);//define the PWM control pin of A motor as output
+    }
+    void loop()
+    { 
+      digitalWrite(ML_Ctrl,HIGH);//set the direction control pin of B motor to HIGH
+      analogWrite(ML_PWM,200);//set the PWM control speed of B motor to 200
+      digitalWrite(MR_Ctrl,HIGH);//set the direction control pin of A motor to HIGH
+      analogWrite(MR_PWM,200);//set the PWM control speed of A motor to 200
+    
+      //front
+      delay(2000);//delay in 2s
+      digitalWrite(ML_Ctrl,LOW);//set the direction control pin of B motor to LOW
+    
+      analogWrite(ML_PWM,200);//set the PWM control speed of B motor to 200  
+      digitalWrite(MR_Ctrl,LOW);//set the direction control pin of A motor to LOW
+      analogWrite(MR_PWM,200);//set the PWM control speed of A motor to 200
+       //back
+      delay(2000);//delay in 2s 
+      digitalWrite(ML_Ctrl,LOW);//set the direction control pin of B motor to LOW
+      analogWrite(ML_PWM,200);//set the PWM control speed of B motor to 200
+      digitalWrite(MR_Ctrl,HIGH);//set the direction control pin of A motor to HIGH
+      analogWrite(MR_PWM,200);// set the PWM control speed of A motor to 200
+    
+        //left
+      delay(2000);//delay in 2s
+      digitalWrite(ML_Ctrl,HIGH);//set the direction control pin of B motor to HIGH
+      analogWrite(ML_PWM,200);//set the PWM control speed of B motor to 200
+      digitalWrite(MR_Ctrl,LOW);// set the direction control pin of A motor to LOW
+      analogWrite(MR_PWM,200);//set the PWM control speed of A motor to 200
+    
+       //right
+      delay(2000);//delay in 2s
+      analogWrite(ML_PWM,0);//set the PWM control speed of B motor to 0
+      analogWrite(MR_PWM,0);//set the PWM control speed of A motor to 0
+    
+        //stop
+      delay(2000);//delay in 2s
+    }//*************************************************************************
 
-keyestudio 4wd BT Car V2.0
-
-lesson 8
-
-motor driver shield
-
-<http://www.keyestudio.com>
-
-*/
-
-\#define ML_Ctrl 4 // define the direction control pin of B motor
-
-\#define ML_PWM 5 //define the PWM control pin of B motor
-
-\#define MR_Ctrl 2 //define direction control pin of A motor
-
-\#define MR_PWM 9 //define the PWM control pin of A motor
-
-void setup()
-
-{
-
-pinMode(ML_Ctrl, OUTPUT);//set direction control pin of B motor to output
-
-pinMode(ML_PWM, OUTPUT);//set PWM control pin of B motor to output
-
-pinMode(MR_Ctrl, OUTPUT);//set direction control pin of A motor to output.
-
-pinMode(MR_PWM, OUTPUT);//set the PWM control pin of A motor to output
-
-}
-
-void loop()
-
-{
-
-digitalWrite(ML_Ctrl,HIGH);//set the direction control pin of B motor to HIGH
-
-analogWrite(ML_PWM,200);//set the PWM control speed of B motor to 200
-
-digitalWrite(MR_Ctrl,HIGH);//set the direction control pin of A motor to HIGH
-
-analogWrite(MR_PWM,200);//set the PWM control speed of A motor to 200
-
-//front
-
-delay(2000);//delay in 2s
-
-digitalWrite(ML_Ctrl,LOW);//set the direction control pin of B motor to LOW
-
-analogWrite(ML_PWM,200);//set the PWM control speed of B motor to 200
-
-digitalWrite(MR_Ctrl,LOW);//set the direction control pin of A motor to LOW
-
-analogWrite(MR_PWM,200);//set the PWM control speed of A motor to 200
-
-//back
-
-delay(2000);//delay in 2s
-
-digitalWrite(ML_Ctrl,LOW);//set the direction control pin of B motor to LOW
-
-analogWrite(ML_PWM,200);//set the PWM control speed of B motor to 200
-
-digitalWrite(MR_Ctrl,HIGH);//set the direction control pin of A motor to HIGH
-
-analogWrite(MR_PWM,200);// set the PWM control speed of A motor to 200
-
-//left
-
-delay(2000);//delay in 2s
-
-digitalWrite(ML_Ctrl,HIGH);//set the direction control pin of B motor to HIGH
-
-analogWrite(ML_PWM,200);//set the PWM control speed of B motor to 200
-
-digitalWrite(MR_Ctrl,LOW);// set the direction control pin of A motor to LOW
-
-analogWrite(MR_PWM,200);//set the PWM control speed of A motor to 200
-
-//right
-
-delay(2000);//delay in 2s
-
-analogWrite(ML_PWM,0);//set the PWM control speed of B motor to 0
-
-analogWrite(MR_PWM,0);//set the PWM control speed of A motor to 0
-
-//stop
-
-delay(2000);//delay in 2s
-
-}//
 
 7.**(7) Test Result**
 
@@ -2109,101 +1702,55 @@ Adjust the speed that PWM controls the motor, hook up in same way
 
 ![](media/73693872140523a79266b2e62622d9e4.png)
 
-/*
+    /*
+     keyestudio 4wd BT Car V2.0
+     lesson 8.2
+     motor driver
+     http://www.keyestudio.com
+    */ 
+    #define ML_Ctrl 4     //define the direction control pin of B motor
+    #define ML_PWM 5   //define the PWM control pin of B motor
+    #define MR_Ctrl 2    //define the direction control pin of A motor
+    #define MR_PWM 6   //define the PWM control pin of A motor
+    void setup()
+    {
+      pinMode(ML_Ctrl, OUTPUT);//set direction control pin of B motor to OUTPUT
+      pinMode(ML_PWM, OUTPUT);//set the PWM control pin of B motor to OUTPUT 
+     pinMode(MR_Ctrl, OUTPUT);//set the direction control pin of A motor to OUTPUT
+      pinMode(MR_PWM, OUTPUT);//set PWM control pin of A motor to OUTPUT
+    }
+    void loop()
+    { 
+      digitalWrite(ML_Ctrl,HIGH);//set direction control pin of B motor to HIGH level
+      analogWrite(ML_PWM,250);//Set PWM control speed of B motor to 100
+      digitalWrite(MR_Ctrl,HIGH);//set direction control pin of A motor to HIGH level
+      analogWrite(MR_PWM,250);//Set PWM control speed of A motor to 100
+      //front
+      delay(2000);//delay in 2s
+      digitalWrite(ML_Ctrl,LOW);//set direction control pin of B motor to LOW
+      analogWrite(ML_PWM,250);//Set PWM control speed of B motor to 100
+      digitalWrite(MR_Ctrl,LOW);//set direction control pin of A motor to LOW
+      analogWrite(MR_PWM,250);//Set PWM control speed of A motor to 100
+       //back
+      delay(2000);//delay in 2s
+      digitalWrite(ML_Ctrl,LOW);//set direction control pin of B motor to LOW
+      analogWrite(ML_PWM,250);//Set PWM control speed of B motor to 100
+      digitalWrite(MR_Ctrl,HIGH);//set direction control pin of A motor to HIGH level
+      analogWrite(MR_PWM,250);//Set PWM control speed of A motor to 100
+        //left
+      delay(2000);//delay in 2s
+      digitalWrite(ML_Ctrl,HIGH);//set direction control pin of B motor to HIGH level
+      analogWrite(ML_PWM,250);//Set PWM control speed of B motor to 100
+      digitalWrite(MR_Ctrl,LOW);//set direction control pin of A motor to LOW
+      analogWrite(MR_PWM,250);//Set PWM control speed of A motor to 100
+       //right
+      delay(2000);//delay in 2s
+      analogWrite(ML_PWM,0);//set PWM control speed of B motor to 0
+      analogWrite(MR_PWM,0);//set PWM control speed of A motor to 0
+        //stop
+      delay(2000);//delay in 2s
+    }//***********************************************************************
 
-keyestudio 4wd BT Car V2.0
-
-lesson 8.2
-
-motor driver
-
-<http://www.keyestudio.com>
-
-*/
-
-\#define ML_Ctrl 4 //define the direction control pin of B motor
-
-\#define ML_PWM 5 //define the PWM control pin of B motor
-
-\#define MR_Ctrl 2 //define the direction control pin of A motor
-
-\#define MR_PWM 9 //define the PWM control pin of A motor
-
-void setup()
-
-{
-
-pinMode(ML_Ctrl, OUTPUT);//set direction control pin of B motor to OUTPUT
-
-pinMode(ML_PWM, OUTPUT);//set the PWM control pin of B motor to OUTPUT
-
-pinMode(MR_Ctrl, OUTPUT);//set the direction control pin of A motor to OUTPUT
-
-pinMode(MR_PWM, OUTPUT);//set PWM control pin of A motor to OUTPUT
-
-}
-
-void loop()
-
-{
-
-digitalWrite(ML_Ctrl,HIGH);//set direction control pin of B motor to HIGH level
-
-analogWrite(ML_PWM,250);//Set PWM control speed of B motor to 100
-
-digitalWrite(MR_Ctrl,HIGH);//set direction control pin of A motor to HIGH level
-
-analogWrite(MR_PWM,250);//Set PWM control speed of A motor to 100
-
-//front
-
-delay(2000);//delay in 2s
-
-digitalWrite(ML_Ctrl,LOW);//set direction control pin of B motor to LOW
-
-analogWrite(ML_PWM,250);//Set PWM control speed of B motor to 100
-
-digitalWrite(MR_Ctrl,LOW);//set direction control pin of A motor to LOW
-
-analogWrite(MR_PWM,250);//Set PWM control speed of A motor to 100
-
-//back
-
-delay(2000);//delay in 2s
-
-digitalWrite(ML_Ctrl,LOW);//set direction control pin of B motor to LOW
-
-analogWrite(ML_PWM,250);//Set PWM control speed of B motor to 100
-
-digitalWrite(MR_Ctrl,HIGH);//set direction control pin of A motor to HIGH level
-
-analogWrite(MR_PWM,250);//Set PWM control speed of A motor to 100
-
-//left
-
-delay(2000);//delay in 2s
-
-digitalWrite(ML_Ctrl,HIGH);//set direction control pin of B motor to HIGH level
-
-analogWrite(ML_PWM,250);//Set PWM control speed of B motor to 100
-
-digitalWrite(MR_Ctrl,LOW);//set direction control pin of A motor to LOW
-
-analogWrite(MR_PWM,250);//Set PWM control speed of A motor to 100
-
-//right
-
-delay(2000);//delay in 2s
-
-analogWrite(ML_PWM,0);//set PWM control speed of B motor to 0
-
-analogWrite(MR_PWM,0);//set PWM control speed of A motor to 0
-
-//stop
-
-delay(2000);//delay in 2s
-
-}//
 
 After uploading the code successfully, do you find the motors rotate faster?
 
@@ -2340,163 +1887,85 @@ but this module is not IIC communication, it can be linked with any two pins.)
 
 The code that shows smile face
 
-/*
+     /*
+     keyestudio 4wd BT Car V2.0
+     lesson 9.1
+     matrix
+     http://www.keyestudio.com
+    */ 
+    //get the data of smile pattern in the modulus tool
+    unsigned char smile[] = {0x00, 0x00, 0x1c, 0x02, 0x02, 0x02, 0x5c, 0x40, 0x40, 0x5c, 0x02, 0x02, 0x02, 0x1c, 0x00, 0x00};
+    #define SCL_Pin  A5  //Set clock pin to A5
+    #define SDA_Pin  A4  //Set data pin to A4
+    void setup(){
+      //Set pin to output
+      pinMode(SCL_Pin,OUTPUT);
+      pinMode(SDA_Pin,OUTPUT);
+      //Clear the matrix display
+      //matrix_display(clear);
+    }
+    void loop(){
+      matrix_display(smile);  //display smile pattern
+    }
+    //this function is used for dot matrix display
+    void matrix_display(unsigned char matrix_value[])
+    {
+      IIC_start();  //the function to call the data transmission
+      IIC_send(0xc0);  //Select address
+      
+      for(int i = 0;i < 16;i++) //Pattern data has 16 bytes
+      {
+         IIC_send(matrix_value[i]); //data to convey patterns
+      }
+      IIC_end();   //end the transmission of patterns data
+      IIC_start();
+      IIC_send(0x8A);  //display control, set pulse width to 4/16
+      IIC_end();
+    }
+    //  the condition that data transmission starts
+    void IIC_start()
+    {
+      digitalWrite(SCL_Pin,HIGH);
+      delayMicroseconds(3);
+      digitalWrite(SDA_Pin,HIGH);
+      delayMicroseconds(3);
+      digitalWrite(SDA_Pin,LOW);
+      delayMicroseconds(3);
+    }
+    // transmit data
+    void IIC_send(unsigned char send_data)
+    {
+      for(char i = 0;i < 8;i++)  //Every character has 8 bits
+      {
+          digitalWrite(SCL_Pin,LOW);  //pull down the SCL_Pin to change the signal of SDA
+          delayMicroseconds(3);
+          if(send_data & 0x01)  //1 or 0 of byte  is used to set high and low level of SDA_Pin
+          {
+            digitalWrite(SDA_Pin,HIGH);
+          }
+          else
+          {
+            digitalWrite(SDA_Pin,LOW);
+          }
+          delayMicroseconds(3);
+          digitalWrite(SCL_Pin,HIGH); //Pull up SCL_Pin to stop data transmission
+          delayMicroseconds(3);
+          send_data = send_data >> 1;  //Detect bit by bit, so move the data right by one bit
+      }
+    }
+    //the sign that data transmission ends 
+    void IIC_end()
+    {
+      digitalWrite(SCL_Pin,LOW);
+      delayMicroseconds(3);
+      digitalWrite(SDA_Pin,LOW);
+      delayMicroseconds(3);
+      digitalWrite(SCL_Pin,HIGH);
+      delayMicroseconds(3);
+      digitalWrite(SDA_Pin,HIGH);
+      delayMicroseconds(3);
+    }//****************************************************************************************
 
-keyestudio 4wd BT Car V2.0
-
-lesson 9.1
-
-matrix
-
-<http://www.keyestudio.com>
-
-*/
-
-//get the data of smile pattern in the modulus tool
-
-unsigned char smile[] = {0x00, 0x00, 0x1c, 0x02, 0x02, 0x02, 0x5c, 0x40, 0x40,
-0x5c, 0x02, 0x02, 0x02, 0x1c, 0x00, 0x00};
-
-\#define SCL_Pin A5 //Set clock pin to A5
-
-\#define SDA_Pin A4 //Set data pin to A4
-
-void setup(){
-
-//Set pin to output
-
-pinMode(SCL_Pin,OUTPUT);
-
-pinMode(SDA_Pin,OUTPUT);
-
-//Clear the matrix display
-
-//matrix_display(clear);
-
-}
-
-void loop(){
-
-matrix_display(smile); //display smile pattern
-
-}
-
-//this function is used for dot matrix display
-
-void matrix_display(unsigned char matrix_value[])
-
-{
-
-IIC_start(); //the function to call the data transmission
-
-IIC_send(0xc0); //Select address
-
-for(int i = 0;i \< 16;i++) //Pattern data has 16 bytes
-
-{
-
-IIC_send(matrix_value[i]); //data to convey patterns
-
-}
-
-IIC_end(); //end the transmission of patterns data
-
-IIC_start();
-
-IIC_send(0x8A); //display control, set pulse width to 4/16
-
-IIC_end();
-
-}
-
-// the condition that data transmission starts
-
-void IIC_start()
-
-{
-
-digitalWrite(SCL_Pin,HIGH);
-
-delayMicroseconds(3);
-
-digitalWrite(SDA_Pin,HIGH);
-
-delayMicroseconds(3);
-
-digitalWrite(SDA_Pin,LOW);
-
-delayMicroseconds(3);
-
-}
-
-// transmit data
-
-void IIC_send(unsigned char send_data)
-
-{
-
-for(char i = 0;i \< 8;i++) //Every character has 8 bits
-
-{
-
-digitalWrite(SCL_Pin,LOW); //pull down the SCL_Pin to change the signal of SDA
-
-delayMicroseconds(3);
-
-if(send_data & 0x01) //1 or 0 of byte is used to set high and low level of
-SDA_Pin
-
-{
-
-digitalWrite(SDA_Pin,HIGH);
-
-}
-
-else
-
-{
-
-digitalWrite(SDA_Pin,LOW);
-
-}
-
-delayMicroseconds(3);
-
-digitalWrite(SCL_Pin,HIGH); //Pull up SCL_Pin to stop data transmission
-
-delayMicroseconds(3);
-
-send_data = send_data \>\> 1; //Detect bit by bit, so move the data right by one
-bit
-
-}
-
-}
-
-//the sign that data transmission ends
-
-void IIC_end()
-
-{
-
-digitalWrite(SCL_Pin,LOW);
-
-delayMicroseconds(3);
-
-digitalWrite(SDA_Pin,LOW);
-
-delayMicroseconds(3);
-
-digitalWrite(SCL_Pin,HIGH);
-
-delayMicroseconds(3);
-
-digitalWrite(SDA_Pin,HIGH);
-
-delayMicroseconds(3);
-
-}
-//
 
 1. **Test Result**
 
@@ -2551,194 +2020,97 @@ Clear the matrix display:
 The code that the multiple patterns shift:
 
     /*
-
-    keyestudio 4WD Robot v2.0
-
-    lesson 9.2
-
-    matrix
-
-    <http://www.keyestudio.com>
-
-    */
-
-    //Array, used to store the data of pattern, can be calculated by yourself or
-    obtained from the modulus tool
-
-    unsigned char start01[] =
-    {0x01,0x02,0x04,0x08,0x10,0x20,0x40,0x80,0x80,0x40,0x20,0x10,0x08,0x04,0x02,0x01};
-
-    unsigned char front[] =
-    {0x00,0x00,0x00,0x00,0x00,0x24,0x12,0x09,0x12,0x24,0x00,0x00,0x00,0x00,0x00,0x00};
-
-    unsigned char back[] =
-    {0x00,0x00,0x00,0x00,0x00,0x24,0x48,0x90,0x48,0x24,0x00,0x00,0x00,0x00,0x00,0x00};
-
-    unsigned char left[] =
-    {0x00,0x00,0x00,0x00,0x00,0x00,0x44,0x28,0x10,0x44,0x28,0x10,0x44,0x28,0x10,0x00};
-
-    unsigned char right[] =
-    {0x00,0x10,0x28,0x44,0x10,0x28,0x44,0x10,0x28,0x44,0x00,0x00,0x00,0x00,0x00,0x00};
-
-    unsigned char STOP01[] =
-    {0x2E,0x2A,0x3A,0x00,0x02,0x3E,0x02,0x00,0x3E,0x22,0x3E,0x00,0x3E,0x0A,0x0E,0x00};
-
-    unsigned char clear[] =
-    {0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
-
-    \#define SCL_Pin A5 //Set clock pin to A5
-
-    \#define SDA_Pin A4 //Set data pin to A4
-
+     keyestudio 4WD Robot v2.0
+     lesson 9.2
+     matrix
+     http://www.keyestudio.com
+    */ 
+    //Array, used to store the data of pattern, can be calculated by yourself or obtained from the modulus tool
+    unsigned char start01[] = {0x01,0x02,0x04,0x08,0x10,0x20,0x40,0x80,0x80,0x40,0x20,0x10,0x08,0x04,0x02,0x01};
+    unsigned char front[] = {0x00,0x00,0x00,0x00,0x00,0x24,0x12,0x09,0x12,0x24,0x00,0x00,0x00,0x00,0x00,0x00};
+    unsigned char back[] = {0x00,0x00,0x00,0x00,0x00,0x24,0x48,0x90,0x48,0x24,0x00,0x00,0x00,0x00,0x00,0x00};
+    unsigned char left[] = {0x00,0x00,0x00,0x00,0x00,0x00,0x44,0x28,0x10,0x44,0x28,0x10,0x44,0x28,0x10,0x00};
+    unsigned char right[] = {0x00,0x10,0x28,0x44,0x10,0x28,0x44,0x10,0x28,0x44,0x00,0x00,0x00,0x00,0x00,0x00};
+    unsigned char STOP01[] = {0x2E,0x2A,0x3A,0x00,0x02,0x3E,0x02,0x00,0x3E,0x22,0x3E,0x00,0x3E,0x0A,0x0E,0x00};
+    unsigned char clear[] = {0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
+    #define SCL_Pin  A5  //Set clock pin to A5
+    #define SDA_Pin  A4  //Set data pin to A4
     void setup(){
-
-    //Set pin to output
-
-    pinMode(SCL_Pin,OUTPUT);
-
-    pinMode(SDA_Pin,OUTPUT);
-
-    //Clear the matrix display
-
-    matrix_display(clear);
-
+      //Set pin to output
+      pinMode(SCL_Pin,OUTPUT);
+      pinMode(SDA_Pin,OUTPUT);
+      //Clear the matrix display
+      matrix_display(clear);
     }
-
     void loop(){
-
-    matrix_display(start01); //Display start pattern
-
-    delay(2000);
-
-    matrix_display(front); ///Front pattern
-
-    delay(2000);
-
-    matrix_display(STOP01); //Stop pattern
-
-    delay(2000);
-
-    matrix_display(clear); //Clear the matrix display
-
-    delay(2000);
-
+      matrix_display(start01);  //Display start pattern
+      delay(2000);
+      matrix_display(front);    ///Front pattern
+      delay(2000);
+      matrix_display(STOP01);   //Stop pattern
+      delay(2000);
+      matrix_display(clear);    //Clear the matrix display
+      delay(2000);
     }
-
+    
     //this function is used for dot matrix display
-
     void matrix_display(unsigned char matrix_value[])
-
     {
-
-    IIC_start(); //the function to call the data transmission
-
-    IIC_send(0xc0); //Select address
-
-    for(int i = 0;i \< 16;i++) //Pattern data has 16 bytes
-
-    {
-
-    IIC_send(matrix_value[i]); //data to convey patterns
-
+      IIC_start();  //the function to call the data transmission
+      IIC_send(0xc0);  //Select address
+        for(int i = 0;i < 16;i++) //Pattern data has 16 bytes
+      {
+         IIC_send(matrix_value[i]); //data to convey patterns
+      }
+      IIC_end();   //end the transmission of patterns data
+      IIC_start();
+      IIC_send(0x8A);  //display control, set pulse width to 4/16
+      IIC_end();
     }
-
-    IIC_end(); //end the transmission of patterns data
-
-    IIC_start();
-
-    IIC_send(0x8A); //display control, set pulse width to 4/16
-
-    IIC_end();
-
-    }
-
-    // the condition that data transmission starts
-
+    //  the condition that data transmission starts
     void IIC_start()
-
     {
-
-    digitalWrite(SCL_Pin,HIGH);
-
-    delayMicroseconds(3);
-
-    digitalWrite(SDA_Pin,HIGH);
-
-    delayMicroseconds(3);
-
-    digitalWrite(SDA_Pin,LOW);
-
-    delayMicroseconds(3);
-
+      digitalWrite(SCL_Pin,HIGH);
+      delayMicroseconds(3);
+      digitalWrite(SDA_Pin,HIGH);
+      delayMicroseconds(3);
+      digitalWrite(SDA_Pin,LOW);
+      delayMicroseconds(3);
     }
-
     // transmit data
-
     void IIC_send(unsigned char send_data)
-
     {
-
-    for(char i = 0;i \< 8;i++) //Every character has 8 bits
-
-    {
-
-    digitalWrite(SCL_Pin,LOW); //pull down the SCL_Pin to change the signal of SDA
-
-    delayMicroseconds(3);
-
-    if(send_data & 0x01) //1 or 0 of byte is used to set high and low level of
-    SDA_Pin
-
-    {
-
-    digitalWrite(SDA_Pin,HIGH);
-
+      for(char i = 0;i < 8;i++)  //Every character has 8 bits
+      {
+          digitalWrite(SCL_Pin,LOW);  //pull down the SCL_Pin to change the signal of SDA
+          delayMicroseconds(3);
+          if(send_data & 0x01)  //1 or 0 of byte  is used to set high and low level of SDA_Pin
+          {
+            digitalWrite(SDA_Pin,HIGH);
+          }
+          else
+          {
+            digitalWrite(SDA_Pin,LOW);
+          }
+          delayMicroseconds(3);
+          digitalWrite(SCL_Pin,HIGH); //Pull up SCL_Pin to stop data transmission
+          delayMicroseconds(3);
+          send_data = send_data >> 1;  //Detect bit by bit, so move the data right by one bit
+      }
     }
-
-    else
-
-    {
-
-    digitalWrite(SDA_Pin,LOW);
-
-    }
-
-    delayMicroseconds(3);
-
-    digitalWrite(SCL_Pin,HIGH); //Pull up SCL_Pin to stop data transmission
-
-    delayMicroseconds(3);
-
-    send_data = send_data \>\> 1; //Detect bit by bit, so move the data right by one
-    bit
-
-    }
-
-    }
-
     //the sign that data transmission ends
-
     void IIC_end()
-
     {
-
-    digitalWrite(SCL_Pin,LOW);
-
-    delayMicroseconds(3);
-
-    digitalWrite(SDA_Pin,LOW);
-
-    delayMicroseconds(3);
-
-    digitalWrite(SCL_Pin,HIGH);
-
-    delayMicroseconds(3);
-
-    digitalWrite(SDA_Pin,HIGH);
-
-    delayMicroseconds(3);
-
-    }
+      digitalWrite(SCL_Pin,LOW);
+      delayMicroseconds(3);
+      digitalWrite(SDA_Pin,LOW);
+      delayMicroseconds(3);
+      digitalWrite(SCL_Pin,HIGH);
+      delayMicroseconds(3);
+      digitalWrite(SDA_Pin,HIGH);
+      delayMicroseconds(3);
+    } 
+    //****************************************************************************
 
 Upload code on development board, 8*16 dot matrix display shows front , back
 and stop patterns, alternately.
@@ -2826,180 +2198,94 @@ Flow Chart
 
 4.**(4) Test Code**
 
-/*
+     /*
+    keyestudio 4wd BT Car V2.0
+    lesson 10
+    Line Tracking Robot
+    http://www.keyestudio.com
+    */ 
+    #define ML_Ctrl 4     //define direction control pin of B motor
+    #define ML_PWM 5   //define PWM control pin of B motor
+    #define MR_Ctrl 2    //define direction control pin of A motor
+    #define MR_PWM 6   //define PWM control pin of A motor
+    const int sensor_l = 11;//define the pin of left line tracking sensor
+    const int sensor_c = 7;//define the pin of middle line tracking sensor
+    const int sensor_r = 8;//define the pin of right line tracking sensor
+    int l_val,c_val,r_val;//define these variables
+    void setup() {
+      Serial.begin(9600);//start serial monitor and set baud rate to 9600
+      pinMode(ML_Ctrl, OUTPUT);//set direction control pin of B motor 
+      pinMode(ML_PWM, OUTPUT);//set PWM control pin of B motor to OUTPUT
+      pinMode(MR_Ctrl, OUTPUT);//set direction control pin of A motor to OUTPUT
+      pinMode(MR_PWM, OUTPUT);//set PWM control pin of A motor to OUTPUT
+      pinMode(sensor_l,INPUT);//set the pins of left line tracking sensor to INPUT
+      pinMode(sensor_c,INPUT);//set the pins of middle line tracking sensor to INPUT
+      pinMode(sensor_r,INPUT);//set the pins of right line tracking sensor to INPUT
+    }
+    void loop() 
+    {
+      tracking(); //run main program
+    }
+    
+    void tracking()
+    {
+      l_val = digitalRead(sensor_l);//read the value of left line tracking sensor
+      c_val = digitalRead(sensor_c);//read the value of middle line tracking sensor
+      r_val = digitalRead(sensor_r);//read the value of right line tracking sensor
+      if(c_val == 1)//if the state of middle one is 1, which means detecting black line
+      {
+        front();//car goes forward
+      }
+      else
+      {
+        if((l_val == 1)&&(r_val == 0))//if only left line tracking sensor detects black trace
+        {
+          left();//car turns left
+        }
+    else if((l_val == 0)&&(r_val == 1))//if only right line tracking sensor detects black trace
+        {
+          right();//car turns right
+        }
+        else// if left and right line tracking sensors detect black trace or they don’t read
+        {
+          Stop();//car stops
+        }
+      }
+    }
+    void front()//define the status of going forward
+    {
+      digitalWrite(ML_Ctrl,HIGH);//set direction control pin of B motor to HIGH
+      analogWrite(ML_PWM,70);//set PWM control speed of B motor to 70
+      digitalWrite(MR_Ctrl,HIGH);//set direction control pin of A motor to HIGH 
+      analogWrite(MR_PWM,70);//set PWM control speed of A motor to 70
+    }
+    void back()//define the state of going back
+    {
+      digitalWrite(ML_Ctrl,LOW);//set direction control pin of B motor to LOW
+      analogWrite(ML_PWM,200);//set PWM control speed of B motor to 200
+      digitalWrite(MR_Ctrl,LOW);//set direction control pin of A motor to LOW
+      analogWrite(MR_PWM,200);//set PWM control speed of A motor to 200
+    }
+    void left()//car turns left
+    {
+      digitalWrite(ML_Ctrl,LOW);//set direction control pin of B motor to LOW
+      analogWrite(ML_PWM,200);//set PWM control speed of B motor to 200
+      digitalWrite(MR_Ctrl,HIGH);//set direction control pin of A motor to HIGH level
+      analogWrite(MR_PWM,200);//set PWM control speed of A motor to 200
+    }
+    void right()//define the right-turning state
+    {
+      digitalWrite(ML_Ctrl,HIGH);//set direction control pin of B motor to HIGH level
+      analogWrite(ML_PWM,200);//set PWM control speed of B motor to 200
+      digitalWrite(MR_Ctrl,LOW);//set direction control pin of A motor to LOW
+      analogWrite(MR_PWM,200);//set PWM control speed of A motor to 200
+    }
+    void Stop()//define the state of stop
+    {
+      analogWrite(ML_PWM,0);//set PWM control speed of B motor to 0
+      analogWrite(MR_PWM,0);//set PWM control speed of A motor to 0
+    }//*********************************************************
 
-keyestudio 4wd BT Car V2.0
-
-lesson 10
-
-Line Tracking Robot
-
-<http://www.keyestudio.com>
-
-*/
-
-\#define ML_Ctrl 4 //define direction control pin of B motor
-
-\#define ML_PWM 5 //define PWM control pin of B motor
-
-\#define MR_Ctrl 2 //define direction control pin of A motor
-
-\#define MR_PWM 9 //define PWM control pin of A motor
-
-const int sensor_l = 6;//define the pin of left line tracking sensor
-
-const int sensor_c = 7;//define the pin of middle line tracking sensor
-
-const int sensor_r = 8;//define the pin of right line tracking sensor
-
-int l_val,c_val,r_val;//define these variables
-
-void setup() {
-
-Serial.begin(9600);//start serial monitor and set baud rate to 9600
-
-pinMode(ML_Ctrl, OUTPUT);//set direction control pin of B motor to OUTPUT
-
-pinMode(ML_PWM, OUTPUT);//set PWM control pin of B motor to OUTPUT
-
-pinMode(MR_Ctrl, OUTPUT);//set direction control pin of A motor to OUTPUT
-
-pinMode(MR_PWM, OUTPUT);//set PWM control pin of A motor to OUTPUT
-
-pinMode(sensor_l,INPUT);//set the pins of left line tracking sensor to INPUT
-
-pinMode(sensor_c,INPUT);//set the pins of middle line tracking sensor to INPUT
-
-pinMode(sensor_r,INPUT);//set the pins of right line tracking sensor to INPUT
-
-}
-
-void loop()
-
-{
-
-tracking(); //run main program
-
-}
-
-void tracking()
-
-{
-
-l_val = digitalRead(sensor_l);//read the value of left line tracking sensor
-
-c_val = digitalRead(sensor_c);//read the value of middle line tracking sensor
-
-r_val = digitalRead(sensor_r);//read the value of right line tracking sensor
-
-if(c_val == 1)//if the state of middle one is 1, which means detecting black
-line
-
-{
-
-front();//car goes forward
-
-}
-
-else
-
-{
-
-if((l_val == 1)&&(r_val == 0))//if only left line tracking sensor detects black
-trace
-
-{
-
-left();//car turns left
-
-}
-
-else if((l_val == 0)&&(r_val == 1))//if only right line tracking sensor detects
-black trace
-
-{
-
-right();//car turns right
-
-}
-
-else// if line tracking sensors detect black trace or they don’t
-
-{
-
-Stop();//car stops
-
-}
-
-}
-
-}
-
-void front()//define the status of going forward
-
-{
-
-digitalWrite(ML_Ctrl,HIGH);//set direction control pin of B motor to HIGH
-
-analogWrite(ML_PWM,70);//set PWM control speed of B motor to 70
-
-digitalWrite(MR_Ctrl,HIGH);//set direction control pin of A motor to HIGH
-
-analogWrite(MR_PWM,70);//set PWM control speed of A motor to 70
-
-}
-
-void back()//define the state of going back
-
-{
-
-digitalWrite(ML_Ctrl,LOW);//set direction control pin of B motor to LOW
-
-analogWrite(ML_PWM,200);//set PWM control speed of B motor to 200
-
-digitalWrite(MR_Ctrl,LOW);//set direction control pin of A motor to LOW
-
-analogWrite(MR_PWM,200);//set PWM control speed of A motor to 200
-
-}
-
-void left()//car turns left
-
-{
-
-digitalWrite(ML_Ctrl,LOW);//set direction control pin of B motor to LOW
-
-analogWrite(ML_PWM,200);//set PWM control speed of B motor to 200
-
-digitalWrite(MR_Ctrl,HIGH);//set direction control pin of A motor to HIGH level
-
-analogWrite(MR_PWM,200);//set PWM control speed of A motor to 200
-
-}
-
-void right()//define the right-turning state
-
-{
-
-digitalWrite(ML_Ctrl,HIGH);//set direction control pin of B motor to HIGH level
-
-analogWrite(ML_PWM,200);//set PWM control speed of B motor to 200
-
-digitalWrite(MR_Ctrl,LOW);//set direction control pin of A motor to LOW
-
-analogWrite(MR_PWM,200);//set PWM control speed of A motor to 200
-
-}
-
-void Stop()//define the state of stop
-
-{
-
-analogWrite(ML_PWM,0);//set PWM control speed of B motor to 0
-
-analogWrite(MR_PWM,0);//set PWM control speed of A motor to 0
-
-}//
 
 1. **Test Result**
 
@@ -3044,129 +2330,70 @@ The specific logic of ultrasonic follow robot car is shown below:
 
 4.**(4) Test Code**
 
-/*
+    /*
+    keyestudio 4wd BT Car V2.0
+    lesson 11
+    Ultrasonic Follow Robot
+    http://www.keyestudio.com
+    */ 
+    #define ML_Ctrl 4     //define direction control pin of B motor
+    #define ML_PWM 5   //define PWM control pin of B motor
+    #define MR_Ctrl 2    //define direction control pin of A motor
+    #define MR_PWM 6   //define PWM control pin of A motor
+    #include "SR04.h" //define the function library of ultrasonic sensor
+    #define TRIG_PIN 12// set the signal input of ultrasonic sensor to D12 
+    #define ECHO_PIN 13//set the signal output of ultrasonic sensor to D13
+    SR04 sr04 = SR04(ECHO_PIN,TRIG_PIN);
+    long distance;
+    void setup() {
+      Serial.begin(9600);//open serial monitor and set baud rate to 9600
+      pinMode(ML_Ctrl, OUTPUT);//set direction control pin of B motor to OUTPUT
+      pinMode(ML_PWM, OUTPUT);//set PWM control pin of B motor to OUTPUT
+      pinMode(MR_Ctrl, OUTPUT);//set direction control pin of A motor to OUTPUT
+      pinMode(MR_PWM, OUTPUT);//set PWM control pin of A motor to OUTPUT
+      pinMode(TRIG_PIN,OUTPUT);// set TRIG_PIN to OUTPUT
+      pinMode(ECHO_PIN,INPUT);// set ECHO_PIN to INPUT
+    }
+    void loop() {
+      distance = sr04.Distance();// the distance detected by ultrasonic sensor
+       if(distance<8)//if distance is less than 8
+      {
+        back();//go back
+      }
+      else if((distance>=8)&&(distance<13))// if 8≤distance＜13
+      {
+        Stop();//stop
+      }
+      else if((distance>=13)&&(distance<35))//if 13≤distance＜35
+      {
+        front();//follow
+      }
+      else//otherwise
+      {
+        Stop();//stop
+      }
+    }
+    
+    void front()//go front 
+    {
+      digitalWrite(ML_Ctrl,HIGH);//set direction control pin of B motor to HIGH
+      analogWrite(ML_PWM,100);//Set PWM control speed of B motor to 100
+      digitalWrite(MR_Ctrl,HIGH);//set direction control pin of A motor to HIGH 
+      analogWrite(MR_PWM,100);//Set PWM control speed of A motor to 100
+    }
+    void back()//go back
+    {
+      digitalWrite(ML_Ctrl,LOW);//set direction control pin of B motor to LOW
+      analogWrite(ML_PWM,100);//Set PWM control speed of B motor to 100
+      digitalWrite(MR_Ctrl,LOW);//set direction control pin of A motor to LOW
+      analogWrite(MR_PWM,100);//Set PWM control speed of A motor to 100
+    }
+    void Stop()//stop
+    {
+      analogWrite(ML_PWM,0);//set PWM control speed of B motor to 0
+      analogWrite(MR_PWM,0);//set PWM control speed of A motor to 0
+    }//*********************************************************
 
-keyestudio 4wd BT Car V2.0
-
-lesson 11
-
-Ultrasonic Follow Robot
-
-<http://www.keyestudio.com>
-
-*/
-
-\#define ML_Ctrl 4 //define direction control pin of B motor
-
-\#define ML_PWM 5 //define PWM control pin of B motor
-
-\#define MR_Ctrl 2 //define direction control pin of A motor
-
-\#define MR_PWM 9 //define PWM control pin of A motor
-
-\#include "SR04.h" //define the function library of ultrasonic sensor
-
-\#define TRIG_PIN 12// set the signal input of ultrasonic sensor to D12
-
-\#define ECHO_PIN 13//set the signal output of ultrasonic sensor to D13
-
-SR04 sr04 = SR04(ECHO_PIN,TRIG_PIN);
-
-long distance;
-
-void setup() {
-
-Serial.begin(9600);//open serial monitor and set baud rate to 9600
-
-pinMode(ML_Ctrl, OUTPUT);//set direction control pin of B motor to OUTPUT
-
-pinMode(ML_PWM, OUTPUT);//set PWM control pin of B motor to OUTPUT
-
-pinMode(MR_Ctrl, OUTPUT);//set direction control pin of A motor to OUTPUT
-
-pinMode(MR_PWM, OUTPUT);//set PWM control pin of A motor to OUTPUT
-
-pinMode(TRIG_PIN,OUTPUT);// set TRIG_PIN to OUTPUT
-
-pinMode(ECHO_PIN,INPUT);// set ECHO_PIN to INPUT
-
-}
-
-void loop() {
-
-distance = sr04.Distance();// the distance detected by ultrasonic sensor
-
-if(distance\<8)//if distance is less than 8
-
-{
-
-back();//go back
-
-}
-
-else if((distance\>=8)&&(distance\<13))// if 8≤distance＜13
-
-{
-
-Stop();//stop
-
-}
-
-else if((distance\>=13)&&(distance\<35))//if 13≤distance＜35
-
-{
-
-front();//follow
-
-}
-
-else//otherwise
-
-{
-
-Stop();//stop
-
-}
-
-}
-
-void front()//go front
-
-{
-
-digitalWrite(ML_Ctrl,HIGH);//set direction control pin of B motor to HIGH
-
-analogWrite(ML_PWM,100);//Set PWM control speed of B motor to 100
-
-digitalWrite(MR_Ctrl,HIGH);//set direction control pin of A motor to HIGH
-
-analogWrite(MR_PWM,100);//Set PWM control speed of A motor to 100
-
-}
-
-void back()//go back
-
-{
-
-digitalWrite(ML_Ctrl,LOW);//set direction control pin of B motor to LOW
-
-analogWrite(ML_PWM,100);//Set PWM control speed of B motor to 100
-
-digitalWrite(MR_Ctrl,LOW);//set direction control pin of A motor to LOW
-
-analogWrite(MR_PWM,100);//Set PWM control speed of A motor to 100
-
-}
-
-void Stop()//stop
-
-{
-
-analogWrite(ML_PWM,0);//set PWM control speed of B motor to 0
-
-analogWrite(MR_PWM,0);//set PWM control speed of A motor to 0
-
-}//
 
 5.**(5) Test Result**
 
@@ -3197,384 +2424,195 @@ The specific logic of ultrasonic avoiding smart car is as shown below:
 
 1. **Test Code**
 
-/*
+    /*
+    keyestudio 4wd BT Car V2.0
+    lesson 12
+    ultrasonic avoiding robot
+    http://www.keyestudio.com
+    */ 
+    //Array, used to store the data of pattern, can be calculated by yourself or obtained from the modulus tool
+    unsigned char front[] = {0x00,0x00,0x00,0x00,0x00,0x24,0x12,0x09,0x12,0x24,0x00,0x00,0x00,0x00,0x00,0x00};
+    unsigned char left[] = {0x00,0x00,0x00,0x00,0x00,0x00,0x44,0x28,0x10,0x44,0x28,0x10,0x44,0x28,0x10,0x00};
+    unsigned char right[] = {0x00,0x10,0x28,0x44,0x10,0x28,0x44,0x10,0x28,0x44,0x00,0x00,0x00,0x00,0x00,0x00};
+    unsigned char STOP01[] = {0x2E,0x2A,0x3A,0x00,0x02,0x3E,0x02,0x00,0x3E,0x22,0x3E,0x00,0x3E,0x0A,0x0E,0x00};
+    unsigned char clear[] = {0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
+    #define SCL_Pin  A5  //Set clock pin to A5
+    #define SDA_Pin  A4  //Set data pin to A4
+    #define ML_Ctrl 4     //define direction control pin of B motor
+    #define ML_PWM 5   //define PWM control pin of B motor
+    #define MR_Ctrl 2    //define direction control pin of A motor
+    #define MR_PWM 6   //define PWM control pin of A motor
+    #include "SR04.h"//define the library of ultrasonic sensor
+    #define TRIG_PIN 12// set the signal input of ultrasonic sensor to D12 
+    #define ECHO_PIN 13//set the signal output of ultrasonic sensor to D13 
+    SR04 sr04 = SR04(ECHO_PIN,TRIG_PIN);
+    long distance,a1,a2;//define three distance
+    const int servopin = 10;//set the pin of servo to D10 
+    
+    void setup() {
+      Serial.begin(9600);//open serial monitor and set baud rate to 9600 
+      pinMode(ML_Ctrl, OUTPUT);//set direction control pin of B motor to OUTPUT
+      pinMode(ML_PWM, OUTPUT);//set PWM control pin of B motor to OUTPUT
+      pinMode(MR_Ctrl, OUTPUT);//set direction control pin of A motor to OUTPUT
+    
+      pinMode(MR_PWM, OUTPUT);//set PWM control pin of A motor to OUTPUT
+      servopulse(servopin,90);// the angle of servo is 90 degree
+      delay(300);
+      pinMode(SCL_Pin,OUTPUT);//  set clock pin to OUTPUT
+      pinMode(SDA_Pin,OUTPUT);//set data pin to OUTPUT
+      matrix_display(clear);// Clear the matrix display
+    }
+    
+    void loop()
+    {
+      avoid();//run the main program
+    }
+    void avoid()
+    {
+      distance=sr04.Distance(); //obtain the value detected by ultrasonic sensor 
+      if((distance < 20)&&(distance > 0))//if the distance is greater than 0 and less than 20  
+    {
+        car_Stop();//stop
+        matrix_display(STOP01);   //show stop pattern
+        delay(100);
+        servopulse(servopin,180);//servo rotates to 180°
+        delay(500);
+        a1=sr04.Distance();//measure the distance
+        delay(100);
+        servopulse(servopin,0);//rotate to 0 degree
+        delay(500);
+        a2=sr04.Distance();//measure the distance
+        delay(100);
+    if(a1 > a2)//if distance a1 is greater than a2
+        {
+          car_left();//turn left
+          matrix_display(left);   //display left-turning pattern
+          servopulse(servopin,90);//servo rotates to 90 degree
+          delay(300); 
+          matrix_display(front);   //show forward pattern
+        }
+        else//if the right distance is greater than the left
+        {
+          car_right();// turn right
+          matrix_display(right);   // display right-turning pattern
+          servopulse(servopin,90);// servo rotates to 90 degree
+          delay(300); 
+          matrix_display(front);   //show forward pattern
+        }
+      }
+      else//otherwise
+      {
+        car_front();//go forward
+        matrix_display(front);   // show forward pattern
+      }
+    }
+    void servopulse(int servopin,int myangle)//the running angle of servo
+    {
+      for(int i=0; i<30; i++)
+      {
+        int pulsewidth = (myangle*11)+500;
+        digitalWrite(servopin,HIGH);
+        delayMicroseconds(pulsewidth);
+        digitalWrite(servopin,LOW);
+        delay(20-pulsewidth/1000);
+      }  
+    }
+    void car_front()//car goes forward
+    {
+      digitalWrite(ML_Ctrl,HIGH);//set direction control pin of B motor to HIGH level
+      analogWrite(ML_PWM,150);//set PWM control speed of B motor to 150
+      digitalWrite(MR_Ctrl,HIGH);//set direction control pin of A motor to HIGH level
+      analogWrite(MR_PWM,150);//set PWM control speed of A motor to 150
+    }
+    void car_back()//go back
+    {
+      digitalWrite(ML_Ctrl,LOW);//set direction control pin of B motor to LOW
+      analogWrite(ML_PWM,200);//set PWM control speed of B motor to 200
+      digitalWrite(MR_Ctrl,LOW);//set direction control pin of A motor to LOW
+      analogWrite(MR_PWM,200);//set PWM control speed of A motor to 200
+    }
+    void car_left()//car turns left
+    {
+      digitalWrite(ML_Ctrl,LOW);//set direction control pin of B motor to LOW
+      analogWrite(ML_PWM,200);//set PWM control speed of B motor to 200
+      digitalWrite(MR_Ctrl,HIGH);//set direction control pin of A motor to HIGH 
+      analogWrite(MR_PWM,200);//set PWM control speed of A motor to 200
+    }
+    void car_right()//car turn rights
+    {
+      digitalWrite(ML_Ctrl,HIGH);//set direction control pin of B motor to HIGH 
+      analogWrite(ML_PWM,200);//set PWM control speed of B motor to 200
+      digitalWrite(MR_Ctrl,LOW);//set direction control pin of A motor to LOW
+      analogWrite(MR_PWM,200);//set PWM control speed of A motor to 200
+    }
+    void car_Stop()//car stops
+    {
+      digitalWrite(ML_Ctrl,LOW);
+      analogWrite(ML_PWM,150);
+      digitalWrite(MR_Ctrl,LOW);
+      analogWrite(MR_PWM,150);
+      delay(50);
+      analogWrite(ML_PWM,0);//set PWM control speed of B motor to 0
+      analogWrite(MR_PWM,0);//set PWM control speed of A motor to 0
+    }
+    //this function is used for dot matrix display
+    void matrix_display(unsigned char matrix_value[])
+    {
+      IIC_start();  //the function to call the data transmission
+      IIC_send(0xc0);  //Select address
+      for(int i = 0;i < 16;i++) //Pattern data has 16 bytes
+      {
+        IIC_send(matrix_value[i]); //data to convey patterns
+      }
+      IIC_end();   //end the transmission of patterns data
+      IIC_start();
+      IIC_send(0x8A);  //display control, set pulse width to 4/16
+      IIC_end();
+    }
+    //  the condition that data transmission starts  
+    void IIC_start()
+    {
+      digitalWrite(SCL_Pin,HIGH);
+      delayMicroseconds(3);
+      digitalWrite(SDA_Pin,HIGH);
+      delayMicroseconds(3);
+      digitalWrite(SDA_Pin,LOW);
+      delayMicroseconds(3);
+    }
+    // transmit data
+    void IIC_send(unsigned char send_data)
+    {
+      for(char i = 0;i < 8;i++)  //Every character has 8 bits
+      {
+        digitalWrite(SCL_Pin,LOW);  //pull down the SCL_Pin to change the signal of SDA
+        delayMicroseconds(3);
+        if(send_data & 0x01)  //1 or 0 of byte  is used to set high and low level of SDA_Pin
+        {
+          digitalWrite(SDA_Pin,HIGH);
+        }
+        else
+        {
+          digitalWrite(SDA_Pin,LOW);
+        }
+        delayMicroseconds(3);
+        digitalWrite(SCL_Pin,HIGH); //Pull up SCL_Pin to stop data transmission
+        delayMicroseconds(3);
+        send_data = send_data >> 1;  //Detect bit by bit, so move the data right by one bit
+      }
+    }
+    //the sign that data transmission ends 
+    void IIC_end()
+    {
+      digitalWrite(SCL_Pin,LOW);
+      delayMicroseconds(3);
+      digitalWrite(SDA_Pin,LOW);
+      delayMicroseconds(3);
+      digitalWrite(SCL_Pin,HIGH);
+      delayMicroseconds(3);
+      digitalWrite(SDA_Pin,HIGH);
+      delayMicroseconds(3);
+    }//*********************************************************
 
-keyestudio 4wd BT Car V2.0
-
-lesson 12
-
-ultrasonic avoiding robot
-
-<http://www.keyestudio.com>
-
-*/
-
-//Array, used to store the data of pattern, can be calculated by yourself or
-obtained from the modulus tool
-
-unsigned char front[] =
-{0x00,0x00,0x00,0x00,0x00,0x24,0x12,0x09,0x12,0x24,0x00,0x00,0x00,0x00,0x00,0x00};
-
-unsigned char left[] =
-{0x00,0x00,0x00,0x00,0x00,0x00,0x44,0x28,0x10,0x44,0x28,0x10,0x44,0x28,0x10,0x00};
-
-unsigned char right[] =
-{0x00,0x10,0x28,0x44,0x10,0x28,0x44,0x10,0x28,0x44,0x00,0x00,0x00,0x00,0x00,0x00};
-
-unsigned char STOP01[] =
-{0x2E,0x2A,0x3A,0x00,0x02,0x3E,0x02,0x00,0x3E,0x22,0x3E,0x00,0x3E,0x0A,0x0E,0x00};
-
-unsigned char clear[] =
-{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
-
-\#define SCL_Pin A5 //Set clock pin to A5
-
-\#define SDA_Pin A4 //Set data pin to A4
-
-\#define ML_Ctrl 4 //define direction control pin of B motor
-
-\#define ML_PWM 5 //define PWM control pin of B motor
-
-\#define MR_Ctrl 2 //define direction control pin of A motor
-
-\#define MR_PWM 9 //define PWM control pin of A motor
-
-\#include "SR04.h"//define the library of ultrasonic sensor
-
-\#define TRIG_PIN 12// set the signal input of ultrasonic sensor to D12
-
-\#define ECHO_PIN 13//set the signal output of ultrasonic sensor to D13
-
-SR04 sr04 = SR04(ECHO_PIN,TRIG_PIN);
-
-long distance,a1,a2;//define three distance
-
-const int servopin = 10;//set the pin of servo to D10
-
-void setup() {
-
-Serial.begin(9600);//open serial monitor and set baud rate to 9600
-
-pinMode(ML_Ctrl, OUTPUT);//set direction control pin of B motor to OUTPUT
-
-pinMode(ML_PWM, OUTPUT);//set PWM control pin of B motor to OUTPUT
-
-pinMode(MR_Ctrl, OUTPUT);//set direction control pin of A motor to OUTPUT
-
-pinMode(MR_PWM, OUTPUT);//set PWM control pin of A motor to OUTPUT
-
-servopulse(servopin,90);// the angle of servo is 90 degree
-
-delay(300);
-
-pinMode(SCL_Pin,OUTPUT);// set clock pin to OUTPUT
-
-pinMode(SDA_Pin,OUTPUT);//set data pin to OUTPUT
-
-matrix_display(clear);// Clear the matrix display
-
-}
-
-void loop()
-
-{
-
-avoid();//run the main program
-
-}
-
-void avoid()
-
-{
-
-distance=sr04.Distance(); //obtain the value detected by ultrasonic sensor
-
-if((distance \< 20)&&(distance \> 0))//if the distance is greater than 0 and
-less than 20
-
-{
-
-car_Stop();//stop
-
-matrix_display(STOP01); //show stop pattern
-
-delay(100);
-
-servopulse(servopin,180);//servo rotates to 180°
-
-delay(500);
-
-a1=sr04.Distance();//measure the distance
-
-delay(100);
-
-servopulse(servopin,0);//rotate to 0 degree
-
-delay(500);
-
-a2=sr04.Distance();//measure the distance
-
-delay(100);
-
-if(a1 \> a2)//if distance a1 is greater than a2
-
-{
-
-car_left();//turn left
-
-matrix_display(left); //display left-turning pattern
-
-servopulse(servopin,90);//servo rotates to 90 degree
-
-delay(300);
-
-matrix_display(front); //show forward pattern
-
-}
-
-else//if the right distance is greater than the left
-
-{
-
-car_right();// turn right
-
-matrix_display(right); // display right-turning pattern
-
-servopulse(servopin,90);// servo rotates to 90 degree
-
-delay(300);
-
-matrix_display(front); //show forward pattern
-
-}
-
-}
-
-else//otherwise
-
-{
-
-car_front();//go forward
-
-matrix_display(front); // show forward pattern
-
-}
-
-}
-
-void servopulse(int servopin,int myangle)//the running angle of servo
-
-{
-
-for(int i=0; i\<30; i++)
-
-{
-
-int pulsewidth = (myanglex11)+500;
-
-digitalWrite(servopin,HIGH);
-
-delayMicroseconds(pulsewidth);
-
-digitalWrite(servopin,LOW);
-
-delay(20-pulsewidth/1000);
-
-}
-
-}
-
-void car_front()//car goes forward
-
-{
-
-digitalWrite(ML_Ctrl,HIGH);//set direction control pin of B motor to HIGH level
-
-analogWrite(ML_PWM,150);//set PWM control speed of B motor to 150
-
-digitalWrite(MR_Ctrl,HIGH);//set direction control pin of A motor to HIGH level
-
-analogWrite(MR_PWM,150);//set PWM control speed of A motor to 150
-
-}
-
-void car_back()//go back
-
-{
-
-digitalWrite(ML_Ctrl,LOW);//set direction control pin of B motor to LOW
-
-analogWrite(ML_PWM,200);//set PWM control speed of B motor to 200
-
-digitalWrite(MR_Ctrl,LOW);//set direction control pin of A motor to LOW
-
-analogWrite(MR_PWM,200);//set PWM control speed of A motor to 200
-
-}
-
-void car_left()//car turns left
-
-{
-
-digitalWrite(ML_Ctrl,LOW);//set direction control pin of B motor to LOW
-
-analogWrite(ML_PWM,200);//set PWM control speed of B motor to 200
-
-digitalWrite(MR_Ctrl,HIGH);//set direction control pin of A motor to HIGH
-
-analogWrite(MR_PWM,200);//set PWM control speed of A motor to 200
-
-}
-
-void car_right()//car turns right
-
-{
-
-digitalWrite(ML_Ctrl,HIGH);//set direction control pin of B motor to HIGH
-
-analogWrite(ML_PWM,200);//set PWM control speed of B motor to 200
-
-digitalWrite(MR_Ctrl,LOW);//set direction control pin of A motor to LOW
-
-analogWrite(MR_PWM,200);//set PWM control speed of A motor to 200
-
-}
-
-void car_Stop()//car stops
-
-{
-
-digitalWrite(ML_Ctrl,LOW);
-
-analogWrite(ML_PWM,150);
-
-digitalWrite(MR_Ctrl,LOW);
-
-analogWrite(MR_PWM,150);
-
-delay(50);
-
-analogWrite(ML_PWM,0);//set PWM control speed of B motor to 0
-
-analogWrite(MR_PWM,0);//set PWM control speed of A motor to 0
-
-}
-
-//this function is used for dot matrix display
-
-void matrix_display(unsigned char matrix_value[])
-
-{
-
-IIC_start(); //the function to call the data transmission
-
-IIC_send(0xc0); //Select address
-
-for(int i = 0;i \< 16;i++) //Pattern data has 16 bytes
-
-{
-
-IIC_send(matrix_value[i]); //data to convey patterns
-
-}
-
-IIC_end(); //end the transmission of patterns data
-
-IIC_start();
-
-IIC_send(0x8A); //display control, set pulse width to 4/16
-
-IIC_end();
-
-}
-
-// the condition that data transmission starts
-
-void IIC_start()
-
-{
-
-digitalWrite(SCL_Pin,HIGH);
-
-delayMicroseconds(3);
-
-digitalWrite(SDA_Pin,HIGH);
-
-delayMicroseconds(3);
-
-digitalWrite(SDA_Pin,LOW);
-
-delayMicroseconds(3);
-
-}
-
-// transmit data
-
-void IIC_send(unsigned char send_data)
-
-{
-
-for(char i = 0;i \< 8;i++) //Every character has 8 bits
-
-{
-
-digitalWrite(SCL_Pin,LOW); //pull down the SCL_Pin to change the signal of SDA
-
-delayMicroseconds(3);
-
-if(send_data & 0x01) //1 or 0 of byte is used to set high and low level of
-SDA_Pin
-
-{
-
-digitalWrite(SDA_Pin,HIGH);
-
-}
-
-else
-
-{
-
-digitalWrite(SDA_Pin,LOW);
-
-}
-
-delayMicroseconds(3);
-
-digitalWrite(SCL_Pin,HIGH); //Pull up SCL_Pin to stop data transmission
-
-delayMicroseconds(3);
-
-send_data = send_data \>\> 1; //Detect bit by bit, so move the data right by one
-bit
-
-}
-
-}
-
-//the sign that data transmission ends
-
-void IIC_end()
-
-{
-
-digitalWrite(SCL_Pin,LOW);
-
-delayMicroseconds(3);
-
-digitalWrite(SDA_Pin,LOW);
-
-delayMicroseconds(3);
-
-digitalWrite(SCL_Pin,HIGH);
-
-delayMicroseconds(3);
-
-digitalWrite(SDA_Pin,HIGH);
-
-delayMicroseconds(3);
-
-}//
 
 1. **Test Result**
 
@@ -3607,315 +2645,157 @@ Based on the circuit design, we can start building our own remote control robot.
 
 1. **Test Code**
 
-/*
+    /*
+    keyestudio 4wd BT Car V2.0
+    lesson 13
+    remote control robot
+    http://www.keyestudio.com
+    */ 
+    //Array, used to store the data of pattern, can be calculated by yourself or obtained from the modulus tool
+    unsigned char start01[] = {0x01,0x02,0x04,0x08,0x10,0x20,0x40,0x80,0x80,0x40,0x20,0x10,0x08,0x04,0x02,0x01};
+    unsigned char front[] = {0x00,0x00,0x00,0x00,0x00,0x24,0x12,0x09,0x12,0x24,0x00,0x00,0x00,0x00,0x00,0x00};
+    unsigned char back[] = {0x00,0x00,0x00,0x00,0x00,0x24,0x48,0x90,0x48,0x24,0x00,0x00,0x00,0x00,0x00,0x00};
+    unsigned char left[] = {0x00,0x00,0x00,0x00,0x00,0x00,0x44,0x28,0x10,0x44,0x28,0x10,0x44,0x28,0x10,0x00};
+    unsigned char right[] = {0x00,0x10,0x28,0x44,0x10,0x28,0x44,0x10,0x28,0x44,0x00,0x00,0x00,0x00,0x00,0x00};
+    unsigned char STOP01[] = {0x2E,0x2A,0x3A,0x00,0x02,0x3E,0x02,0x00,0x3E,0x22,0x3E,0x00,0x3E,0x0A,0x0E,0x00};
+    unsigned char clear[] = {0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
+    #define SCL_Pin  A5  //Set clock pin to A5
+    #define SDA_Pin  A4  //Set data pin to A4
+    #define ML_Ctrl 4     //define direction control pin of B motor
+    #define ML_PWM 5   //define PWM control pin of B motor
+    #define MR_Ctrl 2    //define direction control pin of A motor
+    #define MR_PWM 6   //define PWM control pin of A motor
+    #include <IRremote.h>//function library of IR remote control
+    int RECV_PIN =3;// set the pin of IR receiver to 3
+    IRrecv irrecv(RECV_PIN);
+    long irr_val;
+    decode_results results;
+    void setup()
+    {
+      pinMode(ML_Ctrl, OUTPUT);//define direction control pin of B motor to OUTPUT
+      pinMode(ML_PWM, OUTPUT);//define PWM control pin of B motor to OUTPUT
+      pinMode(MR_Ctrl, OUTPUT);//define direction control pin of A motor to OUTPUT
+      pinMode(MR_PWM, OUTPUT);//define PWM control pin of A motor to OUTPUT
+        Serial.begin(9600);//Start serial printing, baud rate is 9600
+      // In case the interrupt driver crashes on setup, give a clue
+      // to the user what's going on.
+      irrecv.enableIRIn(); // Start the receiver
+      Serial.println("Enabled IRin");
+      //Set pin to output
+      pinMode(SCL_Pin,OUTPUT);
+      pinMode(SDA_Pin,OUTPUT);
+      //Clear the matrix display
+      matrix_display(clear);
+      matrix_display(start01);
+    }
+    void loop()
+     {
+      if (irrecv.decode(&results)) 
+     {
+        irr_val = results.value;
+        Serial.println(irr_val, HEX);//serial reads the IR remote signals
+        switch(irr_val)
+        {
+          case 0xFF629D : car_front(); matrix_display(front); break;
+          case 0xFFA857 : car_back(); matrix_display(back); break;
+          case 0xFF22DD : car_left(); matrix_display(left); break;
+          case 0xFFC23D : car_right(); matrix_display(right); break;
+          case 0xFF02FD : car_Stop(); matrix_display(STOP01); break;
+        }
+            irrecv.resume(); // Receive the next value
+      }
+    }
+    void car_front()//car goes forward
+    {
+      digitalWrite(ML_Ctrl,HIGH);//set direction control pin of B motor to HIGH level
+      analogWrite(ML_PWM,200);//Set PWM control speed of B motor to 20
+      digitalWrite(MR_Ctrl,HIGH);//set direction control pin of A motor to HIGH level
+      analogWrite(MR_PWM,200);//Set PWM control speed of A motor to 20
+    }
+    void car_back()//car goes back
+    {
+      digitalWrite(ML_Ctrl,LOW);//set direction control pin of B motor to LOW
+      analogWrite(ML_PWM,200);//set PWM control speed of B motor to 200
+      digitalWrite(MR_Ctrl,LOW);//set direction control pin of A motor to LOW
+      analogWrite(MR_PWM,200);//set PWM control speed of A motor to 200
+    }
+    void car_left()//car turns left
+    {
+      digitalWrite(ML_Ctrl,LOW);//set direction control pin of B motor to LOW
+      analogWrite(ML_PWM,200);//set PWM control speed of B motor to 200
+      digitalWrite(MR_Ctrl,HIGH);//set direction control pin of A motor to HIGH level
+      analogWrite(MR_PWM,200);//set PWM control speed of A motor to 200
+    }
+    void car_right()//car turns right
+    {
+      digitalWrite(ML_Ctrl,HIGH);//set direction control pin of B motor to HIGH level
+      analogWrite(ML_PWM,200);//set PWM control speed of B motor to 200
+      digitalWrite(MR_Ctrl,LOW);//set direction control pin of A motor to LOW
+      analogWrite(MR_PWM,200);//set PWM control speed of A motor to 200
+    }
+    void car_Stop()//car stops
+    {
+      analogWrite(ML_PWM,0);//set PWM control speed of B motor to 0
+      analogWrite(MR_PWM,0);//set PWM control speed of A motor to 0
+    }
+    //this function is used for dot matrix display
+    void matrix_display(unsigned char matrix_value[])
+    {
+      IIC_start();  //the function to call the data transmission
+      IIC_send(0xc0);  //Select address
+        for(int i = 0;i < 16;i++) //Pattern data has 16 bytes
+      {
+         IIC_send(matrix_value[i]); //data to convey patterns
+      }
+      IIC_end();   //end the transmission of patterns data
+      IIC_start();
+      IIC_send(0x8A);  //display control, set pulse width to 4/16
+      IIC_end();
+    }
+    //  the condition that data transmission starts
+    void IIC_start()
+    {
+      digitalWrite(SCL_Pin,HIGH);
+      delayMicroseconds(3);
+      digitalWrite(SDA_Pin,HIGH);
+      delayMicroseconds(3);
+      digitalWrite(SDA_Pin,LOW);
+      delayMicroseconds(3);
+    }
+    // transmit data
+    void IIC_send(unsigned char send_data)
+    {
+      for(char i = 0;i < 8;i++)  //Every character has 8 bits
+      {
+          digitalWrite(SCL_Pin,LOW);  //pull down the SCL_Pin to change the signal of SDA
+          delayMicroseconds(3);
+          if(send_data & 0x01)  //1 or 0 of byte is used to set high and low level of SDA_Pin
+          {
+            digitalWrite(SDA_Pin,HIGH);
+          }
+          else
+          {
+            digitalWrite(SDA_Pin,LOW);
+          }
+          delayMicroseconds(3);
+          digitalWrite(SCL_Pin,HIGH); //Pull up SCL_Pin to stop data transmission
+          delayMicroseconds(3);
+          send_data = send_data >> 1;  //Detect bit by bit, so move the data right by one bit
+      }
+    }
+    //the sign that data transmission ends
+    void IIC_end()
+    {
+      digitalWrite(SCL_Pin,LOW);
+      delayMicroseconds(3);
+      digitalWrite(SDA_Pin,LOW);
+      delayMicroseconds(3);
+      digitalWrite(SCL_Pin,HIGH);
+      delayMicroseconds(3);
+      digitalWrite(SDA_Pin,HIGH);
+      delayMicroseconds(3);
+    }
 
-keyestudio 4wd BT Car V2.0
-
-lesson 13
-
-remote control robot
-
-<http://www.keyestudio.com>
-
-*/
-
-//Array, used to store the data of pattern, can be calculated by yourself or
-obtained from the modulus tool
-
-unsigned char start01[] =
-{0x01,0x02,0x04,0x08,0x10,0x20,0x40,0x80,0x80,0x40,0x20,0x10,0x08,0x04,0x02,0x01};
-
-unsigned char front[] =
-{0x00,0x00,0x00,0x00,0x00,0x24,0x12,0x09,0x12,0x24,0x00,0x00,0x00,0x00,0x00,0x00};
-
-unsigned char back[] =
-{0x00,0x00,0x00,0x00,0x00,0x24,0x48,0x90,0x48,0x24,0x00,0x00,0x00,0x00,0x00,0x00};
-
-unsigned char left[] =
-{0x00,0x00,0x00,0x00,0x00,0x00,0x44,0x28,0x10,0x44,0x28,0x10,0x44,0x28,0x10,0x00};
-
-unsigned char right[] =
-{0x00,0x10,0x28,0x44,0x10,0x28,0x44,0x10,0x28,0x44,0x00,0x00,0x00,0x00,0x00,0x00};
-
-unsigned char STOP01[] =
-{0x2E,0x2A,0x3A,0x00,0x02,0x3E,0x02,0x00,0x3E,0x22,0x3E,0x00,0x3E,0x0A,0x0E,0x00};
-
-unsigned char clear[] =
-{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
-
-\#define SCL_Pin A5 //Set clock pin to A5
-
-\#define SDA_Pin A4 //Set data pin to A4
-
-\#define ML_Ctrl 4 //define direction control pin of B motor
-
-\#define ML_PWM 5 //define PWM control pin of B motor
-
-\#define MR_Ctrl 2 //define direction control pin of A motor
-
-\#define MR_PWM 9 //define PWM control pin of A motor
-
-\#include \<IRremote.h\>//function library of IR remote control
-
-int RECV_PIN = A0;// set the pin of IR receiver to A0
-
-IRrecv irrecv(RECV_PIN);
-
-long irr_val;
-
-decode_results results;
-
-void setup()
-
-{
-
-pinMode(ML_Ctrl, OUTPUT);//define direction control pin of B motor to OUTPUT
-
-pinMode(ML_PWM, OUTPUT);//define PWM control pin of B motor to OUTPUT
-
-pinMode(MR_Ctrl, OUTPUT);//define direction control pin of A motor to OUTPUT
-
-pinMode(MR_PWM, OUTPUT);//define PWM control pin of A motor to OUTPUT
-
-Serial.begin(9600);//Start serial printing, baud rate is 9600
-
-// In case the interrupt driver crashes on setup, give a clue
-
-// to the user what's going on.
-
-irrecv.enableIRIn(); // Start the receiver
-
-Serial.println("Enabled IRin");
-
-//Set pin to output
-
-pinMode(SCL_Pin,OUTPUT);
-
-pinMode(SDA_Pin,OUTPUT);
-
-//Clear the matrix display
-
-matrix_display(clear);
-
-matrix_display(start01);
-
-}
-
-void loop()
-
-{
-
-if (irrecv.decode(&results))
-
-{
-
-irr_val = results.value;
-
-Serial.println(irr_val, HEX);//serial reads the IR remote signals
-
-switch(irr_val)
-
-{
-
-case 0xFF629D : car_front(); matrix_display(front); break;
-
-case 0xFFA857 : car_back(); matrix_display(back); break;
-
-case 0xFF22DD : car_left(); matrix_display(left); break;
-
-case 0xFFC23D : car_right(); matrix_display(right); break;
-
-case 0xFF02FD : car_Stop(); matrix_display(STOP01); break;
-
-}
-
-irrecv.resume(); // Receive the next value
-
-}
-
-}
-
-void car_front()//car goes forward
-
-{
-
-digitalWrite(ML_Ctrl,HIGH);//set direction control pin of B motor to HIGH level
-
-analogWrite(ML_PWM,200);//Set PWM control speed of B motor to 20
-
-digitalWrite(MR_Ctrl,HIGH);//set direction control pin of A motor to HIGH level
-
-analogWrite(MR_PWM,200);//Set PWM control speed of A motor to 20
-
-}
-
-void car_back()//car goes back
-
-{
-
-digitalWrite(ML_Ctrl,LOW);//set direction control pin of B motor to LOW
-
-analogWrite(ML_PWM,200);//set PWM control speed of B motor to 200
-
-digitalWrite(MR_Ctrl,LOW);//set direction control pin of A motor to LOW
-
-analogWrite(MR_PWM,200);//set PWM control speed of A motor to 200
-
-}
-
-void car_left()//car turns left
-
-{
-
-digitalWrite(ML_Ctrl,LOW);//set direction control pin of B motor to LOW
-
-analogWrite(ML_PWM,200);//set PWM control speed of B motor to 200
-
-digitalWrite(MR_Ctrl,HIGH);//set direction control pin of A motor to HIGH level
-
-analogWrite(MR_PWM,200);//set PWM control speed of A motor to 200
-
-}
-
-void car_right()//car turns right
-
-{
-
-digitalWrite(ML_Ctrl,HIGH);//set direction control pin of B motor to HIGH level
-
-analogWrite(ML_PWM,200);//set PWM control speed of B motor to 200
-
-digitalWrite(MR_Ctrl,LOW);//set direction control pin of A motor to LOW
-
-analogWrite(MR_PWM,200);//set PWM control speed of A motor to 200
-
-}
-
-void car_Stop()//car stops
-
-{
-
-analogWrite(ML_PWM,0);//set PWM control speed of B motor to 0
-
-analogWrite(MR_PWM,0);//set PWM control speed of A motor to 0
-
-}
-
-//this function is used for dot matrix display
-
-void matrix_display(unsigned char matrix_value[])
-
-{
-
-IIC_start(); //the function to call the data transmission
-
-IIC_send(0xc0); //Select address
-
-for(int i = 0;i \< 16;i++) //Pattern data has 16 bytes
-
-{
-
-IIC_send(matrix_value[i]); //data to convey patterns
-
-}
-
-IIC_end(); //end the transmission of patterns data
-
-IIC_start();
-
-IIC_send(0x8A); //display control, set pulse width to 4/16
-
-IIC_end();
-
-}
-
-// the condition that data transmission starts
-
-void IIC_start()
-
-{
-
-digitalWrite(SCL_Pin,HIGH);
-
-delayMicroseconds(3);
-
-digitalWrite(SDA_Pin,HIGH);
-
-delayMicroseconds(3);
-
-digitalWrite(SDA_Pin,LOW);
-
-delayMicroseconds(3);
-
-}
-
-// transmit data
-
-void IIC_send(unsigned char send_data)
-
-{
-
-for(char i = 0;i \< 8;i++) //Every character has 8 bits
-
-{
-
-digitalWrite(SCL_Pin,LOW); //pull down the SCL_Pin to change the signal of SDA
-
-delayMicroseconds(3);
-
-if(send_data & 0x01) //1 or 0 of byte is used to set high and low level of
-SDA_Pin
-
-{
-
-digitalWrite(SDA_Pin,HIGH);
-
-}
-
-else
-
-{
-
-digitalWrite(SDA_Pin,LOW);
-
-}
-
-delayMicroseconds(3);
-
-digitalWrite(SCL_Pin,HIGH); //Pull up SCL_Pin to stop data transmission
-
-delayMicroseconds(3);
-
-send_data = send_data \>\> 1; //Detect bit by bit, so move the data right by one
-bit
-
-}
-
-}
-
-//the sign that data transmission ends
-
-void IIC_end()
-
-{
-
-digitalWrite(SCL_Pin,LOW);
-
-delayMicroseconds(3);
-
-digitalWrite(SDA_Pin,LOW);
-
-delayMicroseconds(3);
-
-digitalWrite(SCL_Pin,HIGH);
-
-delayMicroseconds(3);
-
-digitalWrite(SDA_Pin,HIGH);
-
-delayMicroseconds(3);
-
-}
 
 1. **Test Result**
 
@@ -3944,45 +2824,26 @@ Special note: before uploading the test code, you need to remove the Bluetooth
 module. Otherwise, the test code will fail to upload. You can reconnect the
 Bluetooth module when the code is uploaded successfully.
 
-/*
+	/*
+	keyestudio 4WD BT Car V2.0
+	lesson 14.1
+	Bluetooth test
+	<http://www.keyestudio.com>
+	*/
+	char BLE_val;
+	void setup()
+	{
+	Serial.begin(9600);
+	}
+	void loop()
+	{
+	if(Serial.available()>0)
+	{
+	BLE_val = Serial.read();
+	Serial.println(BLE_val);
+	}
+	}
 
-keyestudio 4WD BT Car V2.0
-
-lesson 14.1
-
-Bluetooth test
-
-<http://www.keyestudio.com>
-
-*/
-
-char BLE_val;
-
-void setup()
-
-{
-
-Serial.begin(9600);
-
-}
-
-void loop()
-
-{
-
-if(Serial.available()\>0)
-
-{
-
-BLE_val = Serial.read();
-
-Serial.println(BLE_val);
-
-}
-
-}
-
-//
 
 Upload test code on V4.0 development board and insert the Bluetooth module. Then
 we need to download the APP.
@@ -4035,302 +2896,152 @@ corresponding characters are displayed as shown below:
 
 5.**(5) Test Code**
 
-/*
+    /*
+    keyestudio 4wd BT Car V2.0
+    lesson 14
+    Bluetooth Remote Control
+    http://www.keyestudio.com
+    */ 
+    //Array, used to store the data of pattern, can be calculated by yourself or obtained from the modulus tool
+    unsigned char start01[] = {0x01,0x02,0x04,0x08,0x10,0x20,0x40,0x80,0x80,0x40,0x20,0x10,0x08,0x04,0x02,0x01};
+    unsigned char front[] = {0x00,0x00,0x00,0x00,0x00,0x24,0x12,0x09,0x12,0x24,0x00,0x00,0x00,0x00,0x00,0x00};
+    unsigned char back[] = {0x00,0x00,0x00,0x00,0x00,0x24,0x12,0x09,0x12,0x24,0x00,0x00,0x00,0x00,0x00,0x00};
+    unsigned char left[] = {0x00,0x00,0x00,0x00,0x00,0x00,0x44,0x28,0x10,0x44,0x28,0x10,0x44,0x28,0x10,0x00};
+    unsigned char right[] = {0x00,0x10,0x28,0x44,0x10,0x28,0x44,0x10,0x28,0x44,0x00,0x00,0x00,0x00,0x00,0x00};
+    unsigned char STOP01[] = {0x2E,0x2A,0x3A,0x00,0x02,0x3E,0x02,0x00,0x3E,0x22,0x3E,0x00,0x3E,0x0A,0x0E,0x00};
+    unsigned char clear[] = {0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
+    #define SCL_Pin  A5  //Set clock pin to A5
+    #define SDA_Pin  A4  //Set data pin to A4
+    unsigned char data_line = 0;
+    unsigned char delay_count = 0;
+    #define ML_Ctrl 4     //define direction control pin of B motor
+    #define ML_PWM 5   //define PWM control pin of B motor
+    #define MR_Ctrl 2    //define direction control pin of A motor
+    #define MR_PWM 6   //define PWM control pin of A motor
+    char BLE_val;
+    void setup() 
+    {
+      Serial.begin(9600);
+      pinMode(ML_Ctrl, OUTPUT);//set direction control pin of B motor to OUTPUT
+      pinMode(ML_PWM, OUTPUT);//set PWM control pin of B motor to OUTPUT
+      pinMode(MR_Ctrl, OUTPUT);//set direction control pin of A motor to OUTPUT
+      pinMode(MR_PWM, OUTPUT);//Set PWM control pin of A motor to OUTPUT
+    //Set pin to output
+      pinMode(SCL_Pin,OUTPUT);
+      pinMode(SDA_Pin,OUTPUT);
+      //Clear the matrix display
+      matrix_display(clear);
+      matrix_display(start01);
+    }
+    
+    void loop() 
+    {
+      if(Serial.available()>0)
+      {
+        BLE_val = Serial.read();
+        Serial.println(BLE_val);
+      }
+      switch(BLE_val)
+      {
+        case 'F': car_front(); matrix_display(front); break;
+        case 'B': car_back(); matrix_display(back); break;
+        case 'L': car_left(); matrix_display(left); break;
+        case 'R': car_right(); matrix_display(right); break;
+        case 'S': car_Stop();matrix_display(STOP01); break;
+      }
+    
+    }
+    void car_front()
+    {
+      digitalWrite(ML_Ctrl,HIGH);//set direction control pin of B motor to HIGH 
+      analogWrite(ML_PWM,200);//set PWM control speed of B motor to 200
+      digitalWrite(MR_Ctrl,HIGH);//set direction control pin of A motor to HIGH
+      analogWrite(MR_PWM,200);//set PWM control speed of A motor to 200
+    }
+    void car_back()
+    {
+      digitalWrite(ML_Ctrl,LOW);//set direction control pin of B motor to LOW
+      analogWrite(ML_PWM,200);//set PWM control speed of B motor to 200
+      digitalWrite(MR_Ctrl,LOW);//set direction control pin of A motor to LOW
+      analogWrite(MR_PWM,200);//set PWM control speed of A motor to 200
+    }
+    void car_left()
+    {
+      digitalWrite(ML_Ctrl,LOW);//set direction control pin of B motor to LOW
+      analogWrite(ML_PWM,200);//set PWM control speed of B motor to 200
+      digitalWrite(MR_Ctrl,HIGH);//set direction control pin of A motor to HIGH 
+      analogWrite(MR_PWM,200);//set PWM control speed of A motor to 200
+    }
+    void car_right()
+    {
+      digitalWrite(ML_Ctrl,HIGH);//set direction control pin of B motor to HIGH 
+      analogWrite(ML_PWM,200);//set PWM control speed of B motor to 200
+      digitalWrite(MR_Ctrl,LOW);//set direction control pin of A motor to LOW
+      analogWrite(MR_PWM,200);//set PWM control speed of A motor to 200
+    }
+    void car_Stop()
+    {
+      analogWrite(ML_PWM,0);//set PWM control speed of B motor to 0
+      analogWrite(MR_PWM,0);//set PWM control speed of A motor to 0
+    }
+    //this function is used for dot matrix display
+    void matrix_display(unsigned char matrix_value[])
+    {
+      IIC_start();  //the function that calls the data transmission
+      IIC_send(0xc0);  //Select address
+        for(int i = 0;i < 16;i++) //Pattern data has 16 bytes
+      {
+         IIC_send(matrix_value[i]); //data to convey patterns
+      }
+      IIC_end();   //end the transmission of patterns data
+      IIC_start();
+      IIC_send(0x8A);  //display control, set pulse width to 4/16  IIC_end();
+      IIC_end();
+    }
+    // the condition of data transmission starts 
+    void IIC_start()
+    {
+      digitalWrite(SCL_Pin,HIGH);
+      delayMicroseconds(3);
+      digitalWrite(SDA_Pin,HIGH);
+      delayMicroseconds(3);
+      digitalWrite(SDA_Pin,LOW);
+      delayMicroseconds(3);
+    }
+    // transmit data
+    void IIC_send(unsigned char send_data)
+    {
+      for(char i = 0;i < 8;i++)  //Every character has 8 bits
+      {
+          digitalWrite(SCL_Pin,LOW);  //pull down the SCL_Pin to change the signal of SDA
+          delayMicroseconds(3);
+          if(send_data & 0x01)  //1 or 0 of byte is used to set high and low level of SDA_Pin
+          {
+            digitalWrite(SDA_Pin,HIGH);
+          }
+          else
+          {
+            digitalWrite(SDA_Pin,LOW);
+          }
+          delayMicroseconds(3);
+          digitalWrite(SCL_Pin,HIGH); //Pull up SCL_Pin to stop data transmission
+          delayMicroseconds(3);
+          send_data = send_data >> 1;  //Detect bit by bit, so move the data right by one bit
+      }
+    }
+    //the sign that data transmission ends
+    void IIC_end()
+    {
+      digitalWrite(SCL_Pin,LOW);
+      delayMicroseconds(3);
+      digitalWrite(SDA_Pin,LOW);
+      delayMicroseconds(3);
+      digitalWrite(SCL_Pin,HIGH);
+      delayMicroseconds(3);
+      digitalWrite(SDA_Pin,HIGH);
+      delayMicroseconds(3);
+    } //**************************************************************************
 
-keyestudio 4wd BT Car V2.0
-
-lesson 14
-
-Bluetooth Remote Control
-
-<http://www.keyestudio.com>
-
-*/
-
-//Array, used to store the data of pattern, can be calculated by yourself or
-obtained from the modulus tool
-
-unsigned char start01[] =
-{0x01,0x02,0x04,0x08,0x10,0x20,0x40,0x80,0x80,0x40,0x20,0x10,0x08,0x04,0x02,0x01};
-
-unsigned char front[] =
-{0x00,0x00,0x00,0x00,0x00,0x24,0x12,0x09,0x12,0x24,0x00,0x00,0x00,0x00,0x00,0x00};
-
-unsigned char back[] =
-{0x00,0x00,0x00,0x00,0x00,0x24,0x48,0x90,0x48,0x24,0x00,0x00,0x00,0x00,0x00,0x00};
-
-unsigned char left[] =
-{0x00,0x00,0x00,0x00,0x00,0x00,0x44,0x28,0x10,0x44,0x28,0x10,0x44,0x28,0x10,0x00};
-
-unsigned char right[] =
-{0x00,0x10,0x28,0x44,0x10,0x28,0x44,0x10,0x28,0x44,0x00,0x00,0x00,0x00,0x00,0x00};
-
-unsigned char STOP01[] =
-{0x2E,0x2A,0x3A,0x00,0x02,0x3E,0x02,0x00,0x3E,0x22,0x3E,0x00,0x3E,0x0A,0x0E,0x00};
-
-unsigned char clear[] =
-{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
-
-\#define SCL_Pin A5 //Set clock pin to A5
-
-\#define SDA_Pin A4 //Set data pin to A4
-
-unsigned char data_line = 0;
-
-unsigned char delay_count = 0;
-
-\#define ML_Ctrl 4 //define direction control pin of B motor
-
-\#define ML_PWM 5 //define PWM control pin of B motor
-
-\#define MR_Ctrl 2 //define direction control pin of A motor
-
-\#define MR_PWM 9 //define PWM control pin of A motor
-
-char BLE_val;
-
-void setup()
-
-{
-
-Serial.begin(9600);
-
-pinMode(ML_Ctrl, OUTPUT);//set direction control pin of B motor to OUTPUT
-
-pinMode(ML_PWM, OUTPUT);//set PWM control pin of B motor to OUTPUT
-
-pinMode(MR_Ctrl, OUTPUT);//set direction control pin of A motor to OUTPUT
-
-pinMode(MR_PWM, OUTPUT);//Set PWM control pin of A motor to OUTPUT
-
-//Set pin to output
-
-pinMode(SCL_Pin,OUTPUT);
-
-pinMode(SDA_Pin,OUTPUT);
-
-//Clear the matrix display
-
-matrix_display(clear);
-
-matrix_display(start01);
-
-}
-
-void loop()
-
-{
-
-if(Serial.available()\>0)
-
-{
-
-BLE_val = Serial.read();
-
-Serial.println(BLE_val);
-
-}
-
-switch(BLE_val)
-
-{
-
-case 'F': car_front(); matrix_display(front); break;
-
-case 'B': car_back(); matrix_display(back); break;
-
-case 'L': car_left(); matrix_display(left); break;
-
-case 'R': car_right(); matrix_display(right); break;
-
-case 'S': car_Stop();matrix_display(STOP01); break;
-
-}
-
-}
-
-void car_front()
-
-{
-
-digitalWrite(ML_Ctrl,HIGH);//set direction control pin of B motor to HIGH
-
-analogWrite(ML_PWM,200);//set PWM control speed of B motor to 200
-
-digitalWrite(MR_Ctrl,HIGH);//set direction control pin of A motor to HIGH
-
-analogWrite(MR_PWM,200);//set PWM control speed of A motor to 200
-
-}
-
-void car_back()
-
-{
-
-digitalWrite(ML_Ctrl,LOW);//set direction control pin of B motor to LOW
-
-analogWrite(ML_PWM,200);//set PWM control speed of B motor to 200
-
-digitalWrite(MR_Ctrl,LOW);//set direction control pin of A motor to LOW
-
-analogWrite(MR_PWM,200);//set PWM control speed of A motor to 200
-
-}
-
-void car_left()
-
-{
-
-digitalWrite(ML_Ctrl,LOW);//set direction control pin of B motor to LOW
-
-analogWrite(ML_PWM,200);//set PWM control speed of B motor to 200
-
-digitalWrite(MR_Ctrl,HIGH);//set direction control pin of A motor to HIGH
-
-analogWrite(MR_PWM,200);//set PWM control speed of A motor to 200
-
-}
-
-void car_right()
-
-{
-
-digitalWrite(ML_Ctrl,HIGH);//set direction control pin of B motor to HIGH
-
-analogWrite(ML_PWM,200);//set PWM control speed of B motor to 200
-
-digitalWrite(MR_Ctrl,LOW);//set direction control pin of A motor to LOW
-
-analogWrite(MR_PWM,200);//set PWM control speed of A motor to 200
-
-}
-
-void car_Stop()
-
-{
-
-analogWrite(ML_PWM,0);//set PWM control speed of B motor to 0
-
-analogWrite(MR_PWM,0);//set PWM control speed of A motor to 0
-
-}
-
-//this function is used for dot matrix display
-
-void matrix_display(unsigned char matrix_value[])
-
-{
-
-IIC_start(); //the function that calls the data transmission
-
-IIC_send(0xc0); //Select address
-
-for(int i = 0;i \< 16;i++) //Pattern data has 16 bytes
-
-{
-
-IIC_send(matrix_value[i]); //data to convey patterns
-
-}
-
-IIC_end(); //end the transmission of patterns data
-
-IIC_start();
-
-IIC_send(0x8A); //display control, set pulse width to 4/16
-
-IIC_end();
-
-}
-
-// the condition of data transmission starts
-
-void IIC_start()
-
-{
-
-digitalWrite(SCL_Pin,HIGH);
-
-delayMicroseconds(3);
-
-digitalWrite(SDA_Pin,HIGH);
-
-delayMicroseconds(3);
-
-digitalWrite(SDA_Pin,LOW);
-
-delayMicroseconds(3);
-
-}
-
-// transmit data
-
-void IIC_send(unsigned char send_data)
-
-{
-
-for(char i = 0;i \< 8;i++) //Every character has 8 bits
-
-{
-
-digitalWrite(SCL_Pin,LOW); //pull down the SCL_Pin to change the signal of SDA
-
-delayMicroseconds(3);
-
-if(send_data & 0x01) //1 or 0 of byte is used to set high and low level of
-SDA_Pin
-
-{
-
-digitalWrite(SDA_Pin,HIGH);
-
-}
-
-else
-
-{
-
-digitalWrite(SDA_Pin,LOW);
-
-}
-
-delayMicroseconds(3);
-
-digitalWrite(SCL_Pin,HIGH); //Pull up SCL_Pin to stop data transmission
-
-delayMicroseconds(3);
-
-send_data = send_data \>\> 1; //Detect bit by bit, so move the data right by one
-bit
-
-}
-
-}
-
-//the sign that data transmission ends
-
-void IIC_end()
-
-{
-
-digitalWrite(SCL_Pin,LOW);
-
-delayMicroseconds(3);
-
-digitalWrite(SDA_Pin,LOW);
-
-delayMicroseconds(3);
-
-digitalWrite(SCL_Pin,HIGH);
-
-delayMicroseconds(3);
-
-digitalWrite(SDA_Pin,HIGH);
-
-delayMicroseconds(3);
-
-}
-//
 
 1. **Test Result**
 
@@ -4420,49 +3131,29 @@ You can find M1.2x4 screws inside the bag of the servo platform
 
 ![](media/6246bf8c9de981303761b60fe5dfb44b.png)
 
-/*
-
-Set the 90-degree code,Copy the code and upload it to the development board. The
-steering gear connected to port D9 will rotate to 90 °
-
-*/
-
-\#define servoPin 9 //servo Pin
-
-int pos; //the angle variable of servo
-
-int pulsewidth; // pulse width variable of servo
-
-void setup() {
-
-pinMode(servoPin, OUTPUT); //set servo pin to OUTPUT
-
-procedure(0); //set the angle of servo to 0°
-
-}
-
-void loop() {
-
-procedure(90); // tell servo to go to position in variable 90°
-
-}
-
-// function to control servo
-
-void procedure(int myangle) {
-
-pulsewidth = myangle x 11 + 500; //calculate the value of pulse width
-
-digitalWrite(servoPin,HIGH);
-
-delayMicroseconds(pulsewidth); //The duration of high level is pulse width
-
-digitalWrite(servoPin,LOW);
-
-delay((20 - pulsewidth / 1000)); // the cycle is 20ms, the low level last for
-the rest of time
-
-}
+	/*
+	Set the 90-degree code,Copy the code and upload it to the development board. The
+	steering gear connected to port D9 will rotate to 90 °
+	*/
+	#define servoPin 9 //servo Pin
+	int pos; //the angle variable of servo
+	int pulsewidth; // pulse width variable of servo
+	void setup() {
+	pinMode(servoPin, OUTPUT); //set servo pin to OUTPUT
+	procedure(0); //set the angle of servo to 0°
+	}
+	void loop() {
+	procedure(90); // tell servo to go to position in variable 90°
+	}
+	// function to control servo
+	void procedure(int myangle) {
+	pulsewidth = myangle x 11 + 500; //calculate the value of pulse width
+	digitalWrite(servoPin,HIGH);
+	delayMicroseconds(pulsewidth); //The duration of high level is pulse width
+	digitalWrite(servoPin,LOW);
+	delay((20 - pulsewidth / 1000)); // the cycle is 20ms, the low level last for
+	the rest of time
+	}
 
 ![](media/3311f103f869ac9a889cdca0e2c95092.png)
 ![](media/8040617db413660fce1fa198e9d55fb6.png)
@@ -4545,623 +3236,324 @@ Here is a simple flow chart of multi-purpose robot car for your reference.
 
  **Test Code**
 
-/*
+    /*
+    keyestudio 4wd BT Car V2.0
+    lesson 15
+    Multifunctional Robot car
+    http://www.keyestudio.com
+    */ 
+    unsigned char start01[] = {0x01,0x02,0x04,0x08,0x10,0x20,0x40,0x80,0x80,0x40,0x20,0x10,0x08,0x04,0x02,0x01};
+    unsigned char front_matrix[] = {0x00,0x00,0x00,0x00,0x00,0x24,0x12,0x09,0x12,0x24,0x00,0x00,0x00,0x00,0x00,0x00};
+    unsigned char back_matrix[] = {0x00,0x00,0x00,0x00,0x00,0x24,0x48,0x90,0x48,0x24,0x00,0x00,0x00,0x00,0x00,0x00};
+    unsigned char left_matrix[] = {0x00,0x00,0x00,0x00,0x00,0x00,0x44,0x28,0x10,0x44,0x28,0x10,0x44,0x28,0x10,0x00};
+    unsigned char right_matrix[] = {0x00,0x10,0x28,0x44,0x10,0x28,0x44,0x10,0x28,0x44,0x00,0x00,0x00,0x00,0x00,0x00};
+    unsigned char STOP01[] = {0x2E,0x2A,0x3A,0x00,0x02,0x3E,0x02,0x00,0x3E,0x22,0x3E,0x00,0x3E,0x0A,0x0E,0x00};
+    unsigned char clear[] = {0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
+    
+    #define SCL_Pin  A5
+    #define SDA_Pin  A4
+    
+    #include "SR04.h"
+    #define TRIG_PIN 12
+    #define ECHO_PIN 13
+    SR04 sr04 = SR04(ECHO_PIN,TRIG_PIN);
+    long distance,distance1,distance2,distance3;
+    
+    const int left_ctrl = 4;
+    const int left_pwm = 5;
+    const int right_ctrl = 2;
+    const int right_pwm = 6;
+    const int sensor_l = 11;
+    const int sensor_c = 7;
+    const int sensor_r = 8;
+    int l_val,c_val,r_val;
+    const int servopin = 10;
+    char BLE_val;
+    
+    void setup() {
+      Serial.begin(9600);
+      //irrecv.enableIRIn(); // Start the receiver
+      servopulse(servopin,90);
+      pinMode(left_ctrl,OUTPUT);
+      pinMode(left_pwm,OUTPUT);
+      pinMode(right_ctrl,OUTPUT);
+      pinMode(right_pwm,OUTPUT);
+      pinMode(sensor_l,INPUT);
+      pinMode(sensor_c,INPUT);
+      pinMode(sensor_r,INPUT);
+      pinMode(SCL_Pin,OUTPUT);
+      pinMode(SDA_Pin,OUTPUT);
+      //Clear the screen
+      matrix_display(clear);
+      matrix_display(start01);
+    }
+    
+    void loop() {
+      if(Serial.available()>0)
+      {
+        BLE_val = Serial.read();
+        Serial.println(BLE_val);
+      }
+      switch(BLE_val)
+      {
+        case 'F': front(); matrix_display(front_matrix); break;
+        case 'B': back(); matrix_display(back_matrix); break;
+        case 'L': left(); matrix_display(left_matrix); break;
+        case 'R': right(); matrix_display(right_matrix); break;
+        case 'S': Stop(); matrix_display(STOP01); break;
+        case 'X': tracking(); break;
+        case 'Y': avoid();break;
+        case 'U': follow_car();break;
+      }
+    }
+    
+    void avoid()
+    {
+      matrix_display(start01);
+      int track_flag = 0;
+      while(track_flag == 0)
+      {
+        distance1=sr04.Distance();
+        if((distance1 < 20)&&(distance1 != 0))
+        {
+          Stop2();
+          delay(100);
+          servopulse(servopin,180);
+          delay(500);
+          distance2=sr04.Distance();
+          delay(100);
+          servopulse(servopin,0);
+          delay(500);
+          distance3=sr04.Distance();
+          delay(100);
+            if(distance2 > distance3)
+          {
+            left();
+            servopulse(servopin,90);
+          }
+          else
+          {
+            right();
+            servopulse(servopin,90);
+          }
+        }
+        else
+        {
+          front();
+        }
+        if(Serial.available()>0)
+        {
+          BLE_val = Serial.read();
+          if(BLE_val == 'S')
+          {
+            track_flag = 1;
+          }
+        }
+      }
+    }
+    
+    void follow_car()
+    {
+      matrix_display(start01);
+      servopulse(servopin,90);
+      int track_flag = 0;
+      while(track_flag == 0)
+      {
+        distance = sr04.Distance();
+      
+        if(distance<8)
+        {
+          back2();
+        }
+        else if((distance>=8)&&(distance<13))
+        {
+          Stop();
+        }
+        else if((distance>=13)&&(distance<35))
+        {
+          front();
+        }
+        else
+        {
+          Stop();
+        }
+        if(Serial.available()>0)
+        {
+          BLE_val = Serial.read();
+          if(BLE_val == 'S')
+          {
+            track_flag = 1;
+          }
+        }
+      }
+    }
+    
+    void servopulse(int servopin,int myangle)
+    {
+      for(int i=0;i<30;i++){
+        int pulsewidth = (myangle*11)+500;
+        digitalWrite(servopin,HIGH);
+        delayMicroseconds(pulsewidth);
+        digitalWrite(servopin,LOW);
+        delay(20-pulsewidth/1000);
+      }
+    }
+    
+    void tracking()
+    {
+      matrix_display(start01);
+      int track_flag = 0;
+      while(track_flag == 0)
+      {
+        l_val = digitalRead(sensor_l);
+        c_val = digitalRead(sensor_c);
+        r_val = digitalRead(sensor_r);
+      
+        if(c_val == 1)
+        {
+          front2();
+        }
+        else
+        {
+          if((l_val == 1)&&(r_val == 0))
+          {
+            left();
+          }
+          else if((l_val == 0)&&(r_val == 1))
+          {
+            right();
+          }
+          else
+          {
+            Stop();
+          }
+        }
+        if(Serial.available()>0)
+        {
+          BLE_val = Serial.read();
+          if(BLE_val == 'S')
+          {
+            track_flag = 1;
+          }
+        } 
+      }
+    }
+    
+    void front()
+    {
+      digitalWrite(left_ctrl,HIGH);
+      analogWrite(left_pwm,220);
+      digitalWrite(right_ctrl,HIGH);
+      analogWrite(right_pwm,190);
+    }
+    void front2()
+    {
+      digitalWrite(left_ctrl,HIGH);
+      analogWrite(left_pwm,75);
+      digitalWrite(right_ctrl,HIGH);
+      analogWrite(right_pwm,70);
+    }
+    void back()
+    {
+      digitalWrite(left_ctrl,LOW);
+      analogWrite(left_pwm,220);
+      digitalWrite(right_ctrl,LOW);
+      analogWrite(right_pwm,190);
+    }
+    void back2()
+    {
+      digitalWrite(left_ctrl,LOW);
+      analogWrite(left_pwm,110);
+      digitalWrite(right_ctrl,LOW);
+      analogWrite(right_pwm,90);
+    }
+    void left()
+    {
+      digitalWrite(left_ctrl,LOW);
+      analogWrite(left_pwm,220);
+      digitalWrite(right_ctrl,HIGH);
+      analogWrite(right_pwm,190);
+    }
+    void right()
+    {
+      digitalWrite(left_ctrl,HIGH);
+      analogWrite(left_pwm,220);
+      digitalWrite(right_ctrl,LOW);
+      analogWrite(right_pwm,190);
+    }
+    void Stop()
+    {
+      analogWrite(left_pwm,0);
+      analogWrite(right_pwm,0);
+    }
+    void Stop2()
+    {
+      digitalWrite(left_ctrl,LOW);
+      analogWrite(left_pwm,200);
+      digitalWrite(right_ctrl,LOW);
+      analogWrite(right_pwm,200);
+      delay(50);
+      analogWrite(left_pwm,0);
+      analogWrite(right_pwm,0);
+    }
+    
+    //this function is used for dot matrix display
+    void matrix_display(unsigned char matrix_value[])
+    {
+      IIC_start();  // the function to transmit data
+      IIC_send(0xc0);  //select address
+        for(int i = 0;i < 16;i++) //pattern data has 16 bytes
+      {
+         IIC_send(matrix_value[i]); //data transmits patterns
+      }
+      IIC_end();   //end the transmission of patterns data
+      IIC_start();
+      IIC_send(0x8A);  //display the control, set pulse width to 4/16
+      IIC_end();
+    }
+    // The condition of data transmission starts
+    void IIC_start()
+    {
+      digitalWrite(SCL_Pin,HIGH);
+      delayMicroseconds(3);
+      digitalWrite(SDA_Pin,HIGH);
+      delayMicroseconds(3);
+      digitalWrite(SDA_Pin,LOW);
+      delayMicroseconds(3);
+    }
+    // transmit data
+    void IIC_send(unsigned char send_data)
+    {
+      for(char i = 0;i < 8;i++)  //Every character has 8 bits
+      {
+          digitalWrite(SCL_Pin,LOW);  //pull down the SCL_Pin to change the signal of SDA
+          delayMicroseconds(3);
+          if(send_data & 0x01)  // 1 or 0 of byte is used to set high and low level of SDA_Pin
+          {
+            digitalWrite(SDA_Pin,HIGH);
+          }
+          else
+          {
+            digitalWrite(SDA_Pin,LOW);
+          }
+          delayMicroseconds(3);
+          digitalWrite(SCL_Pin,HIGH); //pull up the SCL_Pin to stop transmitting data      delayMicroseconds(3);
+          send_data = send_data >> 1;  //Detect bit by bit, so move the data right by one bit detect bit by bit, move data 
+      }
+    }
+    //the sign that data ends transmitting
+    void IIC_end()
+    {
+      digitalWrite(SCL_Pin,LOW);
+      delayMicroseconds(3);
+      digitalWrite(SDA_Pin,LOW);
+      delayMicroseconds(3);
+      digitalWrite(SCL_Pin,HIGH);
+      delayMicroseconds(3);
+      digitalWrite(SDA_Pin,HIGH);
+      delayMicroseconds(3);
+    }//*********************************************************
 
-keyestudio 4wd BT Car V2.0
-
-lesson 15
-
-Multifunctional Robot car
-
-<http://www.keyestudio.com>
-
-*/
-
-unsigned char start01[] =
-{0x01,0x02,0x04,0x08,0x10,0x20,0x40,0x80,0x80,0x40,0x20,0x10,0x08,0x04,0x02,0x01};
-
-unsigned char front_matrix[] =
-{0x00,0x00,0x00,0x00,0x00,0x24,0x12,0x09,0x12,0x24,0x00,0x00,0x00,0x00,0x00,0x00};
-
-unsigned char back_matrix[] =
-{0x00,0x00,0x00,0x00,0x00,0x24,0x48,0x90,0x48,0x24,0x00,0x00,0x00,0x00,0x00,0x00};
-
-unsigned char left_matrix[] =
-{0x00,0x00,0x00,0x00,0x00,0x00,0x44,0x28,0x10,0x44,0x28,0x10,0x44,0x28,0x10,0x00};
-
-unsigned char right_matrix[] =
-{0x00,0x10,0x28,0x44,0x10,0x28,0x44,0x10,0x28,0x44,0x00,0x00,0x00,0x00,0x00,0x00};
-
-unsigned char STOP01[] =
-{0x2E,0x2A,0x3A,0x00,0x02,0x3E,0x02,0x00,0x3E,0x22,0x3E,0x00,0x3E,0x0A,0x0E,0x00};
-
-unsigned char clear[] =
-{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
-
-\#define SCL_Pin A5
-
-\#define SDA_Pin A4
-
-\#include "SR04.h"
-
-\#define TRIG_PIN 12
-
-\#define ECHO_PIN 13
-
-SR04 sr04 = SR04(ECHO_PIN,TRIG_PIN);
-
-long distance,distance1,distance2,distance3;
-
-const int left_ctrl = 4;
-
-const int left_pwm = 5;
-
-const int right_ctrl = 2;
-
-const int right_pwm = 9;
-
-const int sensor_l = 6;
-
-const int sensor_c = 7;
-
-const int sensor_r = 8;
-
-int l_val,c_val,r_val;
-
-const int servopin = 10;
-
-char BLE_val;
-
-void setup() {
-
-Serial.begin(9600);
-
-//irrecv.enableIRIn(); // Start the receiver
-
-servopulse(servopin,90);
-
-pinMode(left_ctrl,OUTPUT);
-
-pinMode(left_pwm,OUTPUT);
-
-pinMode(right_ctrl,OUTPUT);
-
-pinMode(right_pwm,OUTPUT);
-
-pinMode(sensor_l,INPUT);
-
-pinMode(sensor_c,INPUT);
-
-pinMode(sensor_r,INPUT);
-
-pinMode(SCL_Pin,OUTPUT);
-
-pinMode(SDA_Pin,OUTPUT);
-
-//Clear the screen
-
-matrix_display(clear);
-
-matrix_display(start01);
-
-}
-
-void loop() {
-
-if(Serial.available()\>0)
-
-{
-
-BLE_val = Serial.read();
-
-Serial.println(BLE_val);
-
-}
-
-switch(BLE_val)
-
-{
-
-case 'F': front(); matrix_display(front_matrix); break;
-
-case 'B': back(); matrix_display(back_matrix); break;
-
-case 'L': left(); matrix_display(left_matrix); break;
-
-case 'R': right(); matrix_display(right_matrix); break;
-
-case 'S': Stop(); matrix_display(STOP01); break;
-
-case 'X': tracking(); break;
-
-case 'Y': avoid();break;
-
-case 'U': follow_car();break;
-
-}
-
-}
-
-void avoid()
-
-{
-
-matrix_display(start01);
-
-int track_flag = 0;
-
-while(track_flag == 0)
-
-{
-
-distance1=sr04.Distance();
-
-if((distance1 \< 20)&&(distance1 != 0))
-
-{
-
-Stop2();
-
-delay(100);
-
-servopulse(servopin,180);
-
-delay(500);
-
-distance2=sr04.Distance();
-
-delay(100);
-
-servopulse(servopin,0);
-
-delay(500);
-
-distance3=sr04.Distance();
-
-delay(100);
-
-if(distance2 \> distance3)
-
-{
-
-left();
-
-servopulse(servopin,90);
-
-}
-
-else
-
-{
-
-right();
-
-servopulse(servopin,90);
-
-}
-
-}
-
-else
-
-{
-
-front();
-
-}
-
-if(Serial.available()\>0)
-
-{
-
-BLE_val = Serial.read();
-
-if(BLE_val == 'S')
-
-{
-
-track_flag = 1;
-
-}
-
-}
-
-}
-
-}
-
-void follow_car()
-
-{
-
-matrix_display(start01);
-
-servopulse(servopin,90);
-
-int track_flag = 0;
-
-while(track_flag == 0)
-
-{
-
-distance = sr04.Distance();
-
-if(distance\<8)
-
-{
-
-back2();
-
-}
-
-else if((distance\>=8)&&(distance\<13))
-
-{
-
-Stop();
-
-}
-
-else if((distance\>=13)&&(distance\<35))
-
-{
-
-front();
-
-}
-
-else
-
-{
-
-Stop();
-
-}
-
-if(Serial.available()\>0)
-
-{
-
-BLE_val = Serial.read();
-
-if(BLE_val == 'S')
-
-{
-
-track_flag = 1;
-
-}
-
-}
-
-}
-
-}
-
-void servopulse(int servopin,int myangle)
-
-{
-
-for(int i=0;i\<30;i++){
-
-int pulsewidth = (myanglex11)+500;
-
-digitalWrite(servopin,HIGH);
-
-delayMicroseconds(pulsewidth);
-
-digitalWrite(servopin,LOW);
-
-delay(20-pulsewidth/1000);
-
-}
-
-}
-
-void tracking()
-
-{
-
-matrix_display(start01);
-
-int track_flag = 0;
-
-while(track_flag == 0)
-
-{
-
-l_val = digitalRead(sensor_l);
-
-c_val = digitalRead(sensor_c);
-
-r_val = digitalRead(sensor_r);
-
-if(c_val == 1)
-
-{
-
-front2();
-
-}
-
-else
-
-{
-
-if((l_val == 1)&&(r_val == 0))
-
-{
-
-left();
-
-}
-
-else if((l_val == 0)&&(r_val == 1))
-
-{
-
-right();
-
-}
-
-else
-
-{
-
-Stop();
-
-}
-
-}
-
-if(Serial.available()\>0)
-
-{
-
-BLE_val = Serial.read();
-
-if(BLE_val == 'S')
-
-{
-
-track_flag = 1;
-
-}
-
-}
-
-}
-
-}
-
-void front()
-
-{
-
-digitalWrite(left_ctrl,HIGH);
-
-analogWrite(left_pwm,220);
-
-digitalWrite(right_ctrl,HIGH);
-
-analogWrite(right_pwm,190);
-
-}
-
-void front2()
-
-{
-
-digitalWrite(left_ctrl,HIGH);
-
-analogWrite(left_pwm,75);
-
-digitalWrite(right_ctrl,HIGH);
-
-analogWrite(right_pwm,70);
-
-}
-
-void back()
-
-{
-
-digitalWrite(left_ctrl,LOW);
-
-analogWrite(left_pwm,220);
-
-digitalWrite(right_ctrl,LOW);
-
-analogWrite(right_pwm,190);
-
-}
-
-void back2()
-
-{
-
-digitalWrite(left_ctrl,LOW);
-
-analogWrite(left_pwm,110);
-
-digitalWrite(right_ctrl,LOW);
-
-analogWrite(right_pwm,90);
-
-}
-
-void left()
-
-{
-
-digitalWrite(left_ctrl,LOW);
-
-analogWrite(left_pwm,220);
-
-digitalWrite(right_ctrl,HIGH);
-
-analogWrite(right_pwm,190);
-
-}
-
-void right()
-
-{
-
-digitalWrite(left_ctrl,HIGH);
-
-analogWrite(left_pwm,220);
-
-digitalWrite(right_ctrl,LOW);
-
-analogWrite(right_pwm,190);
-
-}
-
-void Stop()
-
-{
-
-analogWrite(left_pwm,0);
-
-analogWrite(right_pwm,0);
-
-}
-
-void Stop2()
-
-{
-
-digitalWrite(left_ctrl,LOW);
-
-analogWrite(left_pwm,200);
-
-digitalWrite(right_ctrl,LOW);
-
-analogWrite(right_pwm,200);
-
-delay(50);
-
-analogWrite(left_pwm,0);
-
-analogWrite(right_pwm,0);
-
-}
-
-//this function is used for dot matrix display
-
-void matrix_display(unsigned char matrix_value[])
-
-{
-
-IIC_start(); // the function to transmit data
-
-IIC_send(0xc0); //select address
-
-for(int i = 0;i \< 16;i++) //pattern data has 16 bytes
-
-{
-
-IIC_send(matrix_value[i]); //data transmits patterns
-
-}
-
-IIC_end(); //end the transmission of patterns data
-
-IIC_start();
-
-IIC_send(0x8A); //display the control, set pulse width to 4/16
-
-IIC_end();
-
-}
-
-// The condition of data transmission starts
-
-void IIC_start()
-
-{
-
-digitalWrite(SCL_Pin,HIGH);
-
-delayMicroseconds(3);
-
-digitalWrite(SDA_Pin,HIGH);
-
-delayMicroseconds(3);
-
-digitalWrite(SDA_Pin,LOW);
-
-delayMicroseconds(3);
-
-}
-
-// transmit data
-
-void IIC_send(unsigned char send_data)
-
-{
-
-for(char i = 0;i \< 8;i++) //Every character has 8 bits
-
-{
-
-digitalWrite(SCL_Pin,LOW); //pull down the SCL_Pin to change the signal of SDA
-
-delayMicroseconds(3);
-
-if(send_data & 0x01) // 1 or 0 of byte is used to set high and low level of
-SDA_Pin
-
-{
-
-digitalWrite(SDA_Pin,HIGH);
-
-}
-
-else
-
-{
-
-digitalWrite(SDA_Pin,LOW);
-
-}
-
-delayMicroseconds(3);
-
-digitalWrite(SCL_Pin,HIGH); //pull up the SCL_Pin to stop transmitting data
-delayMicroseconds(3);
-
-send_data = send_data \>\> 1; //Detect bit by bit, so move the data right by one
-bit detect bit by bit, move data
-
-}
-
-}
-
-//the sign that data ends transmitting
-
-void IIC_end()
-
-{
-
-digitalWrite(SCL_Pin,LOW);
-
-delayMicroseconds(3);
-
-digitalWrite(SDA_Pin,LOW);
-
-delayMicroseconds(3);
-
-digitalWrite(SCL_Pin,HIGH);
-
-delayMicroseconds(3);
-
-digitalWrite(SDA_Pin,HIGH);
-
-delayMicroseconds(3);
-
-}//
 
  **Test Result**
 
