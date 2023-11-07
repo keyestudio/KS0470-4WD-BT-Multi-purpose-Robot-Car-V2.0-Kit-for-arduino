@@ -336,7 +336,7 @@ The whole project begins with basic programs. From simple to complex, the lesson
 
 Note: (G), marked on each sensor and module, is the negative pole and connected to “G”, ”-”or “GND”on the sensor shield or control board ; (V) is the positive pole and linked with V , VCC, + or 5V on the sensor shield or control board.  
 
-Project 1: LED Blink
+### Project 1: LED Blink
 
 ![](media/4c5aa10c3eda7ed4c970b514f5d08da4.png)  
 
@@ -416,7 +416,7 @@ void loop()
 ```
 The test result shows that the LED flashes faster. Therefore, we can draw a conclusion that pins and time delaying affect flash frequency.  
 
-Project 2: Adjust LED Brightness
+### Project 2: Adjust LED Brightness
 
 **1. Description**  
 
@@ -547,7 +547,7 @@ void loop(){
 
 Upload the code to development board, LED flashes more slowly.   
 
-Project 3 : The Working Principle of Line Tracking Sensor
+### Project 3 : The Working Principle of Line Tracking Sensor
 
 **1. Description：**    
 
@@ -704,7 +704,7 @@ void loop()
 
 Upload the code to development board, we could observe the brightness of LED when covering the line tracking sensor or getting close to it by hand.    
 
-Project 4: Servo Control
+### Project 4: Servo Control
 
 ![](media/124d7635f2d87c781a2bcfbfec309dde.png)  
 
@@ -850,7 +850,7 @@ The following are some common statements of the servo function:
 
 Note: The above written format is“servo variable name, specific statement（）”, for instance: myservo.attach(9)  
 
-Project 5: Ultrasonic Sensor
+### Project 5: Ultrasonic Sensor
 
 **1. Description**  
 
@@ -1039,7 +1039,7 @@ else digitalWrite(9, LOW);
 
 Upload test code to development board and block ultrasonic sensor by hand, then check if LED is on.  
 
-Project 6: IR Reception
+### Project 6: IR Reception
 
 **1. Description**  
 
@@ -1169,7 +1169,7 @@ void loop() {
 ```
 Upload code to development board, press“OK”key on remote control to make LED on and off.  
 
-Project 7: Bluetooth Remote Control
+### Project 7: Bluetooth Remote Control
 
 **1. Description**  
 
@@ -1362,7 +1362,7 @@ void loop()
 
 Click“Write”on APP, when you enter 1, LED will be on;when you input 0, it will be off. (Remember to remove the Bluetooth module after finishing experiment. Otherwise, burning code will be affected)  
 
-Project 8: Motor Driving and Speed Control
+### Project 8: Motor Driving and Speed Control
 
 **1. Description**  
 
@@ -1547,7 +1547,7 @@ void loop()
 ```
 After uploading the code successfully, do you find the motors rotate faster?  
 
-Project 9: 8x16 LED Board
+### Project 9: 8x16 LED Board
 
 ![](media/2c6708cb4d9bb775c0b6001b47ad0392.jpeg)  
 
@@ -1881,7 +1881,7 @@ Upload code on development board, 8*16 dot matrix display shows front, back and 
 ![](media/b676867d8d9b4f1973244a255f46f1fc.png)  
 ![](media/71b8d2089f39a655481e98faceb06136.png)  
 
-Project 10: Line Tracking Robot
+### Project 10: Line Tracking Robot
 
 ![](media/0bf5972723b7406d5e3bd7b2549b7e51.jpeg)  
 
@@ -1999,7 +1999,7 @@ void Stop()//define the state of stop
 
 Upload the code on the keyestudio V4.0 board successfully. Stack the expansion board on the keyestudio V4.0 board and wire it according to connection diagram. After power-on, the DIP switch will be dialed to the “ON” end, and the smart car can walk along the black line.  
 
-Project 11: Ultrasonic Follow Robot
+### Project 11: Ultrasonic Follow Robot
 
 ![](media/c0304f731522e9765457cc777c43bd4c.jpeg)  
 
@@ -2102,7 +2102,7 @@ void Stop()//stop
 
 Uploading the code to the development board, and plugging in, dot matrix will display a smile facial pattern and follow the obstacle to move.  
 
-Project 12: Ultrasonic Avoiding Robot
+### Project 12: Ultrasonic Avoiding Robot
 
  ![](media/d1dbb527157f94f736ee0c56087a48bb.jpeg)  
 
@@ -2318,7 +2318,7 @@ void IIC_end()
 
 Upload the code on the keyestudio V4.0 board and wire according to connection diagram. After the DIP switch is dialed to the right end, the smart car can automatically avoid obstacles.  
 
-Project 13: IR Remote Control Robot
+### Project 13: IR Remote Control Robot
 
 ![](media/c2a1fc96d1e5412db2ed7beb2530bd6b.jpeg)  
 
@@ -2494,7 +2494,7 @@ void IIC_end()
 
 Upload the code successfully on the keyestudio V4.0 board and then wire according to the connection diagram. After DIP switch is dialed to the right end, we can use the infrared remote control to control the movement of the smart car . At the same time, the 8X16 LED light board displays the corresponding state pattern.  
 
-Project 14: Bluetooth Remote Control
+### Project 14: Bluetooth Remote Control
 
 ![](media/4cde06efb2694232042823050f425225.png)  
 
@@ -2726,7 +2726,7 @@ void IIC_end()
 
 Upload the code on the V4.0 board. And then we stack the expansion board on it and wire them according to the connection diagram. After power-on, the DIP switch will be dialed to the“ON”end. And after connecting Bluetooth successfully, we can use the APP to control the smart car to move.    
 
-Assembly Guide
+### Assembly Guide
 
 **Note: Peel the plastic film off the board first when installing the smart car.**  
 
@@ -2894,7 +2894,7 @@ Jumper Capx8
 
 
 
-Project 15: Multi-purpose Bluetooth Robot
+### Project 15: Multi-purpose Bluetooth Robot
 
 ![](media/46414c9b978c52160b6a2cfb3a729114.jpeg)  
 
