@@ -464,9 +464,9 @@ Jumper Capx8
 
 The entire project starts with the basic program. The course will guide you step by step, from simple to complex, to program a robotic car while learning about electronics and mechanical concepts. I bet you’re already eager to give it a try. So, let’s get started!
 
-Note: (G), marked on each sensor and module, is the negative pole and connected to “G”, ”-”or “GND”on the sensor shield or control board ; (V) is the positive pole and linked with V , VCC, + or 5V on the sensor shield or control board.
+**Note: (G), marked on each sensor and module, is the negative pole and connected to “G”, ”-”or “GND”on the sensor shield or control board ; (V) is the positive pole and linked with V , VCC, + or 5V on the sensor shield or control board.**
 
-Experiments should be conducted in line with the wiring diagram, including the use of right components and the wiring methods. For example, the supply power applied in the hook-up diagram is external power , so you will have to use external power rather than USB cable .
+**Experiments should be conducted in line with the wiring diagram, including the use of right components and the wiring methods. For example, the supply power applied in the hook-up diagram is external power , so you will have to use external power rather than USB cable.**
 
 ## Project 1: LED Blink
 
