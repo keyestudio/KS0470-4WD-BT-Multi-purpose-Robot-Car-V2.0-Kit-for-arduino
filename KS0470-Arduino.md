@@ -96,7 +96,7 @@ Bluetooth control: support both Android and iOS system
 | 34 | Black Nylon Ties 3\*100MM                | 6   | ![](media/c22c1a490f3363434fd8bf89f8548a43.png)|
 | 35 |  Winding Pipe                            | 1   | ![](media/788270753c70f082e38bf81533d62930.png)|
 | 36 | 3Pin F-F Dupont Wire (20CM)              | 3   | ![](media/be2a3616b359252f404e044020057833.png)|
-| 37 | Decorative Board                         |     | ![](media/0bc4857c242851f3abcef83bc854bf22.png)|
+| 37 | Decorative Board                         |     | ![img](media/0bc4857c242851f3abcef83bc854bf22.png)|
 
 
 # 5. Install Arduino IDE and Driver
