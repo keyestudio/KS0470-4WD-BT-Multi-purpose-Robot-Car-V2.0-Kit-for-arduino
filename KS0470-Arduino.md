@@ -98,7 +98,7 @@ Bluetooth control: support both Android and iOS system
 
 # 5. Install Arduino IDE and Driver
 
-**Installing Arduino IDE**
+## Installing Arduino IDE
 
 When you get the keyestudio V4.0 development board，you need to download Arduino IDE and driver firstly.
 
@@ -120,11 +120,11 @@ You just need to click JUST DOWNLOAD.
 
 You need to know that keyestudio V4.0 development board is the core of this smart car.
 
-![UNO](media/d40575778a33ffe771db5a7daa1b82b0.png)
+![](media/d40575778a33ffe771db5a7daa1b82b0.png)
 
 keyestudio V4.0 development board is an Arduino uno-compatible board, which is based on ATmega328P MCU, and with a cp2102 Chip as a UART-to-USB converter.
 
-![KS0497 新主板_画板 1](media/4b74bfedb10bad88dfc301e3ab2492a7.jpeg)
+![](media/4b74bfedb10bad88dfc301e3ab2492a7.jpeg)
 
 It has 14 digital input/output pins (of which 6 can be used as PWM outputs), 6 analog inputs, a 16 MHz quartz crystal, a USB connection, a power jack, 2 ICSP headers and a reset button.
 
@@ -147,11 +147,11 @@ It contains everything needed to support the microcontroller. Simply connect it 
 | Clock Speed                 | 16 MHz                                                   |
 | LED_BUILTIN                 | D13                                                      |
 
-**Installing the driver for Windows system**
+## Installing the driver for Windows system
 
 Let’s install the driver of keyestudio V4.0 board. The USB-TTL chip on V4.0 board adopts CP2102 serial chip.
 
-Windows system
+**Windows system**
 
 ![](media/dfa2bdbf0e4ed63881318b3f9c168963.png)
 
@@ -179,15 +179,15 @@ Click“OK”to enter the following page, click“browse my computer for updated
 
 Navigate to the CP210x_Universal_Windows_Driver unzip folder that you have downloaded and click Next.
 
-![未标题-1](media/270dc5d39d10f389d1cf212f0e5e7b40.jpeg)
+![](media/270dc5d39d10f389d1cf212f0e5e7b40.jpeg)
 
 ![](media/1e888fdeb85783a123b6948dffa44a97.png)
 
 Open device manager, you will find the yellow exclamation mark disappear. The driver of CP2102 is installed successfully.
 
-![123](media/d8be4d3bf9349aa4de2d9ac52563e563.png)
+![](media/d8be4d3bf9349aa4de2d9ac52563e563.png)
 
-**Installing the driver for MAC system**
+## Installing the driver for MAC system
 
 **MAC system**
 
@@ -247,7 +247,7 @@ Then click Allow
 
 Successfully installed ![{46A164EF-E3D2-CBE2-8CAC-B67C253E68AB}](media/bddd7e8496b2de7a2a72a14a14c803bf.jpeg)
 
-**Arduino IDE Setting**
+## Arduino IDE Setting
 
 Click![](media/9035a01879f001b75827e908d7dceb2d.png)icon，open Arduino IDE.
 
@@ -275,7 +275,7 @@ Before uploading the program to the board, let’s demonstrate the function of e
 
 4- Used to send the serial data received from board to the serial monitor.
 
-**Start Your First Program**
+## Start Your First Program
 
 Open the file to select Example, choose BLINK from BASIC, as shown below:
 
