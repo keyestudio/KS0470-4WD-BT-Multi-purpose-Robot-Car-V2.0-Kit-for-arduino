@@ -13,7 +13,7 @@
 
 **Note: Experiments should be conducted in line with the wiring diagram, including the use of right components and the wiring methods. For example, the supply power applied in the hook-up diagram is external power , so you will have to use external power rather than USB cable .**
 
-# Introduction
+# 1. Introduction
 
 Modern society is being driven at an astonishing pace by technological advancements, and STEM education (integrated education in Science, Technology, Engineering, and Mathematics) is receiving increasing attention as a key way to cultivate the next generation of innovative talent.
 
@@ -325,11 +325,11 @@ Import the library. You can find it in the include library list.
 
 Then the libraries of 4wd robot car are installed successfully.
 
-# 7.Assembly the 4WD Car
+# 7. Assembly the 4WD Car
 
 **Note: Peel the plastic film off the board first when installing the smart car.**
 
-**Step 1: Mount the Bottom PCB**
+## **Step 1: Mount the Bottom PCB**
 
 Prepare the parts as follows:
 
@@ -352,7 +352,7 @@ Prepare the parts as follows:
 ![](media/78087f84b56d86628905bc8f7e5168b8.jpeg)  
 ![](media/c3129471c5d955f1762de58c3145bbbb.jpeg)
 
-**Step 2: Install Dot Matrix**
+## **Step 2: Install Dot Matrix**
 
 1.  Prepare the parts as follows:
 2.  8X16 LED Panel x1
@@ -364,7 +364,7 @@ Prepare the parts as follows:
 ![](media/5240e7dfea863db3d8f061c9f56b050d.png)  
 ![](media/52373dd3d7b86a64d2df8d273972a63c.png)
 
-**Step 3: Install the Plastic Platform of Servo**
+## **Step 3: Install the Plastic Platform of Servo**
 
 -   Prepare the parts as follows:
 1.  Servo x1
@@ -411,7 +411,7 @@ the rest of time
 ![](media/2f18d2918c1b71bc7c1a4cd42e96f0fb.png)  
 ![](media/2970d8b4dc0025d1618512a2544f4819.png)
 
-**Step 4: Assemble Battery Holder**
+## **Step 4: Assemble Battery Holder**
 
 Prepare the parts as follows:
 
@@ -433,7 +433,7 @@ Prepare the parts as follows:
 ![](media/1aeb4fc44bd1b4e8ddc3bdbcd93b45d6.png)  
 ![](media/fabce5e4e9f56ae8636571849c1f5e35.png)
 
-**Step 5: Mount the Top PCB**
+## **Step 5: Mount the Top PCB**
 
 Prepare the parts as follows:
 
@@ -448,7 +448,7 @@ Jumper Capx8
 ![](media/3a88bfe816f44562188f203a048075f7.png)  
 ![](media/f2e6d0a070e73b00dbbebd67cce8d979.jpeg)
 
-**Step 6: Hook-up Guide**
+## **Step 6: Hook-up Guide**
 
 ![](media/0ed75c5916d55d36b2594c19ac91c37a.png)
 
@@ -3222,7 +3222,7 @@ void IIC_end()
 
 Uploading code to development board, plugging in and turning on it , the 4WD robot can not only go forward and back but turn left and right. Moreover, it is known that the mobile APP, connected to Bluetooth successfully, can be used to control the movement of the robot.
 
-# 9.Common Troubleshooting
+# 9. Common Troubleshooting
 
 ## 1. Robot Car Unresponsive
 
