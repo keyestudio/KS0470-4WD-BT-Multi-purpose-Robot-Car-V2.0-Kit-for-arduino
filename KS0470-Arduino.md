@@ -1,145 +1,142 @@
-# **4WD BT Multi-purpose Car V2.0 Kit Arduino Tutorial**
 
-![](media/9d69921bdd194725ffc6e00596643ea9.png)
+# 4WD BT Multi-purpose Car V2.0 Kit Arduino Tutorial
 
-# Read me frist
+![](media/0ce9b9c8b038f76f5c0449a1a52fd66e.png)
 
- **Download the APP, Code and library from the link: <https://fs.keyestudio.com/KS0470>**
+# Read me first
 
-# 1.Introduction
+**Online Wiki page:** [**https://docs.keyestudio.com/projects/KS0470/en/latest/**](https://docs.keyestudio.com/projects/KS0470/en/latest/)**,**
 
-Nowadays, technological education such as VR, kids programming, and artificial intelligence, has become a mainstream in educational industry. Therefore, people attach more importance to STEAM education. Arduino is notably famous for Maker education.  
+**Download the APP, Code and library :** [**https://fs.keyestudio.com/KS0470**](https://fs.keyestudio.com/KS0470)**,**
 
-So what is Arduino? Arduino is an open-source electronics platform based on easy-to-use hardware and software. Arduino boards are able to read inputs - light on a sensor, a finger on a button, or a Twitter message - and turn them into outputs - activating a motor, turning on an LED, publishing something online. Based on this, Keyestudio team has designed a 4wd robot. It has a processor which is programmable using the Arduino IDE, to map its pins to sensors and actuators by a shield that plug in the processor. And it reads sensors, controls the actuators and decides how to operate.  
+**Official website:** [**https://keyestudio.com/**](https://keyestudio.com/)
 
-This product boasts 15 learning projects, from simple to complex, which will guide you to make a smart 4wd robot all by yourself and introduce the detailed knowledge about sensors and modules.  
+**Note: Experiments should be conducted in line with the wiring diagram, including the use of right components and the wiring methods. For example, the supply power applied in the hook-up diagram is external power , so you will have to use external power rather than USB cable .**
 
-Moreover, it is the best choice if you intend to obtain a DIY robot for learning programming, entertainment and competition.  
+# Introduction
 
-**Note: Experiments should be conducted in line with the wiring diagram, including the use of right components and the wiring methods. For example, the supply power applied in the hook-up diagram is external power , so you will have to use external power rather than USB cable .**  
+Modern society is being driven at an astonishing pace by technological advancements, and STEM education (integrated education in Science, Technology, Engineering, and Mathematics) is receiving increasing attention as a key way to cultivate the next generation of innovative talent.
+
+Arduino, as a tool that bridges programming study, hardware operation, and creative realization, is undoubtedly an ideal platform for STEM education. It not only serves as a programming and hardware learning environment but also inspires student creativity and sparks enthusiasm for learning.
+
+The keyestudio 4WD Car offers up to 15 learning projects, with difficulties progressing step by step. These range from simple sensor applications to building a complex four-wheel-drive smart robot, helping students systematically understand the principles and real-world applications of sensors and hardware modules.
 
 # 2. Features
 
-1. Multi-purpose function: Obstacle avoidance, following, IR remote control, Bluetooth control, ultrasonic following and facial emoticons display.  
-
-2. Easy to build: No soldering circuit required, complete assembly easily.  
-
-3. High Tenacity: Aluminum alloy bracket, metal motors, high quality wheels and tracks.  
-
-4. High extension: expand other sensors and modules through motor driver shield and sensor shield.  
-
-5. Multiple controls: IR remote control, App control(iOS and Android system)  
-
-6. Basic programming：C language code of Arduino IDE.  
+1.  Multi-purpose function: Obstacle avoidance, following, IR remote control, Bluetooth control, ultrasonic following and facial emoticons display.
+2.  Easy to build: No soldering circuit required, complete assembly easily.
+3.  High Tenacity: Aluminum alloy bracket, metal motors, high quality wheels and tracks.
+4.  High extension: expand other sensors and modules through motor driver shield and sensor shield.
+5.  Multiple controls: IR remote control, App control(iOS and Android system)
+6.  Basic programming：C language code of Arduino IDE.
 
 # 3. Specification
 
-Working voltage: 5v  
+Working voltage: 5v
 
-Input voltage: 7-12V  
+Input voltage: 7-12V
 
-Maximum output current: 2A  
+Maximum output current: 2A
 
-Maximum power dissipation: 25W (T=75℃)  
+Maximum power dissipation: 25W (T=75℃)
 
-Motor speed: 5V 200 rpm/min  
+Motor speed: 5V 200 rpm/min
 
-Motor drive mode: dual H bridge drive  
+Motor drive mode: dual H bridge drive
 
-Ultrasonic induction angle: < 15 degrees  
+Ultrasonic induction angle: \< 15 degrees
 
-Ultrasonic detection distance: 2cm-400cm  
+Ultrasonic detection distance: 2cm-400cm
 
-Infrared remote control distance: 10 meters (measured)  
+Infrared remote control distance: 10 meters (measured)
 
-Bluetooth remote control distance: 50 meters (measured)  
+Bluetooth remote control distance: 50 meters (measured)
 
-Bluetooth control: support both Android and iOS system  
+Bluetooth control: support both Android and iOS system
 
 # 4. Product List
 
-| No | Name                                     | QTY |                  Picture                       |
-|----|------------------------------------------|-----|------------------------------------------------|
-| 1  | Keyestudio V4.0 Board                    | 1   | ![](media/d48e310dbb7f60760a02fbd88c17d97a.png)|
-| 2  | Keyestudio Motor Driver Shield           | 1   | ![](media/93521a0a4605adc2b9281fa7b7d04ed7.png)|
-| 3  | Keyestudio HM-10 Bluetooth-4.0           | 1   | ![](media/dd96bc6b421d7e5d90c5d6bba17792b1.png)|
-| 4  | Red LED Module                           | 1   | ![](media/9ac3c56be4e52c0623161ba8e4587ea1.png)|
-| 5  | HC-SR04 Ultrasonic Sensor                | 1   | ![](media/8b0ad8e263bcb737b26ada117df09ecc.png)|
-| 6  | Keyestudio Line Tracking Sensor          | 1   | ![](media/e7da5f48ae919f1f1753d8e8e76efff2.png)|
-| 7  | Keyestudio IR Receiver Sensor            | 1   | ![](media/0f924b1c78d9cc8060f3c6852453535b.png)|
-| 8  | Keyestudio 8\*16 LED  Dot Matrix, with 4pin Dupont Line | 1   | ![](media/3af9611e13767b37b476ba8f739ae473.jpeg)|
-| 9  | Keyestudio 9G Servo                      | 1   | ![](media/124d7635f2d87c781a2bcfbfec309dde.png)|
-| 10 | Keyestudio Remote Control                | 1   | ![](media/1cb7f343e485d1d92e6dc9b49c2216c6.png)|
-| 11 | USB Cable                                | 1   | ![](media/ae4255fe8683fbb2e083c83b98385707.png)|
-| 12 | 18650 Battery Holder                     | 1   | ![](media/8379a88fb269abe60cd0ad4dcb052865.png)|
-| 13 | 6 AA Battery Holder                      | 1   | ![](media/f7ec53e22f42b997a091e0ecb449f174.png)|
-| 14 | Servo Platform                           | 1   | ![](media/74067fcc6690270d218a4f80e8b1c440.png)|
-| 15 | 15CM F-F 5P 24AWG Dupont Wire            | 1   | ![](media/1c9f1cbb4758ce5b6a2476f6bd11bbd9.png)|
-| 16 | 8cm F-F 3P 24AWG  Dupont Wire            | 1   | ![](media/2b85ad6d4c8ce57776917db066e92176.png)|
-| 17 | 4P to 1P Female  DuPont Wire             | 1   | ![](media/a101e1a54334970d4ed17fdb00bf0efb.png)|
-| 18 | Acrylic Board                            | 1   | ![](media/9c27a4cf322fa28124af2828ef711273.png)|
-| 19 | Keyestudio 4WD Smart Car V2.0 Top Board  | 1   | ![](media/2fb841793bcccf3bc2d5a0c1103d62dc.png)|
-| 20 | Keyestudio 4WD Smart Car V2.0 Bottom PCB | 1   | ![](media/782fca2e92c4c94957e7e94513365d02.png)|
-| 21 | Fixed Parts                              | 4   | ![](media/31da46b304fa5546d457f444e6f24a95.png)|
-| 22 | Wheel                                    | 4   |  ![](media/de153b270a2635a082af13f6c530aac2.png)|
-| 23 | M3\*10MM Dual-pass  Copper Bush          | 10  | ![](media/792d8043677d2c3fe52bf52d87623734.png)|
-| 24 | M3\*40MM Dual-pass  Copper Bush          | 4   | ![](media/484d02a86e672277bf844de19f99d952.png)|
-| 25 | M3\*30MM Round Head Screws               | 8   | ![](media/80af09d425cfdc4788c441042c553346.png)|
-| 26 | M3\*6MM Round Head Screws                | 40  | ![](media/05a777927510346c0201f5fdfec45bda.png) |
-| 27 | M3 Nickel Plated Nuts                    | 16  | ![](media/3665fc5a77e96330bd56e9e00dda8c93.png)|
-| 28 | M2X8MM Round Head Screws                 | 6   | ![](media/36abc1252edb2c3b025a3b6169eb55cf.png)|
-| 29 | M3\*8MM Round Head Screws                | 4   | ![](media/2f7b5616f43002e2903a3e7eec952bfa.png)|
-| 30 | M2 Nickel Plated Nuts                    | 6   | ![](media/350883d58fb992c8eacd3ce8aad07976.png)|
-| 31 | M3\*10MM Flat Screws                     | 3   | ![](media/2b3cb9d8641675d829315e14c653be59.png)|
-| 32 |  Motor (with welding wire)               | 4   | ![](media/e3da11c3b300de4832244417c4c5742a.png)|
-| 33 | 3\*40MM Screwdriver                      | 1   | ![](media/6f607f8a0a22498bb852e087daecb0e3.png)|
-| 34 | Black Nylon Ties 3\*100MM                | 6   | ![](media/c22c1a490f3363434fd8bf89f8548a43.png)|
-| 35 |  Winding Pipe                            | 1   | ![](media/788270753c70f082e38bf81533d62930.png)|
-| 36 | 3Pin F-F Dupont Wire (20CM)              | 3   | ![](media/be2a3616b359252f404e044020057833.png)|
-| 37 | Decorative Board                         |     | ![img](media/0bc4857c242851f3abcef83bc854bf22.png)|
-
+| No | Name                                                   | QTY | Picture                                          |
+|----|--------------------------------------------------------|-----|--------------------------------------------------|
+| 1  | Keyestudio V4.0 Board                                  | 1   |  ![](media/468e916508d9e70caab2cac8402610e8.png) |
+| 2  | Keyestudio Motor Driver Shield                         | 1   |  ![](media/b40d0d62885326ba4d0e44fb3f9c0d26.png) |
+| 3  | Keyestudio HM-10 Bluetooth-4.0                         | 1   | ![](media/dd96bc6b421d7e5d90c5d6bba17792b1.png)  |
+| 4  | Red LED Module                                         | 1   | ![](media/9ac3c56be4e52c0623161ba8e4587ea1.png)  |
+| 5  | HC-SR04 Ultrasonic Sensor                              | 1   | ![](media/8b0ad8e263bcb737b26ada117df09ecc.png)  |
+| 6  | Keyestudio Line Tracking Sensor                        | 1   | ![](media/e7da5f48ae919f1f1753d8e8e76efff2.png)  |
+| 7  | Keyestudio IR Receiver Sensor                          | 1   | ![](media/0f924b1c78d9cc8060f3c6852453535b.png)  |
+| 8  | Keyestudio 8\*16 LED Dot Matrix, with 4pin Dupont Line | 1   | ![](media/3af9611e13767b37b476ba8f739ae473.jpeg) |
+| 9  | Keyestudio 9G Servo                                    | 1   | ![](media/fd38c11858f7c4467ea7fdeafbaa8991.png)  |
+| 10 | Keyestudio Remote Control                              | 1   | ![](media/1cb7f343e485d1d92e6dc9b49c2216c6.png)  |
+| 11 | USB Cable                                              | 1   | ![](media/ae4255fe8683fbb2e083c83b98385707.png)  |
+| 12 | 18650 Battery Holder                                   | 1   | ![](media/220488302fb801b5b277ebd7d218607f.png)  |
+| 13 | 6 AA Battery Holder                                    | 1   | ![](media/46dc2ad019b36a37abb48b86629d88c1.png)  |
+| 14 | Servo Platform                                         | 1   | ![](media/74067fcc6690270d218a4f80e8b1c440.png)  |
+| 15 | 15CM F-F 5P 24AWG Dupont Wire                          | 1   | ![](media/090e02a61ee11f122ce74f284dd1cd50.png)  |
+| 16 | 8cm F-F 3P 24AWG Dupont Wire                           | 1   | ![](media/729b08abfb4c5f6a599965a243e6820b.png)  |
+| 17 | 4P to 1P Female DuPont Wire                            | 1   | ![](media/c649df3649acb5e39a48cc8cd13c0834.png)  |
+| 18 | Acrylic Board                                          | 1   | ![](media/6337cae7b42e2761e42b5f9dd6f9a8df.png)  |
+| 19 | Keyestudio 4WD Smart Car V2.0 Top Board                | 1   | ![](media/a316a7be1bb63be6a2de228e48ea0de4.png)  |
+| 20 | Keyestudio 4WD Smart Car V2.0 Bottom PCB               | 1   | ![](media/8ab6377dd2c13dffd4e8e82eae36c64e.png)  |
+| 21 | Fixed Parts                                            | 4   | ![](media/6aa38f7aaeb71ff2220c48e0cd8546c6.png)  |
+| 22 | Wheel                                                  | 4   | ![](media/02577398f77feda6482366f938cd7cc6.png)  |
+| 23 | M3\*10MM Dual-pass Copper Bush                         | 10  | ![](media/623cf8251d821e4b3bd45686ede90bcb.png)  |
+| 24 | M3\*40MM Dual-pass Copper Bush                         | 4   | ![](media/232812f370d3568edd69b0a4ff0f16b3.png)  |
+| 25 | M3\*30MM Round Head Screws                             | 8   | ![](media/61642f9f0d0a44ebc9db33718a739d89.png)  |
+| 26 | M3\*6MM Round Head Screws                              | 40  | ![](media/26f0fdde15bf76627f3209e4ab0f4e12.png)  |
+| 27 | M3 Nickel Plated Nuts                                  | 16  | ![](media/f2b82b84f601d5b0b493580a0d65e2ad.png)  |
+| 28 | M2X8MM Round Head Screws                               | 6   | ![](media/8153a1d2bfb36133ef105b388b7f87a9.png)  |
+| 29 | M3\*8MM Round Head Screws                              | 4   | ![](media/c247fbb60599b2acdda9993c6de107f8.png)  |
+| 30 | M2 Nickel Plated Nuts                                  | 6   | ![](media/369dfd9d110ce6552f9f3629762141fa.png)  |
+| 31 | M3\*10MM Flat Screws                                   | 3   | ![](media/55751cbdb89323ba4aba82e7c087081d.png)  |
+| 32 | Motor (with welding wire)                              | 4   | ![](media/2d560ddf70fa087cc6c3a3777e8b345f.png)  |
+| 33 | 3\*40MM Screwdriver                                    | 1   | ![](media/6f607f8a0a22498bb852e087daecb0e3.png)  |
+| 34 | Black Nylon Ties 3\*100MM                              | 6   | ![](media/9efb193c4fe787ff4797d2a154dae097.png)  |
+| 35 | Winding Pipe                                           | 1   | ![](media/53fccfcce6f701ca54e119c611ef04ec.png)  |
+| 36 | 3Pin F-F Dupont Wire (20CM)                            | 3   | ![](media/aedd2bd6f73d45e22737821e0d8aeb4b.png)  |
+| 37 | Decorative Board                                       |     | ![](media/5a31aa15e85922756af6b513512c082d.png)  |
 
 # 5. Install Arduino IDE and Driver
 
- **Installing Arduino IDE**  
+**Installing Arduino IDE**
 
-When you get control board, you need to download Arduino IDE and driver firstly.   
+When you get the keyestudio V4.0 development board，you need to download Arduino IDE and driver firstly.
 
-You could download Arduino IDE from the official website:<https://www.arduino.cc/>, click the **SOFTWARE** on the browse bar to enter download page, as shown below:  
+You could download Arduino IDE from the official website:<https://www.arduino.cc/>, click the **SOFTWARE** on the browse bar to enter download page, as shown below:
 
-![](media/83a843a56d49e93ec9f99bfb33fee269.png)  
+![](media/fc5bed0d58cfb888609b637ec9312ee0.png)
 
-There are various versions of IDE for Arduino. Just download a version compatible with your system. Here we will show you how to download and install the windows version of Arduino IDE.  
+There are various versions of IDE for Arduino. Just download a version compatible with your system. Here we will show you how to download and install the windows version of Arduino IDE.
 
-![](media/fac59eb6f401fa9e6ce711bb5f3f62f2.png)  
+![](media/9e9e64165a5480287d70a147da355fec.png)
 
-You can choose between the Installer (.exe) and the Zip packages. We suggest you use the first one that installs directly everything you need to use the Arduino Software (IDE), including the drivers. With the Zip package you need to install the drivers manually. The Zip file is also useful if you want to create a portable installation.  
+You can choose between the Installer (.exe) and the Zip packages. We suggest you use the first one that installs directly everything you need to use the Arduino Software (IDE), including the drivers. With the Zip package you need to install the drivers manually. The Zip file is also useful if you want to create a portable installation.
 
-![](media/0ab58d5303a100e9638be44131a34b51.png)  
+![](media/abb31e7efa8cca8a0b25cd5a3c985587.png)
 
-You just need to click JUST DOWNLOAD.  
+You just need to click JUST DOWNLOAD.
 
-**Keyestudio V4.0 Development Board**  
+## Keyestudio V4.0 Development Board
 
-You need to know that keyestudio V4.0 development board is the core of this smart car.  
+You need to know that keyestudio V4.0 development board is the core of this smart car.
 
-![UNO](media/d48e310dbb7f60760a02fbd88c17d97a.png)  
+![UNO](media/d40575778a33ffe771db5a7daa1b82b0.png)
 
-keyestudio V4.0 development board is an Arduino uno-compatible board, which is based on ATmega328P MCU, and with a cp2102 Chip as a UART-to-USB converter.  
+keyestudio V4.0 development board is an Arduino uno-compatible board, which is based on ATmega328P MCU, and with a cp2102 Chip as a UART-to-USB converter.
 
-![KS0497 新主板_画板 1](media/d1d8b8703109cc5f953ec723ac57804d.jpeg)  
+![KS0497 新主板_画板 1](media/4b74bfedb10bad88dfc301e3ab2492a7.jpeg)
 
-It has 14 digital input/output pins (of which 6 can be used as PWM outputs), 6 analog inputs, a 16 MHz quartz crystal, a USB connection, a power jack, 2 ICSP headers and a reset button.  
+It has 14 digital input/output pins (of which 6 can be used as PWM outputs), 6 analog inputs, a 16 MHz quartz crystal, a USB connection, a power jack, 2 ICSP headers and a reset button.
 
-![3](media/bc609cfdb8f102e95dd298121e8eae01.jpeg)  
+![3](media/a063fef7df4d8a58465401a09f4269c9.jpeg)
 
-It contains everything needed to support the microcontroller. Simply connect it to a computer with a USB cable or power it via an external DC power jack (DC 7-12V) or via female headers Vin/ GND(DC 7-12V) to get started.  
+It contains everything needed to support the microcontroller. Simply connect it to a computer with a USB cable or power it via an external DC power jack (DC 7-12V) or via female headers Vin/ GND(DC 7-12V) to get started.
 
 | Microcontroller             | ATmega328P-PU                                            |
 |-----------------------------|----------------------------------------------------------|
 | Operating Voltage           | 5V                                                       |
 | Input Voltage (recommended) | DC7-12V                                                  |
-| Digital I/O Pins            | 14 (D0-D13)  (of which 6 provide PWM output)             |
+| Digital I/O Pins            | 14 (D0-D13) (of which 6 provide PWM output)              |
 | PWM Digital I/O Pins        | 6 (D3, D5, D6, D9, D10, D11)                             |
 | Analog Input Pins           | 6 (A0-A5)                                                |
 | DC Current per I/O Pin      | 20 mA                                                    |
@@ -150,223 +147,355 @@ It contains everything needed to support the microcontroller. Simply connect it 
 | Clock Speed                 | 16 MHz                                                   |
 | LED_BUILTIN                 | D13                                                      |
 
-**Installing the driver for Windows system**  
+**Installing the driver for Windows system**
 
-Let’s install the driver of keyestudio V4.0 board. The USB-TTL chip on V4.0 board adopts CP2102 serial chip.  
+Let’s install the driver of keyestudio V4.0 board. The USB-TTL chip on V4.0 board adopts CP2102 serial chip.
 
-Windows system  
+Windows system
 
-![](media/b5cebd0e0a088eddf38f52c83bff3150.png)  
+![](media/dfa2bdbf0e4ed63881318b3f9c168963.png)
 
-You can download the driver of the CP2101 in the following link.  
+You can download the driver of the CP2101 in the following link.
 
-<https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads>  
+<https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads>
 
-For Windows system, you can select the first driver to download and upzip it.  
+For Windows system, you can select the first driver to download and upzip it.
 
-![](media/4df300d69be9b7dd8f60e4bc1142e3b8.png)  
+![](media/4df300d69be9b7dd8f60e4bc1142e3b8.png)
 
-![](media/eb9a5fa40edeab575e7b4d8a26d710f6.png)  
+![](media/eb9a5fa40edeab575e7b4d8a26d710f6.png)
 
-Then open the device manager of computer. Right click Computer----- Properties----- Device Manager  
+Then open the device manager of computer. Right click Computer----- Properties----- Device Manager
 
-![](media/5d3921d98a5be791b0b5166164b389e7.png)  
+![](media/ff799e402f7e8552f648e232c7541994.png)
 
-The yellow exclamation mark on the page implies that the driver of CP2101 isn’t installed. Next, you should double-click the hardware to update the driver.  
+The yellow exclamation mark on the page implies that the driver of CP2101 isn’t installed. Next, you should double-click the hardware to update the driver.
 
-![](media/0946d3e3d322e66303a5e3fec0bb53c0.png)  
+![](media/2820c2e84f993a75c2ee1339fc348d23.png)
 
-Click“OK”to enter the following page, click“browse my computer for updated driver software”. As shown below:  
+Click“OK”to enter the following page, click“browse my computer for updated driver software”. As shown below:
 
-![](media/abff63e491413339a985a0a03df21106.png)  
+![](media/abff63e491413339a985a0a03df21106.png)
 
-Navigate to the CP210x_Universal_Windows_Driver unzip folder that you have downloaded and click Next.  
+Navigate to the CP210x_Universal_Windows_Driver unzip folder that you have downloaded and click Next.
 
-![未标题-1](media/270dc5d39d10f389d1cf212f0e5e7b40.jpeg)  
+![未标题-1](media/270dc5d39d10f389d1cf212f0e5e7b40.jpeg)
 
-![](media/1e888fdeb85783a123b6948dffa44a97.png)  
+![](media/1e888fdeb85783a123b6948dffa44a97.png)
 
-Open device manager, you will find the yellow exclamation mark disappear. The driver of CP2102 is installed successfully.  
+Open device manager, you will find the yellow exclamation mark disappear. The driver of CP2102 is installed successfully.
 
-![123](media/9b8ddc1c8af12e5f363817d49cea8571.png)  
+![123](media/d8be4d3bf9349aa4de2d9ac52563e563.png)
 
-**Installing the driver for MAC system**  
+**Installing the driver for MAC system**
 
-**MAC system**  
+**MAC system**
 
-![](media/aee40e1614afae9be6b0ffa78bcb833c.png)  
+![](media/1981717961c5493a818aed2370a7858b.png)
 
-You can download the driver of the CP2101 in the following link.  
+You can download the driver of the CP2101 in the following link.
 
-<https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads>  
+<https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads>
 
-For MacOS system, you can select the this driver to download and upzip it.  
+For MacOS system, you can select the this driver to download and upzip it.
 
-![](media/28a72783e9df9fb397a9ac2ba435e716.png)  
+![](media/28a72783e9df9fb397a9ac2ba435e716.png)
 
-Open the driver folder and double-click SiLabsUSBDriverDisk.dmg file.  
+Open the driver folder and double-click SiLabsUSBDriverDisk.dmg file.
 
-![{B226126D-C3F1-8402-1361-7E6AB44E7078}](media/59c91402aeb0941e301acb8c8aa36141.jpeg)  
+![{B226126D-C3F1-8402-1361-7E6AB44E7078}](media/33d3d25519432bd71df3a5ff7a89d203.jpeg)
 
-You will view following files as follows:  
+You will view following files as follows:
 
-![{5C3FCA68-7405-460C-91BE-E0775E4B2429}](media/cf395759ef97b05784c65b2514f728fc.jpeg)  
+![{5C3FCA68-7405-460C-91BE-E0775E4B2429}](media/c141f1169ad466f1058b984345e293cf.jpeg)
 
-Double-click Install CP210x VCP Driver, tick Don’t warn me and click Open  
+Double-click Install CP210x VCP Driver, tick Don’t warn me and click Open
 
-![{59DB6F00-1A8B-3450-CDAA-ED2D7CAA65D6}](media/56ad0368ee8f50fef217428c1e7c00c5.jpeg)  
+![{59DB6F00-1A8B-3450-CDAA-ED2D7CAA65D6}](media/a6dc5538928d137062eb1f763a0abc50.jpeg)
 
-Click Continue  
+Click Continue
 
-![{E3881FC6-7F40-B173-AA22-2A2A8A36ECAB}](media/88a3949d8e7d10d631a8fffa2b9df108.jpeg)  
+![{E3881FC6-7F40-B173-AA22-2A2A8A36ECAB}](media/63d6587d0e313a1326aaa1b89d00239f.jpeg)
 
-Click Continue and Agree  
+Click Continue and Agree
 
-![{5D5929F6-B53A-0C03-7919-49AA20E7738D}](media/28e8013fdde7914820515697181f1ec7.jpeg)  
+![{5D5929F6-B53A-0C03-7919-49AA20E7738D}](media/34c862224f899a59a5879ec6c1c4c876.jpeg)
 
-Click Continue and enter your user password.  
+Click Continue and enter your user password.
 
-![{15F1B01F-B066-9615-0B44-D5039DF02484}](media/d610b36b30a7847d9562143531ff1bde.jpeg)  
+![{15F1B01F-B066-9615-0B44-D5039DF02484}](media/49695bc3da8ea86470af59c909840294.jpeg)
 
-![{B4E122B5-21D3-E930-1D2B-70E00ED504BE}](media/b4e122b521d3e9301d2b70e00ed504be.jpeg)  
+![{B4E122B5-21D3-E930-1D2B-70E00ED504BE}](media/4b1e247e828f8812b7a406affb9d38b4.jpeg)
 
-9.Select Open Security Preferences  
+9.Select Open Security Preferences
 
-![](media/f97f0c1a960ddda5c2a98f52386f0462.png)  
+![](media/95e391d7ed5953595846cd19ac5b57b3.png)
 
-Click the lock then enter your user’s password to authorize.  
+Click the lock then enter your user’s password to authorize.
 
-![{7B313247-7D6D-C1AD-1403-5E14567A2208}](media/41ae5006b276caa2a752f49858e01bf6.jpeg)  
+![{7B313247-7D6D-C1AD-1403-5E14567A2208}](media/a157b70426bb91bd65800e82b4dd4d86.jpeg)
 
-![{E8F637A3-A951-0AA8-F90C-65820D4D1CD8}](media/e8f637a3a9510aa8f90c65820d4d1cd8.jpeg)  
+![{E8F637A3-A951-0AA8-F90C-65820D4D1CD8}](media/10d24b8041670ce4395ecf7f08e27b4e.jpeg)
 
-Then click Allow  
+Then click Allow
 
-![{2A6CFC15-8C4A-2409-CA08-34BF16BD4C9A}](media/8d87ad5fd228acf0a28dc22b9d91194b.jpeg)  
+![{2A6CFC15-8C4A-2409-CA08-34BF16BD4C9A}](media/dcd94e56b1737a035c9c0b4d932fb7f7.jpeg)
 
-12.Back to installation page, and wait to install.  
+12.Back to installation page, and wait to install.
 
-![{47734125-C9FF-7E42-674B-4FD59872EB1C}](media/952736d011b3ac0a628df0a5473af00f.jpeg)  
+![{47734125-C9FF-7E42-674B-4FD59872EB1C}](media/2d15b26132b3aa6578a495e805c42b01.jpeg)
 
-Successfully installed ![{46A164EF-E3D2-CBE2-8CAC-B67C253E68AB}](media/7c26ef0b6e1d36b49c1d80dc4f153707.jpeg)  
+Successfully installed ![{46A164EF-E3D2-CBE2-8CAC-B67C253E68AB}](media/bddd7e8496b2de7a2a72a14a14c803bf.jpeg)
 
-**Arduino IDE Setting**  
+**Arduino IDE Setting**
 
-Click![](media/9035a01879f001b75827e908d7dceb2d.png)icon，open Arduino IDE.  
+Click![](media/9035a01879f001b75827e908d7dceb2d.png)icon，open Arduino IDE.
 
-![](media/843b5bb2d4c1d33c215e8d0c76c07abf.png)  
+![](media/8703d949ffdfc4d8a357e9a6b1e45be4.png)
 
-To avoid the errors when uploading the program to the board, you need to select the correct Arduino board that matches the board connected to your computer.  
+To avoid the errors when uploading the program to the board, you need to select the correct Arduino board that matches the board connected to your computer.
 
-Then come back to the Arduino software, you should click Tools→Board, select the board. (as shown below)  
+Then come back to the Arduino software, you should click Tools→Board, select the board. (as shown below)
 
-![](media/01f0cdcc5418a5676cd69a34abf2ff9c.png)  
+![](media/4ab6f7a53ea55eb164496ec114e27cef.png)
 
-Then select the correct COM port (you can see the corresponding COM port after the driver is successfully installed)  
+Then select the correct COM port (you can see the corresponding COM port after the driver is successfully installed)
 
-![](media/9fd19e4ad9b31ad017e31c7c2c1d0018.png)  
+![](media/2414ec448fa30a94f32f76365f1ee6c5.png)
 
-Before uploading the program to the board, let’s demonstrate the function of each symbol in the Arduino IDE toolbar.  
+Before uploading the program to the board, let’s demonstrate the function of each symbol in the Arduino IDE toolbar.
 
-![](media/9035c37073325fa802cbcc7476d08ef6.png)  
+![](media/70cd10b2011146ca2ca0f4104c80a155.png)
 
-1- Used to verify whether there is any compiling mistakes or not.  
+1- Used to verify whether there is any compiling mistakes or not.
 
-2- Used to upload the sketch to your Arduino board.  
+2- Used to upload the sketch to your Arduino board.
 
-3- Used to send the serial data received from board to the serial plottle.  
+3- Used to send the serial data received from board to the serial plottle.
 
-4- Used to send the serial data received from board to the serial monitor.  
+4- Used to send the serial data received from board to the serial monitor.
 
-**Start First Program**  
+**Start Your First Program**
 
-Open the file to select Example, choose BLINK from BASIC, as shown below:  
+Open the file to select Example, choose BLINK from BASIC, as shown below:
 
-![](media/faa29181fe4a6619dd549ae84e05e247.png) ![](media/798b6b704d8c3d405bfa7b12fb9739f5.png)  
+![](media/0ec1ae228feb903bd9b7bdbd0eff5313.png) ![](media/054c8969f7a2cd990c0846902b247004.png)
 
-Set board and COM port, the corresponding board and COM port are shown on the lower right of IDE.  
+Set board and COM port, the corresponding board and COM port are shown on the lower right of IDE.
 
-![](media/fd3a4ab756755975944bfe310fdb4f46.png)  
+![](media/036bd8f703e8f8b4d3387c6f0a044b9f.png)
 
-Click![](media/ddd21c81338ae1f6b7f84de2a3caecf0.png)to start compiling the program, check errors.  
+Click![](media/ddd21c81338ae1f6b7f84de2a3caecf0.png)to start compiling the program, check errors.
 
-![](media/41214d64128dbd9374a07460d64b3616.png)  
+![](media/ab3924b2b6ba44de1758801f0edddf9d.png)
 
-Click![](media/9c9158a5d49baa740ea2f0048f655017.png)to upload the program, upload successfully.  
+Click![](media/9c9158a5d49baa740ea2f0048f655017.png)to upload the program, upload successfully.
 
-![](media/ee1957edf30584f010dd748405f14095.png)  
+![](media/f7b6506b617e2c3b0ce6383c449edb06.png)
 
-Upload the program successfully, the onboard LED lights on for 1s, lights off for 1s. Congratulation, you have finished the first program.  
+Upload the program successfully, the onboard LED lights on for 1s, lights off for 1s. Congratulation, you have finished the first program.
 
 # 6. How to Add Libraries?
 
-**What are Libraries ?**  
+**What are Libraries ?**
 
-[Libraries](https://www.arduino.cc/en/Reference/Libraries) are a collection of code that makes it easy for you to drive a sensor,display, module, etc.  
+[Libraries](https://www.arduino.cc/en/Reference/Libraries) are a collection of code that makes it easy for you to drive a sensor,display, module, etc.
 
-For example, the built-in LiquidCrystal library helps talk to LCD displays. There are hundreds of additional libraries available on the Internet for download.  
+For example, the built-in LiquidCrystal library helps talk to LCD displays. There are hundreds of additional libraries available on the Internet for download.
 
-The built-in libraries and some of these additional libraries are listed in the reference.  
+The built-in libraries and some of these additional libraries are listed in the reference.
 
-<https://www.arduino.cc/en/Reference/Libraries>  
+<https://www.arduino.cc/en/Reference/Libraries>
 
-**Add ZIP Libraries**  
+**Add ZIP Libraries**
 
-When you want to add a zip library, you need to download it as a ZIP file, put in the proper directory. The Libraries needed to run the mini tank can be found on：<https://fs.keyestudio.com/KS0470>  
+When you want to add a zip library, you need to download it as a ZIP file, put in the proper directory. The Libraries needed to run the mini tank can be found on：<https://fs.keyestudio.com/KS0470>
 
-![](media/4b0da333184024dfdb4c49829c7c289b.png)  
+![](media/a9dcbbf2120981ef1e49cbeb2ce5ab41.png)
 
-Click Sketch----\>Include Library—\>Add.ZIP Library，then Then navigate to the library file you downloaded and click "open."  
+Click Sketch----\>Include Library—\>Add.ZIP Library，then Then navigate to the library file you downloaded and click "open."
 
-![](media/baef5ce61ba8567f4a18fec16a2e3dae.png)  
+![](media/a1725b9cb6e83580872feab5ab84d627.png)
 
-![](media/f282f53c0ef16c9c9480dbeed9845eb3.png)![](media/c1b0c4c29ee89a4b3aad64066d367b5b.png)  
+![](media/fb01cd48be124c4904ff829291166d7b.png)![](media/80cbc6c4ee07b057bf8c81d63e5180f7.png)
 
-Import the library. You can find it in the include library list.  
+Import the library. You can find it in the include library list.
 
-![](media/eb248a126de694796fda2587983859aa.png)  
+![](media/65dba8577432970d4c8a569c3a94c5c6.png)
 
+Then the libraries of 4wd robot car are installed successfully.
 
-Then the libraries of 4wd robot car are installed successfully.  
+# 7.Assembly the 4WD Car
 
-# 7. Projects
+**Note: Peel the plastic film off the board first when installing the smart car.**
 
-The whole project begins with basic programs. From simple to complex, the lessons will guide you to assemble the robot car and absorb the knowledge of electronics and machinery step by step. I reckon that you could hardly sit still and itch to have a go now. Let’s get started.  
+**Step 1: Mount the Bottom PCB**
 
-**If you want to go directly to the step of installing the robot, please click this link**  
+Prepare the parts as follows:
 
-[assembly-guide](https://ks0470-4wd-bt-multi-purpose-robot-car-v20-kit-for-arduino.readthedocs.io/en/latest/KS0470-Arduino.html#assembly-guide)  
+1.  Gear Motor x4
+2.  Fixed Part x4
+3.  M3 Nickel Plated Nut x10
+4.  3x6mm Round-head Screw x14
+5.  4WD Bottom PCB x1
+6.  Tracking Sensor x1
+7.  Wheel x4
+8.  5P Dupont Wire x1
+9.  M3x40mm Copper Pillarx6
+10. M3x30m Round-head Screw x8
+11. M3x8mm Round-head Screw x2
 
+![](media/627210051512938cd2d71618b369284e.png)  
+![](media/434718adb40b581988f9ef0ac6e5746e.png)  
+![](media/9b3916ad03515332f28f3e00541e4f68.png)  
+![](media/8cd2e65c53b605639232097d09cba02e.png)  
+![](media/78087f84b56d86628905bc8f7e5168b8.jpeg)  
+![](media/c3129471c5d955f1762de58c3145bbbb.jpeg)
 
-Note: (G), marked on each sensor and module, is the negative pole and connected to “G”, ”-”or “GND”on the sensor shield or control board ; (V) is the positive pole and linked with V , VCC, + or 5V on the sensor shield or control board.  
+**Step 2: Install Dot Matrix**
+
+1.  Prepare the parts as follows:
+2.  8X16 LED Panel x1
+3.  4WD Baffle
+4.  4P Wire x1
+5.  M2x8mm Round-head Screw x4
+6.  M2 Nut x4
+
+![](media/5240e7dfea863db3d8f061c9f56b050d.png)  
+![](media/52373dd3d7b86a64d2df8d273972a63c.png)
+
+**Step 3: Install the Plastic Platform of Servo**
+
+-   Prepare the parts as follows:
+1.  Servo x1
+2.  M2x4 Screw x1
+3.  Black Cable Tiex2
+4.  Ultrasonic Sensorx1
+5.  Black Plastic Platform x1
+6.  M1.2x4 Tapping Screw x4
+7.  M2x8 Tapping Screw x2
+
+![](media/c1a82c740af8dab4acbb856d9494d1a1.png)
+
+You can find M1.2x4 screws inside the bag of the servo platform
+
+![](media/bf0388c9dad49671aba90f30229d928b.png)
+
+![](media/731dab7e1e835447691068b2235b7f9b.png)
+
+```To keep the servo motor at the correct angle, we need to upload the following code to the development board to adjust the servo's angle.
+/*
+Set the 90-degree code,Copy the code and upload it to the development board. The steering gear connected to port D9 will rotate to 90 °
+*/
+#define servoPin 9 //servo Pin
+int pos; //the angle variable of servo
+int pulsewidth; // pulse width variable of servo
+void setup() {
+pinMode(servoPin, OUTPUT); //set servo pin to OUTPUT
+procedure(0); //set the angle of servo to 0°
+}
+void loop() {
+procedure(90); // tell servo to go to position in variable 90°
+}
+// function to control servo
+void procedure(int myangle) {
+pulsewidth = myangle x 11 + 500; //calculate the value of pulse width
+digitalWrite(servoPin,HIGH);
+delayMicroseconds(pulsewidth); //The duration of high level is pulse width
+digitalWrite(servoPin,LOW);
+delay((20 - pulsewidth / 1000)); // the cycle is 20ms, the low level last for
+the rest of time
+}
+```
+
+![](media/2f18d2918c1b71bc7c1a4cd42e96f0fb.png)  
+![](media/2970d8b4dc0025d1618512a2544f4819.png)
+
+**Step 4: Assemble Battery Holder**
+
+Prepare the parts as follows:
+
+1.  Top PCB x1
+2.  M3 Nut x3
+3.  Motor Driver Board x1
+4.  Control Board x1
+5.  IR Receiver Module x1
+6.  M3x10mm Copper Pillar x8
+7.  M3x8mm Round-head Screw x1
+8.  M3x6mm Round-head Screw x16
+9.  M3x10mm Flat-head Screw x2
+10. 6 AA Battery Holder x1
+
+![](media/64d192c21d7504f9ae4c3cf844c5dd3e.png)  
+![](media/cca26045db9f1fbc8b65889d05f7e500.png)
+
+![](media/5d5f64bd8d936998d65fe064d82710b4.png)  
+![](media/1aeb4fc44bd1b4e8ddc3bdbcd93b45d6.png)  
+![](media/fabce5e4e9f56ae8636571849c1f5e35.png)
+
+**Step 5: Mount the Top PCB**
+
+Prepare the parts as follows:
+
+Bluetooth Module x1
+
+M3x6MM Round-head Screw x6
+
+Jumper Capx8
+
+![](media/66904f4430bae90167db31c5dd828a0e.png)  
+![](media/aadc76c26e9a0ab58c5b489a8cfbe817.png)  
+![](media/3a88bfe816f44562188f203a048075f7.png)  
+![](media/f2e6d0a070e73b00dbbebd67cce8d979.jpeg)
+
+**Step 6: Hook-up Guide**
+
+![](media/0ed75c5916d55d36b2594c19ac91c37a.png)
+
+![](media/b021ddb1a76bf0d64d2e7527f2ecc265.png)
+
+![](media/0c8f8791d672d1e2b15d7029045123ce.png)  
+![](media/5c0ad7bb293b05700e84662d51f9b271.png)I**mportant reminder: Please unplug the Bluetooth module before starting the upcoming lessons; otherwise, the program upload will fail.**
+
+![](media/641a5479888f17c6720ae15532e916e3.png)  
+![](media/9b4172d2a80c54a09b928b249acc9655.jpeg)
+
+# 8. Projects
+
+The entire project starts with the basic program. The course will guide you step by step, from simple to complex, to program a robotic car while learning about electronics and mechanical concepts. I bet you’re already eager to give it a try. So, let’s get started!
+
+Note: (G), marked on each sensor and module, is the negative pole and connected to “G”, ”-”or “GND”on the sensor shield or control board ; (V) is the positive pole and linked with V , VCC, + or 5V on the sensor shield or control board.
+
+Experiments should be conducted in line with the wiring diagram, including the use of right components and the wiring methods. For example, the supply power applied in the hook-up diagram is external power , so you will have to use external power rather than USB cable .
 
 ## Project 1: LED Blink
 
-![](media/4c5aa10c3eda7ed4c970b514f5d08da4.png)  
+![](media/5ab168053ba36400e79f70763fc2f5de.png)
 
-**1. Description**  
+**1. Description**
 
-For starters and enthusiasts, LED Blink is a fundamental program. LED, the abbreviation of light emitting diodes, consists of Ga, As, P, N chemical compounds and so on. The LED can flash in diverse colors by altering the delay time in the test code. When in control, power on GND and VCC, the LED will be on if S end is in high level; nevertheless, it will go off.  
+For starters , LED Blink is a fundamental program. LED, the abbreviation of light emitting diodes, consists of Ga, As, P, N chemical compounds and so on. The LED can flash in diverse colors by altering the delay time in the test code. When in control, power on GND and VCC, the LED will be on if S end is in high level; nevertheless, it will go off.
 
-**2. Specification**  
+**2. Specification**
 
-![](media/16fbd30bf613a97959a7082a684d675d.png)  
+![](media/16fbd30bf613a97959a7082a684d675d.png)
 
-- Control interface: digital port  
-- Working voltage: DC 3.3-5V  
-- Pin spacing: 2.54mm  
-- LED display color: red  
+-   Control interface: digital port
+-   Working voltage: DC 3.3-5V
+-   Pin spacing: 2.54mm
+-   LED display color: red
 
 **3. What You Need**  
-![](media/t1.png)  
+![](media/0fea4c09c1c7d968169a5acee0a1511c.png)
 
-**4. Wiring Diagram**  
+**4. Wiring Diagram**
 
-![](media/90d0fb964274c3d6456b40eabfd763d6.png)  
+![](media/59eaea2a08bb3a963a2f4b82625455f6.png)
 
-The expansion board is stacked on development board; LED module is connected to G of shield;“+”is linked with 5V; S end is attached to D3.   
+The expansion board is stacked on development board; LED module is connected to G of shield;“+”is linked with 5V; S end is attached to D3.
 
-**5. Test Code：**  
+**5. Test Code：**
+
 ```c++
 /*
 keyestudio 4wd BT Car V2
@@ -384,22 +513,22 @@ void loop()                   // the loop function runs over and over again fore
     digitalWrite(9, LOW);     // turn the LED off by making the voltage LOW
     delay(1000);              // wait for a second
 }
-
 ```
 
-**6. Test Result**  
+**6. Test Result**
 
-Upload the program, LED blinks at the interval of 1s.  
+Upload the program, LED blinks at the interval of 1s.
 
-**7. Code Explanation**  
+**7. Code Explanation**
 
-**pinMode(3，OUTPUT)** - This function can denote that the pin is INPUT or OUTPUT  
+**pinMode(3，OUTPUT)** - This function can denote that the pin is INPUT or OUTPUT
 
-**digitalWrite(3, HIGH)** - When pin is OUTPUT, we can set it to HIGH(output 5V) or LOW(output 0V)  
+**digitalWrite(3, HIGH)** - When pin is OUTPUT, we can set it to HIGH(output 5V) or LOW(output 0V)
 
-**8. Extension Practice**  
+**8. Extension Practice**
 
-We have succeeded in blinking LED. Next, let’s observe what will happen to the LED if we modify pins and delay time.  
+We have succeeded in blinking LED. Next, let’s observe what will happen to the LED if we modify pins and delay time.
+
 ```c++
 /*
 keyestudio 4wd BT Car V2
@@ -418,32 +547,34 @@ void loop()
     delay(100);              // wait for 0.1 second
 }
 ```
-The test result shows that the LED flashes faster. Therefore, we can draw a conclusion that pins and time delaying affect flash frequency.  
 
-## Project 2: Adjust LED Brightness
+The test result shows that the LED flashes faster. Therefore, we can draw a conclusion that pins and time delaying affect flash frequency.
 
-**1. Description**  
+## Project 2: LED PWM
 
-In previous lesson, we control LED on and off and make it blink.    
+**1. Description**
 
-In this project, we will control LED’s brightness through PWM simulating breathing effect. Similarly, you can change the step length and delay time in the code so as to demonstrate different breathing effects.     
+In previous lesson, we control LED on and off and make it blink.
 
-PWM is a means of controlling the analog output via digital means. Digital control is used to generate square waves with different duty cycles (a signal that constantly switches between high and low levels) to control the analog output.In general, the input voltages of ports are 0V and 5V. What if the 3V is required? Or a switch among 1V, 3V and 3.5V? We cannot change resistors constantly. For this reason, we resort to PWM.       
+In this project, we will control LED’s brightness through PWM simulating breathing effect. Similarly, you can change the step length and delay time in the code so as to demonstrate different breathing effects.
 
-![](media/bbcfcb9ae56abb7e80ee587246fc4be9.GIF)      
+PWM is a means of controlling the analog output via digital means. Digital control is used to generate square waves with different duty cycles (a signal that constantly switches between high and low levels) to control the analog output.In general, the input voltages of ports are 0V and 5V. What if the 3V is required? Or a switch among 1V, 3V and 3.5V? We cannot change resistors constantly. For this reason, we resort to PWM.
 
-For Arduino digital port voltage outputs, there are only LOW and HIGH levels, which correspond to the voltage outputs of 0V and 5V respectively. You can define LOW as’ 0 ‘and HIGH as’ 1’, and let the Arduino output five hundred ‘0’ or ‘1’ within 1 second. If output five hundred ‘1’, that is 5V; if all of which is ‘0’,that is 0V; if output 250 01 pattern, that is 2.5V.     
+![](media/bbcfcb9ae56abb7e80ee587246fc4be9.GIF)
 
-This process can be likened to showing a movie. The movie we watch are not completely continuous. Actually, it generates 25 pictures per second, which cannot be told by human eyes. Therefore, we mistake it as a continuous process. PWM works in the same way. To output different voltages, we need to control the ratio of 0 and 1. The more ‘0’or ‘1’ output per unit time, the more accurate the control.      
+For Arduino digital port voltage outputs, there are only LOW and HIGH levels, which correspond to the voltage outputs of 0V and 5V respectively. You can define LOW as’ 0 ‘and HIGH as’ 1’, and let the Arduino output five hundred ‘0’ or ‘1’ within 1 second. If output five hundred ‘1’, that is 5V; if all of which is ‘0’,that is 0V; if output 250 01 pattern, that is 2.5V.
+
+This process can be likened to showing a movie. The movie we watch are not completely continuous. Actually, it generates 25 pictures per second, which cannot be told by human eyes. Therefore, we mistake it as a continuous process. PWM works in the same way. To output different voltages, we need to control the ratio of 0 and 1. The more ‘0’or ‘1’ output per unit time, the more accurate the control.
 
 **2. What You Need**  
-![](media/t1.png)   
+![](media/0fea4c09c1c7d968169a5acee0a1511c.png)
 
-**3. Hook-up Diagram**  
+**3. Hook-up Diagram**
 
-![](media/90d0fb964274c3d6456b40eabfd763d6.png)  
+![](media/59eaea2a08bb3a963a2f4b82625455f6.png)
 
 **4. Test Code：**
+
 ```c++
 /*
 keyestudio 4wd BT Car V2
@@ -468,64 +599,65 @@ void loop () {
 }
 ```
 
-**5. Test Result**  
+**5. Test Result**
 
-Upload test code successfully, LED gradually changes from bright to dark, like human’s breath, rather than turning on and off immediately.    
+Upload test code successfully, LED gradually changes from bright to dark, like human’s breath, rather than turning on and off immediately.
 
-**6. Code Explanation**  
+**6. Code Explanation**
 
-To repeat some certain statements, we could use FOR statement.     
-FOR statement format is shown below:   
+To repeat some certain statements, we could use FOR statement.  
+FOR statement format is shown below:
 
-![](media/65da124bdd0ea488291c71c6b879fe95.jpeg)    
+![](media/65da124bdd0ea488291c71c6b879fe95.jpeg)
 
-FOR cyclic sequence:  
+FOR cyclic sequence:
 
-Round 1：1 → 2 → 3 → 4    
+Round 1：1 → 2 → 3 → 4
 
-Round 2：2 → 3 → 4    
+Round 2：2 → 3 → 4
 
-…    
+…
 
-Until number 2 is not established, “for”loop is over.    
+Until number 2 is not established, “for”loop is over.
 
-After knowing this order, go back to code:    
+After knowing this order, go back to code:
 
-for(int value = 0; value < 255; value=value+1){**    
+for(int value = 0; value \< 255; value=value+1){\*\*
 
-**...}   
+\*\*...}
 
-for (int value = 255; value >0; value=value-1){**   
+for (int value = 255; value \>0; value=value-1){\*\*
 
-**...}    
+\*\*...}
 
-The two“for”statements make value increase from 0 to 255, then reduce from 255 to 0, then increase to 255,....infinitely loop    
+The two“for”statements make value increase from 0 to 255, then reduce from 255 to 0, then increase to 255,....infinitely loop
 
-There is a new function in the following ----- analogWrite()    
+There is a new function in the following ----- analogWrite()
 
-We know that digital port only has two state of 0 and 1. So how to send an analog value to a digital value? Here,this function is needed. Let’s observe the Arduino board and find 6 pins marked“\~”which can output PWM signals.    
+We know that digital port only has two state of 0 and 1. So how to send an analog value to a digital value? Here,this function is needed. Let’s observe the Arduino board and find 6 pins marked“\~”which can output PWM signals.
 
-Function format as follows:   
+Function format as follows:
 
-analogWrite(pin,value)    
+analogWrite(pin,value)
 
-analogWrite() is used to write an analog value from 0\~255 for PWM port, so the value is in the range of 0\~255. Attention that you only write the digital pins with PWM function, such as pin 3, 5, 6, 9, 10, 11.    
+analogWrite() is used to write an analog value from 0\~255 for PWM port, so the value is in the range of 0\~255. Attention that you only write the digital pins with PWM function, such as pin 3, 5, 6, 9, 10, 11.
 
-PWM is a technology to obtain analog quantity through digital method. Digital control forms a square wave, and the square wave signal only has two states of turning on and off (that is, high or low levels). By controlling the ratio of the duration of turning on and off, a voltage varying from 0 to 5V can be simulated. The time turning on(academically referred to as high level) is called pulse width, so PWM is also called pulse width modulation.    
+PWM is a technology to obtain analog quantity through digital method. Digital control forms a square wave, and the square wave signal only has two states of turning on and off (that is, high or low levels). By controlling the ratio of the duration of turning on and off, a voltage varying from 0 to 5V can be simulated. The time turning on(academically referred to as high level) is called pulse width, so PWM is also called pulse width modulation.
 
-Through the following five square waves, let’s acknowledge more about PWM.    
+Through the following five square waves, let’s acknowledge more about PWM.
 
-![](media/553f3d1b6ca04e1aa0479841dd075fa2.png)    
+![](media/553f3d1b6ca04e1aa0479841dd075fa2.png)
 
-In the above figure, the green line represents a period, and value of analogWrite() corresponds to a percentage which is called Duty Cycle as well. Duty cycle implies that high-level duration is divided by low-level duration in a cycle. From top to bottom, the duty cycle of first square wave is 0% and its corresponding value is 0. The LED brightness is lowest, that is, light off. The more time the high level lasts, the brighter the LED. Therefore, the last duty cycle is 100%, which correspond to 255, and LED is the brightest. And 25% means darker.    
+In the above figure, the green line represents a period, and value of analogWrite() corresponds to a percentage which is called Duty Cycle as well. Duty cycle implies that high-level duration is divided by low-level duration in a cycle. From top to bottom, the duty cycle of first square wave is 0% and its corresponding value is 0. The LED brightness is lowest, that is, light off. The more time the high level lasts, the brighter the LED. Therefore, the last duty cycle is 100%, which correspond to 255, and LED is the brightest. And 25% means darker.
 
-PWM mostly is used for adjusting the LED’s brightness or the rotation speed of motors.  
+PWM mostly is used for adjusting the LED’s brightness or the rotation speed of motors.
 
-It plays a vital role in controlling smart robot cars. I believe that you cannot wait to learn next project.  
+It plays a vital role in controlling smart robot cars. I believe that you cannot wait to learn next project.
 
-**7. Extension Practice：**  
+**7. Extension Practice：**
 
-Let’s modify the value of delay and remain the pin unchanged, then observe how LED changes.  
+Let’s modify the value of delay and remain the pin unchanged, then observe how LED changes.
+
 ```c++
 /*
 keyestudio 4wd BT Car V2
@@ -549,221 +681,65 @@ void loop(){
 }
 ```
 
-Upload the code to development board, LED flashes more slowly.   
+Upload the code to development board, LED flashes more slowly.
 
-## Project 3 : The Working Principle of Line Tracking Sensor
+## Project 3: Servo Control
 
-**1. Description：**    
+![](media/aab586f4b898e32ef9f4a6e9d303855c.png)
 
-![](media/d37c24e508361ab86b019135ab6950a9.png)   
+**1. Description**
 
-The tracking sensor is actually an infrared sensor. The component used here is the TCRT5000 infrared tube.    
+Servo motor is a position control rotary actuator. It mainly consists of a housing, a circuit board, a core-less motor, a gear and a position sensor. Its working principle is that the servo receives the signal sent by MCU or receiver and produces a reference signal with a period of 20ms and width of 1.5ms, then compares the acquired DC bias voltage to the voltage of the potentiometer and obtain the voltage difference output.
 
-Its working principle is to use different reflectivity of infrared light to colors, then convert the strength of the reflected signal into a current signal.    
+When the motor speed is constant, the potentiometer is driven to rotate through the cascade reduction gear, which leads that the voltage difference is 0, and the motor stops rotating. Generally, the angle range of servo rotation is 0°--180 °
 
-During the process of detection, black is active at HIGH level while white is active at LOW level. The detection height is 0-3 cm.    
+The rotation angle of servo motor is controlled by regulating the duty cycle of PWM (Pulse-Width Modulation) signal. The standard cycle of PWM signal is 20ms (50Hz). Theoretically, the width is distributed between 1ms-2ms, but in fact, it's between 0.5ms-2.5ms. The width corresponds the rotation angle from 0° to 180°. But note that for different brand motors, the same signal may have different rotation angles.
 
-Keyestudio 3-channel line tracking module has integrated 3 sets of TCRT5000 infrared tube on a single board, which is more convenient for wiring and control.    
+![](media/69be958142b773acdae33eeef12afed7.png)
 
-By rotating the adjustable potentiometer on the sensor, it can adjust the detection sensitivity of the sensor.    
+In general, servo has three lines in brown, red and orange. The brown wire is grounded, the red one is a positive pole line and the orange one is a signal line.
 
-**2. Specification：**  
+![](media/49467dfa70799401a5a5acc691014aee.png)
 
-Operating Voltage: 3.3-5V (DC)  
+The corresponding servo angles are shown below:
 
-Interface: 5PIN  
+![](media/bf41f5598935062dd19cdd568e374844.png)
 
-Output Signal: Digital signal  
+**2. Specification**
 
-Detection Height: 0-3 cm  
+Working voltage: DC 4.8V \~ 6V
 
-Special note: before testing, turn the potentiometer on the sensor to adjust the detection sensitivity. When adjust the LED at the threshold between ON and OFF, the sensitivity is the best.  
+Operating angle range: about 180 ° (at 500 → 2500 μsec)
 
-**3. What You Need：**  
-![](media/t2.png)  
-![](media/9d8745d0151b7e408954bb34db8e70b6.jpeg)   
+Pulse width range: 500 → 2500 μsec
 
-**4. Connection Diagram：**  
+No-load speed: 0.12 ± 0.01 sec / 60 (DC 4.8V) 0.1 ± 0.01 sec / 60 (DC 6V)
 
-![](media/b523746598acfd465d3074c22ab1a593.png)  
+No-load current: 200 ± 20mA (DC 4.8V) 220 ± 20mA (DC 6V)
 
-**5. Test Code：**  
-```c++
-/*
-keyestudio 4wd BT Car V2
-lesson 3.1 
-    Line Track sensor
-    http://www.keyestudio.com
-*/
-int L_pin = 11;  //pins of  left line tracking sensor
-int M_pin = 7;  //pins of  middle line tracking sensor
-int R_pin = 8;  //pins of  right  line tracking sensor
-int val_L,val_R,val_M;// define these variables
-void setup()
-{
-    Serial.begin(9600); // initialize serial communication at 9600 bits per second
-    pinMode(L_pin,INPUT); // make the L_pin as an input
-    pinMode(M_pin,INPUT); // make the M_pin as an input
-    pinMode(R_pin,INPUT); // make the R_pin as an input
-}
-void loop() 
-{ 
-    val_L = digitalRead(L_pin);//read the L_pin:
-    val_R = digitalRead(R_pin);//read the R_pin:
-    val_M = digitalRead(M_pin);//read the M_pin:
-    Serial.print("left:");
-    Serial.print(val_L);
-    Serial.print(" middle:");
-    Serial.print(val_M);
-    Serial.print(" right:");
-    Serial.println(val_R);
-    delay(500);// delay in between reads for stability
-}
+Stopping torque: 1.3 ± 0.01kg · cm (DC 4.8V) 1.5 ± 0.1kg · cm (DC 6V)
 
-```
-**6. Test Result：**  
+Stop current: ≦ 850mA (DC 4.8V) ≦ 1000mA (DC 6V)
 
-Upload the code on development board, open serial monitor to check line tracking sensors. And the displayed value is 1(high level) when no signals are received. The value shifts into 0 when the sensor is covered with paper.  
-
-![](media/cbf84d96326071244835b2e691770a97.png)  
-![](media/2fd58c7a9f95fb9f694edf03e755042f.png)  
-
-**7. Code Explanation**  
-
-**Serial.begin(9600)**- Initialize serial port, set baud rate to 9600  
-
-**pinMode-** Define the pin as input or output mode  
-
-xxdigitalRead-xxRead the state of pin, which are generally HIGH and LOW level  
-
-**8. Extension Practice**  
-
-After knowing its working principle, you can connect an LED to D3. so as to control LED by line tracking sensor.  
-
-![](media/c3c159b75d12a87eb1f79acccbfcf469.png)  
-
-Test Code  
-```c++
-/*
-keyestudio 4wd BT Car V2
-lesson 3.2
-    Line Track sensor
-    http://www.keyestudio.com
-*/
-int L_pin = 11;  //pins of  left line tracking sensor
-int M_pin = 7;  //pins of  middle line tracking sensor
-int R_pin = 8;  //pins of  right  line tracking sensor
-int val_L,val_R,val_M;// define the variables of three sensors 
-void setup()
-{
-    Serial.begin(9600); // initialize serial communication at 9600 bits per second
-    pinMode(L_pin,INPUT); // make the L_pin as an input
-    pinMode(M_pin,INPUT); // make the M_pin as an input
-    pinMode(R_pin,INPUT); // make the R_pin as an input
-    pinMode(9, OUTPUT);
-}
-void loop() 
-{ 
-    val_L = digitalRead(L_pin);//read the L_pin:
-    val_R = digitalRead(R_pin);//read the R_pin:
-    val_M = digitalRead(M_pin);//read the M_pin:
-    Serial.print("left:");
-    Serial.print(val_L);
-    Serial.print(" middle:");
-    Serial.print(val_M);
-    Serial.print(" right:");
-    Serial.println(val_R);
-
-    if (val_L == HIGH)//if left line tracking sensor detects signals
-    { 
-    digitalWrite(9, LOW);//LED is off
-    } 
-    else//if left line tracking sensor doesn’t detect signals
-    { 
-    digitalWrite(9, HIGH);//LED lights up
-    delay(2000); 
-    }
-    
-    if (val_R == HIGH)//if right line tracking sensor detects signals
-    {
-    digitalWrite(9, LOW);//LED is off
-    }
-    else//if right line tracking sensor doesn’t detect signals
-    {
-    digitalWrite(9, HIGH);//LED lights up
-    delay(2000); 
-    }
-    
-    if (val_M == HIGH)//if middle line tracking sensor detects signals
-    {
-    digitalWrite(9, LOW);//LED is off
-    }
-    else//if middle line tracking sensor doesn’t detect signals
-    {
-    digitalWrite(9, HIGH);//LED lights up
-    delay(2000); 
-    }
-}
-```
-
-Upload the code to development board, we could observe the brightness of LED when covering the line tracking sensor or getting close to it by hand.    
-
-## Project 4: Servo Control
-
-![](media/124d7635f2d87c781a2bcfbfec309dde.png)  
-
-**1. Description**  
-
-Servo motor is a position control rotary actuator. It mainly consists of a housing, a circuit board, a core-less motor, a gear and a position sensor. Its working principle is that the servo receives the signal sent by MCU or receiver and produces a reference signal with a period of 20ms and width of 1.5ms, then compares the acquired DC bias voltage to the voltage of the potentiometer and obtain the voltage difference output.  
-
-When the motor speed is constant, the potentiometer is driven to rotate through the cascade reduction gear, which leads that the voltage difference is 0, and the motor stops rotating. Generally, the angle range of servo rotation is 0°\--180 °  
-
-The rotation angle of servo motor is controlled by regulating the duty cycle of PWM (Pulse-Width Modulation) signal. The standard cycle of PWM signal is 20ms (50Hz). Theoretically, the width is distributed between 1ms-2ms, but in fact, it's between 0.5ms-2.5ms. The width corresponds the rotation angle from 0° to 180°. But note that for different brand motors, the same signal may have different rotation angles.  
-
-![](media/69be958142b773acdae33eeef12afed7.png)  
-
-In general, servo has three lines in brown, red and orange. The brown wire is grounded, the red one is a positive pole line and the orange one is a signal line.  
-
-![](media/49467dfa70799401a5a5acc691014aee.png)  
-
-The corresponding servo angles are shown below:  
-
-![](media/ddc74f62dc936c925d28d70a1a9c2214.png)  
-
-**2. Specification**  
-
-Working voltage: DC 4.8V \~ 6V  
-
-Operating angle range: about 180 ° (at 500 → 2500 μsec)  
-
-Pulse width range: 500 → 2500 μsec  
-
-No-load speed: 0.12 ± 0.01 sec / 60 (DC 4.8V) 0.1 ± 0.01 sec / 60 (DC 6V)  
-
-No-load current: 200 ± 20mA (DC 4.8V) 220 ± 20mA (DC 6V)  
-
-Stopping torque: 1.3 ± 0.01kg · cm (DC 4.8V) 1.5 ± 0.1kg · cm (DC 6V)  
-
-Stop current: ≦ 850mA (DC 4.8V) ≦ 1000mA (DC 6V)  
-
-Standby current: 3 ± 1mA (DC 4.8V) 4 ± 1mA (DC 6V)  
+Standby current: 3 ± 1mA (DC 4.8V) 4 ± 1mA (DC 6V)
 
 **3. What You Need**  
-![](media/t3.png)  
+![](media/55dc85e8278890544e17393a7b357987.png)
 
-**4. Connection Diagram：**  
+**4. Connection Diagram：**
 
-![](media/ab4e185556d19988770159b9afa448df.png)  
+![](media/f8251dd6502412934810bb626f4e9baa.png)
 
-Wiring note: the brown line of servo is linked with Gnd(G), the red line is connected to 5v(V) and orange line is attached to digit 10.  
+Wiring note: the brown line of servo is linked with Gnd(G), the red line is connected to 5v(V) and orange line is attached to digit 10.
 
-The servo has to be connected to external power due to its high demand for driving servo current. Generally, the current of a development board is not big enough. If without connected power, the development board could be burnt.  
+The servo has to be connected to external power due to its high demand for driving servo current. Generally, the current of a development board is not big enough. If without connected power, the development board could be burnt.
 
 **5. Test Code1**
+
 ```c++
 /*
 keyestudio 4wd BT Car V2
-lesson 4.1
+lesson 3.1
 Servo
 http://www.keyestudio.com
 */
@@ -795,22 +771,22 @@ void procedure(int myangle) {
 }
 ```
 
-Upload code successfully, servo swings forth and back in the range of 0° to 180°   
+Upload code successfully, servo swings forth and back in the range of 0° to 180°
 
-There is another guide for restraining servo---- servo library file, the following link of official website is for your reference.  
+There is another guide for restraining servo---- servo library file, the following link of official website is for your reference.
 
-<https://www.arduino.cc/en/Reference/Servo>  
+<https://www.arduino.cc/en/Reference/Servo>
 
-The library file of servo is used in the following code  
+The library file of servo is used in the following code
 
-![](media/91c89a51ecb2ea92eb4c12ccbce3bef8.png)  
+![](media/ac08cfd4fc73ba2d53eb58d3fe343690.png)
 
-**6. Test Code2**  
+**6. Test Code2**
 
 ```c++
 /*
     keyestudio 4wd BT Car V2
-    lesson 4.2
+    lesson 3.2
     servo
     http://www.keyestudio.com
 */
@@ -834,834 +810,137 @@ void loop() {
 }
 ```
 
-**7. Test Result**  
+**7. Test Result**
 
-Upload code successfully and power on, servo swings in the range of 0° to 180°. The result is same. We usually control it by library file.     
+Upload code successfully and power on, servo swings in the range of 0° to 180°. The result is same. We usually control it by library file.
 
-**8. Code Explanation**  
+**8. Code Explanation**
 
-Arduino comes with **\#include \<Servo.h\>** (servo function and statement）  
+Arduino comes with **\#include \<Servo.h\>** (servo function and statement）
 
-The following are some common statements of the servo function:  
+The following are some common statements of the servo function:
 
-1\. **attach（interface）**——Set servo interface, port 9 and 10 are available  
+1\. **attach（interface）**——Set servo interface, port 9 and 10 are available
 
-2\. **write（angle）**——The statement to set rotation angle of servo, the angle range is from 0° to 180°  
+2\. **write（angle）**——The statement to set rotation angle of servo, the angle range is from 0° to 180°
 
-3\. **read（）**——The statement to read angle of servo, read the command value of “write()”  
+3\. **read（）**——The statement to read angle of servo, read the command value of “write()”
 
-4\. **attached（）**——Judge if the parameter of servo is sent to its interface  
+4\. **attached（）**——Judge if the parameter of servo is sent to its interface
 
-Note: The above written format is“servo variable name, specific statement（）”, for instance: myservo.attach(9)  
+Note: The above written format is“servo variable name, specific statement（）”, for instance: myservo.attach(9)
 
-## Project 5: Ultrasonic Sensor
+## Project 4: 8x16 LED Face
 
-**1. Description**  
+![](media/345db09f0e71b19e36fb70a0d19f16f6.png)
 
-![](media/0180b169a1c3b228394b43df704fac32.png)  
+**1. Description**
 
-The HC-SR04 ultrasonic sensor uses sonar to determine distance to an object like what bats do. It offers excellent non-contact range detection with high accuracy and stable readings in an easy-to-use package. It comes complete with ultrasonic transmitter and receiver modules.  
+If we add a 8x16 LED board to the robot, it will be amazing. Keyestudio's 8x16 dot matrix can meet your requirements. You can create facial emoticons, patterns or other interesting displays yourself. 8x16 LED light board comes with 128 LEDs. The data of the microprocessor (arduino) communicates with the AiP1640 through the two-wire bus interface, so as to control the 128 LEDs on the module, which produce the patterns you need on dot matrix. To facilitate wiring, we also provide a HX-2.54 4Pin wiring.
 
-The HC-SR04 or the ultrasonic sensor is being used in a wide range of electronics projects for creating obstacle detection and distance measuring application as well as various other applications. Here we have brought the simple method to measure the distance with arduino and ultrasonic sensor and how to use ultrasonic sensor with arduino.    
+**2. Specification**
 
-**2. Specification**  
+Working voltage: DC 3.3-5V
 
-Power Supply :+5V DC  
+Power loss: 400mW
 
-Quiescent Current : \< 2mA  
+Oscillation frequency: 450KHz
 
-Working Current: 15mA  
+Drive current: 200mA
 
-Effectual Angle: \< 15°  
+Working temperature: -40\~80℃
 
-Ranging Distance : 2cm – 400 cm  
-
-Resolution : 0.3 cm  
-
-Measuring Angle: 30 degree  
-
-Trigger Input Pulse width: 10uS  
+Communication method: two-wire bus
 
 **3. What You Need**  
+![](media/d307ec152592fc780d8e3a0a6b7eebe3.png)
 
-**4. The principle of ultrasonic sensor**  
+**4. 8x16 Dot Matrix Display**
 
-As the above picture shown, it is like two eyes. One is transmitting end, the other is receiving end.  
+Circuit Graph：
 
-The ultrasonic module will emit the ultrasonic waves after triggering a signal. When the ultrasonic waves encounter the object and are reflected back, the module outputs an echo signal, so it can determine the distance of the object from the time difference between the trigger signal and echo signal.    
+![](media/ecd6b455566e9c49c1c2becdc0437c3a.png)
 
-The t is the time that emitting signal meets obstacle and returns. And the propagation speed of sound in the air is about 343m/s, and distance = speed x time. However, the ultrasonic wave emits and comes back, which is 2 times of distance.     
+**The principle of 8x16 dot matrix:**
 
-Therefore, it needs to be divided by 2, the distance measured by ultrasonic wave = (speed x time)/2
+How to control each led light of 8x16 dot matrix? We know that a byte has 8 bits, each bit is 0 or 1. When a bit is 0, turn off LED and when a bit is 0, turn on LED. Thereby, one byte can control the LED in a row of dot matrix, so 16 bytes can control 16 columns of led lights, that is, 8x16 dot matrix.
 
-1. Use method and timing chart of ultrasonic module:  
+**Interface Description and Communication Protocol:**
 
-2. Setting the delay time of Trig pin of SR04 to 10μs at least, which can trigger it to detect distance.  
+The data of the microprocessor (arduino) communicates with the AiP1640 through the two-wire bus interface.
 
-3. After triggering, the module will automatically send eight 40KHz ultrasonic pulses and detect whether there is a signal return. This step will be completed automatically by the module.  
+The communication protocol diagram is shown below:
 
-4. If the signal returns, the Echo pin will output a high level, and the duration of the high level is the time from the transmission of the ultrasonic wave to the return.    
+(SCLK) is SCL, (DIN) is SDA:
 
-![](media/t4.png)    
+![](media/63672adf52130ac23529e208b55ce270.png)
 
-Circuit diagram of ultrasonic sensor:   
+①The starting condition for data input: SCL is high level and SDA changes from high to low.
 
-![](media/a25028af84d6c7c94382c2a907101241.jpeg)    
+②For data command setting, there are methods as shown in the figure below
 
-**5. Connection Diagram**    
-
-![](media/602e98c3d0d6bd3ee139055d6629b2f4.png)    
-
-Wiring guide:    
-
-Ultrasonic sensor keyestudio V5 Sensor Shield  
-
-VCC → 5v(V)  
-
-Trig → 12(S)  
-
-Echo → 13(S)  
-
-Gnd → Gnd(G)  
-
-**6. Test Code**
-```c++
-/*
-    keyestudio 4wd BT Car V2
-    lesson 5
-    Ultrasonic sensor
-    http://www.keyestudio.com
-*/ 
-int trigPin = 12;    // Trigger
-int echoPin = 13;    // Echo
-long duration, cm, inches;
-    void setup() {
-    //Serial Port begin
-    Serial.begin (9600);
-    //Define inputs and outputs
-    pinMode(trigPin, OUTPUT);
-    pinMode(echoPin, INPUT);
-}
-void loop() {
-    // The sensor is triggered by a HIGH pulse of 10 or more microseconds.
-    // Give a short LOW pulse beforehand to ensure a clean HIGH pulse:
-    digitalWrite(trigPin, LOW);
-    delayMicroseconds(2);
-    digitalWrite(trigPin, HIGH);
-    delayMicroseconds(10);
-    digitalWrite(trigPin, LOW);
-    // Read the signal from the sensor: a HIGH pulse whose
-    // duration is the time (in microseconds) from the sending
-    // of the ping to the reception of its echo off of an object.
-    duration = pulseIn(echoPin, HIGH);
-    // Convert the time into a distance
-    cm = (duration/2) / 29.1;     // Divide by 29.1 or multiply by 0.0343
-    inches = (duration/2) / 74;   // Divide by 74 or multiply by 0.0135
-    Serial.print(inches);
-    Serial.print("in, ");
-    Serial.print(cm);
-    Serial.print("cm");
-    Serial.println();
-    delay(50);
-}   
-```
-
-**7. Test Result**  
-
-Upload test code on the development board, open serial monitor and set baud rate to 9600. The detected distance will be displayed, and the unit is cm and inch. Hinder the ultrasonic sensor by hand, the displayed distance value gets smaller.  
-
-![](media/db57c5b23e2d6dd41ad70d6331297262.png)  
-
-**8. Code Explanation**  
-
-**int trigPin-** this pin is defined to transmit ultrasonic waves, generally output.  
-
-**int echoPin -** this is defined as the pin of reception, generally input  
-
-cm = (duration/2) / 29.1-unit is cm  
-
-inches = (duration/2) / 74-unit is inch  
-
-We can calculate the distance by using the following formula:  
-
-distance = (traveltime/2) x speed of sound  
-
-The speed of sound is: 343m/s = 0.0343 cm/uS = 1/29.1 cm/uS  
-
-Or in inches: 13503.9in/s = 0.0135in/uS = 1/74in/uS  
-
-We need to divide the traveltime by 2 because we have to take into account that the wave was sent, hit the object, and then returned back to the sensor.  
-
-**9. Extension Practice:**  
-
-We have just measured the distance displayed by the ultrasonic. How about controlling the LED with the measured distance? Let's try it and connect an LED light module to the D3 pin.  
-
-![](media/0e611ce1d0da30a4422fad1eefee17ba.png)  
-```c++
-/*
-    keyestudio 4wd BT Car V2
-    lesson 5.2
-    Ultrasonic LED
-    http://www.keyestudio.com
-*/ 
-int trigPin = 12;    // Trigger
-int echoPin = 13;    // Echo
-long duration, cm, inches;
-void setup() {
-    Serial.begin (9600);       //Serial Port begin
-    pinMode(trigPin, OUTPUT);  //Define inputs and outputs
-    pinMode(echoPin, INPUT);
-    pinMode(9, OUTPUT);
-}
-    void loop() 
-{
-    // The sensor is triggered by a HIGH pulse of 10 or more microseconds.
-    // Give a short LOW pulse beforehand to ensure a clean HIGH pulse:
-    digitalWrite(trigPin, LOW);
-    delayMicroseconds(2);
-    digitalWrite(trigPin, HIGH);
-    delayMicroseconds(10);
-    digitalWrite(trigPin, LOW);
-    // Read the signal from the sensor: a HIGH pulse whose
-    // duration is the time (in microseconds) from the sending
-    // of the ping to the reception of its echo off of an object.
-    duration = pulseIn(echoPin, HIGH);
-    // Convert the time into a distance
-    cm = (duration/2) / 29.1;     // Divide by 29.1 or multiply by 0.0343
-    inches = (duration/2) / 74;   // Divide by 74 or multiply by 0.0135
-    Serial.print(inches);
-    Serial.print("in, ");
-    Serial.print(cm);
-    Serial.print("cm");
-    Serial.println();
-    delay(50);
-if (cm>=2 && cm<=10)
-digitalWrite(9, HIGH);
-else digitalWrite(9, LOW);
-}
-```
-
-Upload test code to development board and block ultrasonic sensor by hand, then check if LED is on.  
-
-## Project 6: IR Reception
-
-**1. Description**  
-
-There is no doubt that infrared remote control is ubiquitous in daily life. It is used to control various household appliances, such as TVs, stereos, video recorders and satellite signal receivers. Infrared remote control is composed of infrared transmitting and infrared receiving systems, that is, an infrared remote control and infrared receiving module and a single-chip microcomputer capable of decoding.​  
-
-![](media/e0644987f70b38cdabde382b27858604.png)    
-The 38K infrared carrier signal emitted by remote controller is encoded by the encoding chip in the remote controller. It is composed of a section of pilot code, user code, user inverse code, data code, and data inverse code. The time interval of the pulse is used to distinguish whether it is a 0 or 1 signal and the encoding is made up of these 0, 1 signals.  
-
-The user code of the same remote control is unchanged while the data code can distinguish the key.  
-
-When the remote control button is pressed, the remote control sends out an infrared carrier signal. When the IR receiver receives the signal, the program will decode the carrier signal and determines which key is pressed. The MCU decodes the received 01 signal, thereby judging what key is pressed by the remote control.    
-
-Infrared receiver we use is an infrared receiver module. Mainly composed of an infrared receiver head, which is a device that integrates reception, amplification, and demodulation. Its internal IC has completed demodulation, and can achieve from infrared reception to output and be compatible with TTL signals. Additionally, it is suitable for infrared remote control and infrared data transmission. The infrared receiving module made by the receiver has only three pins, signal line, VCC and GND. It is very convenient to communicate with arduino and other microcontrollers.    
-
-**2. Specification**  
-
-![](media/dce6a373b4c3ef6734e0f813a4d40ee5.png)  
-![](media/bde6c475e15dc65996e95ed327ca1412.png)  
-
-Operating Voltage: 3.3-5V（DC）  
-
-Interface: 3PIN  
-
-Output Signal: Digital signal  
-
-Receiving Angle: 90 degrees  
-
-Frequency: 38khz  
-
-Receiving Distance: 10m  
-
-**3. What You Need**  
-![](media/t5.png)  
-
-**4. Connection Diagram**  
-
-![](media/b2036bee4779175d2a4b9ec7250ccf78.png)  
-
-Respectively link“-”,“+”and S of IR receiver module with G(GND）, V（VCC）and A0 of keyestudio development board.  
-
-Attention: On the condition that digital ports are not available, analog ports can be regarded as digital ports. A0 equals to D14, A1 is equivalent to digital 15.  
-
-**5. Test Code**  
-
-Firstly import library file of IR receiver module(refer to how to import Arduino library file) before designing code.  
-```c++
-/*
-    keyestudio 4wd BT Car V2
-    lesson 6.1
-    IRremote
-    http://www.keyestudio.com
-*/ 
-#include <IRremote.h>           // IRremote library statement
-int RECV_PIN = 3;               //define the pins of IR receiver as 3
-IRrecv irrecv(RECV_PIN);   
-decode_results results;         // decode results exist in the“result” of “decode results”
-void setup()  
-{  
-    Serial.begin(9600);  
-    irrecv.enableIRIn();        // Enable receiver
-}  
-void loop() {  
-if (irrecv.decode(&results))    //decode successfully, receive a set of infrared signals
-{  
-    Serial.println(results.value, HEX);//Wrap word in 16 HEX to output and receive code 
-    irrecv.resume();            // Receive the next value
-}  
-delay(100);  
-} 
-```
-
-**6. Test Result**
-
-Upload test code, open serial monitor and set baud rate to 9600, point remote control to IR receiver and the corresponding value will be shown. If pressing too long, the error codes will appear.    
-
-![](media/92887b989e103ef082569bbb34817852.png)  
-
-Below we have listed out each button value of keyestudio remote control. So you can keep it for reference.  
-
-![](media/ebcf0cb2055f7784505f76ceeaef9f47.jpeg)  
-
-**7. Code Explanation**  
-
-**irrecv.enableIRIn():** after enabling IR decoding, the IR signals will be received, then function“decode()”will check continuously if decode successfully.  
-
-**irrecv.decode(&results):** after decoding successfully, this function will come back to “true”, and keep result in “results”. After decoding a IR signals, run the resume()function and receive the next signal.  
-
-**8. Extension Practice**
-
-We decoded the key value of IR remote control. How about controlling LED by the measured value? We could design an experiment.  
-
-Attach an LED to D3, then press the keys of remote control to make LED light on and off.  
-
-![](media/72c3128aef5346425a02723f6ebe73ec.png)  
-```c++
-/* keyestudio 4wd BT Car V2
-lesson 6.2
-IRremote
-http://www.keyestudio.com
-*/ 
-#include <IRremote.h>
-int RECV_PIN = 3;               //define the pin of IR receiver as 3
-int LED_PIN=9;                  // define the pin of LED as pin 9
-int a=0;
-IRrecv irrecv(RECV_PIN);
-decode_results results;
-void setup()
-{Serial.begin(9600);
-    irrecv.enableIRIn();       //  Initialize the IR receiver 
-    pinMode(LED_PIN,OUTPUT);   //set pin 3 of LED to OUTPUT
-}
-void loop() {
-    if (irrecv.decode(&results)) {
-    if(results.value==0xFF02FD &a==0) //according to the above key value, press“OK”on remote control , LED will be controlled
-    {digitalWrite(LED_PIN,HIGH);      //LED will be on
-    a=1;
-    }
-    else if(results.value==0xFF02FD &a==1) //press again
-    {
-    digitalWrite(LED_PIN,LOW);             //LED will go off
-    a=0;
-    }
-    irrecv.resume();                   // receive the next value
-    }
-}
-
-```
-Upload code to development board, press“OK”key on remote control to make LED on and off.  
-
-## Project 7: Bluetooth Remote Control
-
-**1. Description**  
-
-Bluetooth, a simple wireless communication module, has went viral since the last few decades and been used in most of the battery-powered devices for its easy-to-use function.  
-
-![](media/3920253c86188ac64cf9b82c0df6c941.png)    
-Over the past years, there have been many upgrades of Bluetooth standard to fulfil the demands of customers and the development of technology as well as to follow the trend of time.  
-
-Over the few years, there are many things changed including data transmission rate, power consumption with wearable and IoT Devices and Security System.    
-
-Here are we going to learn about HM-10 BLE 4.0 with Arduino Board? The HM-10 is a readily available Bluetooth 4.0 module. This module is used for establishing wireless data communication. The module is designed by using the Texas Instruments CC2540 or CC2541 Bluetooth low energy (BLE) System on Chip (SoC).    
-
-**2. Specification**  
-
-Bluetooth protocol: Bluetooth Specification V4.0 BLE  
-
-No byte limit in serial port Transceiving  
-
-In open environment, realize 100m ultra-distance communication with iphone4s  
-
-Working frequency: 2.4GHz ISM band  
-
-Modulation method: GFSK(Gaussian Frequency Shift Keying)  
-
-Transmission power: -23dbm, -6dbm, 0dbm, 6dbm, can be modified by AT command.  
-
-Sensitivity: ≤-84dBm at 0.1% BER  
-
-Transmission rate: Asynchronous: 6K bytes ; Synchronous: 6k Bytes  
-
-Security feature: Authentication and encryption  
-
-Supporting service: Central & Peripheral UUID FFE0, FFE1  
-
-Power consumption: Auto sleep mode, stand by current 400uA\~800uA, 8.5mA during transmission.  
-
-Power supply: 5V DC  
-
-Working temperature: –5 to +65 Centigrade  
-
-**3. What You Need**  
-![](media/t6.png)  
-**4. Connection Diagram**  
-
-**STATE:** *state test pins, connected to internal LED, generally keep it unconnected.*  
-
-**RXD:** *serial interface, receiving terminal.*  
-
-**TXD:** *serial interface, transmitting terminal.*  
-
-**GND:** *Ground.*  
-
-**VCC:** *positive pole of the power source.*  
-
-**EN/BRK:** *break connect, it means breaking the Bluetooth connection, generally, keep it unconnected.*  
-
-![](media/edf16d36b37667f2366de3fabff56a95.png)  
-
-**Pay attention to the pin direction when inserting Bluetooth module, and don’t insert it before uploading test code.**  
-
-**5. Test Code**
-```c++
-/*
-keyestudio 4wd BT Car V2.0
-lesson 7.1
-bluetooth 
-http://www.keyestudio.com
-*/
-
-char ble_val; //character variable, used to save the value received by Bluetooth 
-
-void setup() {
-    Serial.begin(9600);
-}
-void loop() {
-    if(Serial.available() > 0)  //make sure if there is data in serial buffer
-    {
-    ble_val = Serial.read();  //Read data from serial buffer
-    Serial.println(ble_val);  //Print
-    }
-}
-
-```
-
-(There will be contradiction between serial communication of code and communication of Bluetooth when uploading code. Therefore, don’t link Bluetooth module before uploading code.)  
-
-After uploading code on development board, then insert Bluetooth module and wait for the command from your cellphone.    
-
-**6. Download APP**  
-
-The code is for reading the received signal, and we also need a device to send signals. In this project, we send signals to control robot car via a cellphone. Therefore, we need to download the APP.  
-
-**7. For iOS system**  
-
-**Note: Allow APP to access“location”in settings of your cellphone when connecting to Bluetooth module; otherwise, Bluetooth may not be connected.**  
-
-Enter APP STORE to search **BLE Scanner 4.0, then download it.**  
-
-![](media/1e7081e38b12fee16c01d368ee3428fd.png)  
-
-**8. For Android system**  
-
-Enter [Google Play](https://developer.android.google.cn/distribute?hl=zh-cn) to find out **BLE Scanner, then download.**  
-
-**And allow APP to access“location”, you could enable“location”in settings of your cellphone.**  
-
-![](media/cf5e6cd8b98346d3e90faf4a10e92dc1.png)  
-
-1. After installation, open App and enable“Location and Bluetooth” permission.  
-
-2. Open App, the name of Bluetooth module is HMSoft.  
-
-Then click “connect” to link it with Bluetooth  
-
-![](media/cc2ad4236eb001676ae447e8033edd2f.png)  
-
-After connecting to HMSoft, click it to get multiple options, such as device information, access permission, general and custom service. Choose “CUSTOM SERVICE”  
-
-![](media/55d4135167e2eadde1595cc4c81ff13d.jpeg)  
-
-Then the following page pops up.  
-
-![](media/f74e64f9f29e0813db44971d2896d7f2.png)  
-
-Click（Read,Notify,WriteWithoutResponse)to enter the following page  
-
-![](media/c769ffa7b68eb36516a429147d5f65b6.png)  
-
-Click **Write Value to enter HEX or Text.**  
-
-![](media/d8afcda78947d9fc25d41cc16a182369.png)  
-
-Open the serial monitor on Arduino，enter a 0 or other characters on Text interface.  
-
-![](media/767ed0b7d1876e63ff109d8a355209ac.png)  
-
-Then click“Write”, open serial monitor to view if there is a“0”signal  
-
-![](media/5254b35b30451fc6dbf7de998cf5e16b.png)  
-
-**9. Code Explanation**  
-
-**Serial.available()** : The current rest characters when return to buffer area. Generally, this function is used to judge if there is data in buffer. When Serial.available()\>0, it means that receives the data and can be read.    
-
-xxSerial.read()：xxRead a data of a Byte in buffer of serial port, for instance, device sends data to Arduino via serial port, then we could read data by “Serial.read()”.    
-
-**10. Extension Practice**  
-
-We could send a command via Bluetooth to turn a LED on and off.  
-
-D3 is connected to a LED, as shown below:  
-
-![](media/e668a67832bf9980fb13038235c80f23.png)  
-```c++
-/*
-keyestudio 4wd BT Car V2.0
-lesson 7.2
-Bluetooth 
-http://www.keyestudio.com
-*/ 
-int ledpin=9;
-void setup()
-{
-    Serial.begin(9600);
-    pinMode(ledpin,OUTPUT);
-}
-void loop()
-{
-    int i;
-    if (Serial.available())
-    {
-    i=Serial.read();
-    Serial.println("DATA RECEIVED:");
-    if(i=='1')
-    {
-        digitalWrite(ledpin,1);
-        Serial.println("led on");
-    }
-    if(i=='0')
-    {
-        digitalWrite(ledpin,0);
-        Serial.println("led off");
-    }
-    }
-}
-```
-
-![](media/f6088ac1921dfb67f4fc949dac719e41.png)  
-![2](media/767ed0b7d1876e63ff109d8a355209ac.png)  
-
-Click“Write”on APP, when you enter 1, LED will be on;when you input 0, it will be off. (Remember to remove the Bluetooth module after finishing experiment. Otherwise, burning code will be affected)  
-
-## Project 8: Motor Driving and Speed Control
-
-**1. Description**  
-
-There are many ways to drive a motor. Our robot car uses the most common solution--L298P--which is an excellent high-power motor driver IC produced by STMicroelectronics. It can directly drive DC motors, two-phase and four-phase stepping motors. The driving current is up to 2A, and the output terminal of motor adopts eight high-speed Schottky diodes as protection.    
-
-We designed a shield based on the circuit of L298p.  
-
-The stacked design reduces the technical difficulty of using and driving the motor.    
-
-![](media/859d579364fab175e13f08745d91ede1.png)  
-
-![](media/686d431211fe22567cd38a135e8b68e6.png)  
-
-**2. Specification**  
-
-Circuit Diagram for L298P Board  
-
-1. Logic part input voltage: DC5V  
-
-2. Driving part input voltage: DC 7-12V  
-
-3. Logic part working current: \< 36mA  
-
-4. Driving part working current: \< 2A  
-
-5. Maximum power dissipation: 25W (T=75℃)  
-
-6. Working temperature: -25℃～＋130℃  
-
-7. Control signal input level: high level 2.3V\< Vin\< 5V, low level\-0.3V\< Vin\< 1.5V
-
-**3. Drive Robot to Move**  
-
-The driver of motor driver shield is in parallel connection. You could control the direction of motors by altering the orientation of jumper caps(seen in the picture).  
-
-![](media/77f420b773ba88f85a2304fa297d366b.png)  
-
-From the above diagram, it is known that the direction pin of B motor is D4; speed pin is D5; D2 is the direction pin of A motor; and D9 is speed pin.    
-
-PWM decides 2 motors to rotate so as to drive robot car. The PWM value is in the range of 0-255. The larger the number, the faster the rotation of the motor.    
-
-| **4WD** **Robot** | **Motor (A)**      | **Motor (B)**      |
-| ----------------- | ------------------ | ------------------ |
-| Forward           | Turn clockwise     |                    |
-| Backward          | Turn anticlockwise |                    |
-| Rotate to left    | Turn anticlockwise | Turn clockwise     |
-| Rotate to right   | Turn clockwise     | Turn anticlockwise |
-| Stop              | Stop               | Stop               |
-
-**4. What You Need**  
-![](media/t7.png) 
-
-**5. Connection Diagram**  
-
-![](media/73693872140523a79266b2e62622d9e4.png)  
-
-**Attention: please connect motors in compliance with the above connection diagram**  
-
-**6. Test Code**    
-```c++
-/*
-keyestudio 4wd BT Car V2.0
-lesson 8
-motor driver shield
-http://www.keyestudio.com
-*/ 
-#define ML_Ctrl 4     // define the direction control pin of B motor
-#define ML_PWM 5      //define the PWM control pin of B motor
-#define MR_Ctrl 2     //define direction control pin of A motor
-#define MR_PWM 6      //define the PWM control pin of A motor
-void setup()
-{
-    pinMode(ML_Ctrl, OUTPUT); //define direction control pin of B motor as output
-    pinMode(ML_PWM, OUTPUT);  //define PWM control pin of B motor as output
-    pinMode(MR_Ctrl, OUTPUT); //define direction control pin of A motor as output.
-    pinMode(MR_PWM, OUTPUT); //define the PWM control pin of A motor as output
-}
-void loop()
-{ 
-    digitalWrite(ML_Ctrl,HIGH); //set the direction control pin of B motor to HIGH
-    analogWrite(ML_PWM,200);    //set the PWM control speed of B motor to 200
-    digitalWrite(MR_Ctrl,HIGH); //set the direction control pin of A motor to HIGH
-    analogWrite(MR_PWM,200);    //set the PWM control speed of A motor to 200
-
-    //front
-    delay(2000);//delay in 2s
-    digitalWrite(ML_Ctrl,LOW);  //set the direction control pin of B motor to LOW
-
-    analogWrite(ML_PWM,200);    //set the PWM control speed of B motor to 200  
-    digitalWrite(MR_Ctrl,LOW);  //set the direction control pin of A motor to LOW
-    analogWrite(MR_PWM,200);    //set the PWM control speed of A motor to 200
-    //back
-    delay(2000);//delay in 2s 
-    digitalWrite(ML_Ctrl,LOW);  //set the direction control pin of B motor to LOW
-    analogWrite(ML_PWM,200);    //set the PWM control speed of B motor to 200
-    digitalWrite(MR_Ctrl,HIGH); //set the direction control pin of A motor to HIGH
-    analogWrite(MR_PWM,200);    //set the PWM control speed of A motor to 200
-
-    //left
-    delay(2000);//delay in 2s
-    digitalWrite(ML_Ctrl,HIGH); //set the direction control pin of B motor to HIGH
-    analogWrite(ML_PWM,200);    //set the PWM control speed of B motor to 200
-    digitalWrite(MR_Ctrl,LOW);  // set the direction control pin of A motor to LOW
-    analogWrite(MR_PWM,200);    //set the PWM control speed of A motor to 200
-
-    //right
-    delay(2000);                //delay in 2s
-    analogWrite(ML_PWM,0);      //set the PWM control speed of B motor to 0
-    analogWrite(MR_PWM,0);      //set the PWM control speed of A motor to 0
-
-    //stop
-    delay(2000);                //delay in 2s
-}
-```
-
-**7. Test Result**  
-
-Hook up by connection diagram, upload code and power on, smart car goes forward and back for 2s, turns left and right for 2s, and stops for 2s alternately.  
-
-**8. Code Explanation**  
-
-**digitalWrite(ML_Ctrl,LOW):** the rotation direction of motor is decided by the high/low level and and the pins that decide rotation direction are digital pins.  
-
-**analogWrite(ML_PWM,200):** the speed of motor is regulated by PWM, and the pins that decide the speed of motor must be PWM pins.  
-
-**9. Extension Practice**  
-
-Adjust the speed that PWM controls the motor, hook up in same way  
-
-![](media/73693872140523a79266b2e62622d9e4.png)  
-
-```c++
-/*
-keyestudio 4wd BT Car V2.0
-lesson 8.2
-motor driver
-http://www.keyestudio.com
-*/ 
-#define ML_Ctrl 4     //define the direction control pin of B motor
-#define ML_PWM 5   //define the PWM control pin of B motor
-#define MR_Ctrl 2    //define the direction control pin of A motor
-#define MR_PWM 6   //define the PWM control pin of A motor
-void setup()
-{
-    pinMode(ML_Ctrl, OUTPUT);//set direction control pin of B motor to OUTPUT
-    pinMode(ML_PWM, OUTPUT);//set the PWM control pin of B motor to OUTPUT 
-    pinMode(MR_Ctrl, OUTPUT);//set the direction control pin of A motor to OUTPUT
-    pinMode(MR_PWM, OUTPUT);//set PWM control pin of A motor to OUTPUT
-}
-void loop()
-{ 
-    digitalWrite(ML_Ctrl,HIGH);//set direction control pin of B motor to HIGH level
-    analogWrite(ML_PWM,250);//Set PWM control speed of B motor to 100
-    digitalWrite(MR_Ctrl,HIGH);//set direction control pin of A motor to HIGH level
-    analogWrite(MR_PWM,250);//Set PWM control speed of A motor to 100
-    //front
-    delay(2000);//delay in 2s
-    digitalWrite(ML_Ctrl,LOW);//set direction control pin of B motor to LOW
-    analogWrite(ML_PWM,250);//Set PWM control speed of B motor to 100
-    digitalWrite(MR_Ctrl,LOW);//set direction control pin of A motor to LOW
-    analogWrite(MR_PWM,250);//Set PWM control speed of A motor to 100
-    //back
-    delay(2000);//delay in 2s
-    digitalWrite(ML_Ctrl,LOW);//set direction control pin of B motor to LOW
-    analogWrite(ML_PWM,250);//Set PWM control speed of B motor to 100
-    digitalWrite(MR_Ctrl,HIGH);//set direction control pin of A motor to HIGH level
-    analogWrite(MR_PWM,250);//Set PWM control speed of A motor to 100
-    //left
-    delay(2000);//delay in 2s
-    digitalWrite(ML_Ctrl,HIGH);//set direction control pin of B motor to HIGH level
-    analogWrite(ML_PWM,250);//Set PWM control speed of B motor to 100
-    digitalWrite(MR_Ctrl,LOW);//set direction control pin of A motor to LOW
-    analogWrite(MR_PWM,250);//Set PWM control speed of A motor to 100
-    //right
-    delay(2000);//delay in 2s
-    analogWrite(ML_PWM,0);//set PWM control speed of B motor to 0
-    analogWrite(MR_PWM,0);//set PWM control speed of A motor to 0
-    //stop
-    delay(2000);//delay in 2s
-}
-
-```
-After uploading the code successfully, do you find the motors rotate faster?  
-
-## Project 9: 8x16 LED Board
-
-![](media/2c6708cb4d9bb775c0b6001b47ad0392.jpeg)  
-
-**1. Description**  
-
-If we add a 8x16 LED board to the robot, it will be amazing. Keyestudio's 8x16 dot matrix can meet your requirements. You can create facial emoticons, patterns or other interesting displays yourself. 8x16 LED light board comes with 128 LEDs. The data of the microprocessor (arduino) communicates with the AiP1640 through the two-wire bus interface, so as to control the 128 LEDs on the module, which produce the patterns you need on dot matrix. To facilitate wiring, we also provide a HX-2.54 4Pin wiring.  
-
-**2. Specification**  
-
-Working voltage: DC 3.3-5V  
-
-Power loss: 400mW  
-
-Oscillation frequency: 450KHz  
-
-Drive current: 200mA  
-
-Working temperature: -40\~80℃  
-
-Communication method: two-wire bus  
-
-**3. What You Need**  
-![](media/t8.png)  
-
-**4. 8x16 Dot Matrix Display**  
-
-Circuit Graph：  
-
-![](media/edf6c77d05904eebbaa89d557e9e9c1a.png)  
-
-**The principle of 8x16 dot matrix:**  
-
-How to control each led light of 8x16 dot matrix? We know that a byte has 8 bits, each bit is 0 or 1. When a bit is 0, turn off LED and when a bit is 0, turn on LED. Thereby, one byte can control the LED in a row of dot matrix, so 16 bytes can control 16 columns of led lights, that is, 8x16 dot matrix.  
-
-**Interface Description and Communication Protocol:**  
-
-The data of the microprocessor (arduino) communicates with the AiP1640 through the two-wire bus interface.  
-
-The communication protocol diagram is shown below:  
-
-(SCLK) is SCL, (DIN) is SDA:  
-
-![](media/ea2bab37f23c09453c680590b84653d6.png)  
-
-①The starting condition for data input: SCL is high level and SDA changes from high to low.  
-
-②For data command setting, there are methods as shown in the figure below  
-
-In our sample program, select the way to **add 1 to the address automatically**, the binary value is 0100 0000 and the corresponding hexadecimal value is 0x40.  
+In our sample program, select the way to **add 1 to the address automatically**, the binary value is 0100 0000 and the corresponding hexadecimal value is 0x40.
 
 | add 1 to the address automatically |
-| ---------------------------------- |
+|------------------------------------|
 | Fixed address                      |
 | Universal mode                     |
 | Test mode                          |
 
-![](media/7e326d7edc877ea2509cbf8649f82d99.png)  
+![](media/f28fab522572ee051d125f37b423303f.png)
 
-③For address command setting, the address can be selected as shown below.  
+③For address command setting, the address can be selected as shown below.
 
-The first 00H is selected in our sample program, and the binary number 1100 0000 corresponds to the hexadecimal 0xc0.  
+The first 00H is selected in our sample program, and the binary number 1100 0000 corresponds to the hexadecimal 0xc0.
 
-![](media/e6da87c9f6056f849c973edec5456f3e.png)  
+![](media/baff8e46dadb627ea54d28d98d865a4a.png)
 
-④The requirement for data input is that SCL is high level when inputting data, the signal on SDA must remain unchanged. Only when the clock signal on SCL is low level, the signal on SDA can be altered. The data input is low-order first, high-order is behind.  
+④The requirement for data input is that SCL is high level when inputting data, the signal on SDA must remain unchanged. Only when the clock signal on SCL is low level, the signal on SDA can be altered. The data input is low-order first, high-order is behind.
 
-⑤ The condition to end data transmission is that when SCL is low, SDA is low, and when SCL is high, the SDA level also becomes high.  
+⑤ The condition to end data transmission is that when SCL is low, SDA is low, and when SCL is high, the SDA level also becomes high.
 
-⑥ Display control, set different pulse width, the pulse width can be selected as shown below.  
+⑥ Display control, set different pulse width, the pulse width can be selected as shown below.
 
-In the example, we choose pulse width 4/16, and the hexadecimal corresponds to 1000 1010 is 0x8A.  
+In the example, we choose pulse width 4/16, and the hexadecimal corresponds to 1000 1010 is 0x8A.
 
-![](media/ad238f413988f77bcf074a5642a5061d.png)  
+![](media/7fbf7470a1865c9871027dbc2552b511.png)
 
+\*\* 5. Introduction for Modulus Tool\*\*
 
-** 5. Introduction for Modulus Tool** 
+The online version of dot matrix modulus tool:
 
-The online version of dot matrix modulus tool:  
+[http://dotmatrixtool.com/\#](http://dotmatrixtool.com/)
 
-[http://dotmatrixtool.com/\#](http://dotmatrixtool.com/)  
+①Open the link to enter the following page.
 
-①Open the link to enter the following page.  
+![](media/18ff23ee2435be143e6b346b737c8ebd.png)
 
-![](media/354693b5679a2615c62e99b7025d6355.png)  
+②The dot matrix is 8x16 in this project. So set the height to 8, width to 16, and select Big Endian; as shown below.
 
-②The dot matrix is 8x16 in this project. So set the height to 8, width to 16, and select Big Endian; as shown below.  
+![](media/a987e74fcf5404f55f584d1c3a6d6fef.png)
 
-![](media/5f0278d66ade370e871b447d360d6e7b.png)  
+③ Generate hexadecimal data from the pattern
 
-③ Generate hexadecimal data from the pattern  
+As shown below, the left button of the mouse is for selection while the right is for canceling. Thus you could use them to draw the pattern you want, then click **Generate**, to yield the hexadecimal data needed.
 
-As shown below, the left button of the mouse is for selection while the right is for canceling. Thus you could use them to draw the pattern you want, then click **Generate**, to yield the hexadecimal data needed.  
+![](media/5329dd3593406361bfc9c888e7218d90.png)
 
-![](media/586e88bf13c61b0918046437ed7f6796.png)  
+The generated hexadecimal code is what will be displayed, so you need to save it for next procedure.
 
-The generated hexadecimal code is what will be displayed, so you need to save it for next procedure.  
+**6. Connection Diagram**
 
-**6. Connection Diagram**  
+![](media/0def819a2ed06da2357807e9b58b3ab5.png)
 
-![](media/386719ead6354507f5667f3724eac2ad.png)  
+Wiring note: The GND, VCC, SDA, and SCL of the 8x16 LED panel are respectively connected to -(GND), + (VCC), A4 and A5 of the keyestudio sensor expansion board for two-wire serial communication. (Note: This pin is connected to Arduino IIC, but this module is not IIC communication, it can be linked with any two pins.)
 
-Wiring note: The GND, VCC, SDA, and SCL of the 8x16 LED panel are respectively connected to -(GND), + (VCC), A4 and A5 of the keyestudio sensor expansion board for two-wire serial communication. (Note: This pin is connected to Arduino IIC, but this module is not IIC communication, it can be linked with any two pins.)  
+**7. Test Code**
 
-**7. Test Code**  
+The code that shows smile face
 
-The code that shows smile face  
 ```c++
 /*
 keyestudio 4wd BT Car V2.0
-lesson 9.1
+lesson 4.
 matrix
 http://www.keyestudio.com
 */ 
@@ -1737,54 +1016,55 @@ void IIC_end()
     digitalWrite(SDA_Pin,HIGH);
     delayMicroseconds(3);
 }
-
 ```
-**8. Test Result**  
 
-After uploading code on keyestudio V4.0 development board, hook up by the connection diagram, the DIP switch is dialed to right end, then a smile pattern is shown.  
+**8. Test Result**
 
-![](media/95bb011957896b12285fc6763137bb9a.png)  
+After uploading code on keyestudio V4.0 development board, hook up by the connection diagram, the DIP switch is dialed to right end, then a smile pattern is shown.
 
-**9. Extension Practice**  
+![](media/95bb011957896b12285fc6763137bb9a.png)
 
-We use the modulo tool([http://dotmatrixtool.com/\#](http://dotmatrixtool.com/))to make the dot matrix alternately display start, forward and stop patterns then clear the patterns, and the time interval is 2000 milliseconds.  
+**9. Extension Practice**
+
+We use the modulo tool([http://dotmatrixtool.com/\#](http://dotmatrixtool.com/))to make the dot matrix alternately display start, forward and stop patterns then clear the patterns, and the time interval is 2000 milliseconds.
 
 ![](media/1b419bdc38763f2d476a31f80e4df109.png)  
 ![](media/609a8b068bb8f95a328718bac3fba986.png)  
 ![](media/e7fbd5f40b576712264670f1da25e73a.png)  
-![](media/04671204b61e95d017653e14d99c531d.png)  
+![](media/04671204b61e95d017653e14d99c531d.png)
 
-Get the graphical code to be displayed via modulus tool  
+Get the graphical code to be displayed via modulus tool
 
-xxStart：xx0x01,0x02,0x04,0x08,0x10,0x20,0x40,0x80,0x80,0x40,0x20,0x10,0x08,0x04,0x02,0x01  
+xxStart：xx0x01,0x02,0x04,0x08,0x10,0x20,0x40,0x80,0x80,0x40,0x20,0x10,0x08,0x04,0x02,0x01
 
-**Go front：**  
+**Go front：**
 
-0x00,0x00,0x00,0x00,0x00,0x24,0x12,0x09,0x12,0x24,0x00,0x00,0x00,0x00,0x00,0x00  
+0x00,0x00,0x00,0x00,0x00,0x24,0x12,0x09,0x12,0x24,0x00,0x00,0x00,0x00,0x00,0x00
 
-**Go back：**  
+**Go back：**
 
-0x00,0x00,0x00,0x00,0x00,0x24,0x48,0x90,0x48,0x24,0x00,0x00,0x00,0x00,0x00,0x00  
+0x00,0x00,0x00,0x00,0x00,0x24,0x48,0x90,0x48,0x24,0x00,0x00,0x00,0x00,0x00,0x00
 
-**Turn left：**  
+**Turn left：**
 
-0x00,0x00,0x00,0x00,0x00,0x00,0x44,0x28,0x10,0x44,0x28,0x10,0x44,0x28,0x10,0x00  
+0x00,0x00,0x00,0x00,0x00,0x00,0x44,0x28,0x10,0x44,0x28,0x10,0x44,0x28,0x10,0x00
 
-**Turn right:**  
+**Turn right:**
 
-0x00,0x10,0x28,0x44,0x10,0x28,0x44,0x10,0x28,0x44,0x00,0x00,0x00,0x00,0x00,0x00  
+0x00,0x10,0x28,0x44,0x10,0x28,0x44,0x10,0x28,0x44,0x00,0x00,0x00,0x00,0x00,0x00
 
-**Stop：**  
+**Stop：**
 
-0x2E,0x2A,0x3A,0x00,0x02,0x3E,0x02,0x00,0x3E,0x22,0x3E,0x00,0x3E,0x0A,0x0E,0x00  
+0x2E,0x2A,0x3A,0x00,0x02,0x3E,0x02,0x00,0x3E,0x22,0x3E,0x00,0x3E,0x0A,0x0E,0x00
 
-Clear the matrix display:  
+Clear the matrix display:
 
-0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00  
+0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00
 
-![](media/75cb1aea53023b46a826cbf6ff379e5b.png)  
+![](media/d48cd0ea17b3f23f61f72d581548fb37.png)
 
-The code that the multiple patterns shift:  
+The code that the multiple patterns shift:
+
 ```c++
 /*
 keyestudio 4WD Robot v2.0
@@ -1879,40 +1159,383 @@ void IIC_end()
 } 
 ```
 
-Upload code on development board, 8*16 dot matrix display shows front, back and stop patterns, alternately.  
+Upload code on development board, 8\*16 dot matrix display shows front, back and stop patterns, alternately.
 
 ![](media/62934fafbccedab49b5e8e62ab52d595.png)  
 ![](media/b676867d8d9b4f1973244a255f46f1fc.png)  
-![](media/71b8d2089f39a655481e98faceb06136.png)  
+![](media/71b8d2089f39a655481e98faceb06136.png)
 
-## Project 10: Line Tracking Robot
+## Project 5: Drive Robot
 
-![](media/0bf5972723b7406d5e3bd7b2549b7e51.jpeg)  
+![](media/1a10c403417d06b75c358bbb79fe62f5.png)
 
-**1. Description**  
+**1. Description**
 
-The previous projects are inclusive of the knowledge of multiple sensors and modules. Next, we will work on a little challenging task.  
+There are many ways to drive a motor. Our robot car uses the most common solution--L298P--which is an excellent high-power motor driver IC produced by STMicroelectronics. It can directly drive DC motors, two-phase and four-phase stepping motors. The driving current is up to 2A, and the output terminal of motor adopts eight high-speed Schottky diodes as protection.
 
-Based on the working principle of the line tracking sensor we could make a line tracking car.    
+We designed a shield based on the circuit of L298p.
 
-Line tracking robot car:   
-![](media/t9.png)   
-![](media/t10.png)   
+The stacked design reduces the technical difficulty of using and driving the motor.
 
+![](media/ac60fce30148fae89f391d26de60a20a.png)
 
-Flow Chart  
+![](media/7d64ea5e4be17680c258f8191ef152a3.png)
 
-![](media/3bef8ab0fb4bb48ea3221a68c5d88711.png)  
+**2. Specification**
 
-**2. Connection Diagram**  
+Circuit Diagram for L298P Board
 
-![](media/0ffa1c57ddf501bc8f315330daead49b.png)  
+1.  Logic part input voltage: DC5V
+2.  Driving part input voltage: DC 7-12V
+3.  Logic part working current: \< 36mA
+4.  Driving part working current: \< 2A
+5.  Maximum power dissipation: 25W (T=75℃)
+6.  Working temperature: -25℃～＋130℃
+7.  Control signal input level: high level 2.3V\< Vin\< 5V, low level-0.3V\< Vin\< 1.5V
 
-**3. Test Code**   
+**3. Drive Robot to Move**
+
+The driver of motor driver shield is in parallel connection. You could control the direction of motors by altering the orientation of jumper caps(seen in the picture).
+
+![](media/9f64cccdfbeb09993671b3d6c4b81d4f.png)
+
+From the above diagram, it is known that the direction pin of B motor is D4; speed pin is D5; D2 is the direction pin of A motor; and D9 is speed pin.
+
+PWM decides 2 motors to rotate so as to drive robot car. The PWM value is in the range of 0-255. The larger the number, the faster the rotation of the motor.
+
+| **4WD** **Robot** | **Motor (A)**      | **Motor (B)**      |
+|-------------------|--------------------|--------------------|
+| Forward           | Turn clockwise     |                    |
+| Backward          | Turn anticlockwise |                    |
+| Rotate to left    | Turn anticlockwise | Turn clockwise     |
+| Rotate to right   | Turn clockwise     | Turn anticlockwise |
+| Stop              | Stop               | Stop               |
+
+**4. What You Need**  
+![](media/c71811fba1f1af95009aa8e241a1e96b.png)
+
+**5. Connection Diagram**
+
+![](media/62e032c5de8b0e1e44218fcc6afee0fa.png)
+
+**Attention: please connect motors in compliance with the above connection diagram**
+
+**6. Test Code**
+
 ```c++
 /*
 keyestudio 4wd BT Car V2.0
-lesson 10
+lesson 5.1
+motor driver shield
+http://www.keyestudio.com
+*/ 
+#define ML_Ctrl 4     // define the direction control pin of B motor
+#define ML_PWM 5      //define the PWM control pin of B motor
+#define MR_Ctrl 2     //define direction control pin of A motor
+#define MR_PWM 6      //define the PWM control pin of A motor
+void setup()
+{
+    pinMode(ML_Ctrl, OUTPUT); //define direction control pin of B motor as output
+    pinMode(ML_PWM, OUTPUT);  //define PWM control pin of B motor as output
+    pinMode(MR_Ctrl, OUTPUT); //define direction control pin of A motor as output.
+    pinMode(MR_PWM, OUTPUT); //define the PWM control pin of A motor as output
+}
+void loop()
+{ 
+    digitalWrite(ML_Ctrl,HIGH); //set the direction control pin of B motor to HIGH
+    analogWrite(ML_PWM,200);    //set the PWM control speed of B motor to 200
+    digitalWrite(MR_Ctrl,HIGH); //set the direction control pin of A motor to HIGH
+    analogWrite(MR_PWM,200);    //set the PWM control speed of A motor to 200
+
+    //front
+    delay(2000);//delay in 2s
+    digitalWrite(ML_Ctrl,LOW);  //set the direction control pin of B motor to LOW
+
+    analogWrite(ML_PWM,200);    //set the PWM control speed of B motor to 200  
+    digitalWrite(MR_Ctrl,LOW);  //set the direction control pin of A motor to LOW
+    analogWrite(MR_PWM,200);    //set the PWM control speed of A motor to 200
+    //back
+    delay(2000);//delay in 2s 
+    digitalWrite(ML_Ctrl,LOW);  //set the direction control pin of B motor to LOW
+    analogWrite(ML_PWM,200);    //set the PWM control speed of B motor to 200
+    digitalWrite(MR_Ctrl,HIGH); //set the direction control pin of A motor to HIGH
+    analogWrite(MR_PWM,200);    //set the PWM control speed of A motor to 200
+
+    //left
+    delay(2000);//delay in 2s
+    digitalWrite(ML_Ctrl,HIGH); //set the direction control pin of B motor to HIGH
+    analogWrite(ML_PWM,200);    //set the PWM control speed of B motor to 200
+    digitalWrite(MR_Ctrl,LOW);  // set the direction control pin of A motor to LOW
+    analogWrite(MR_PWM,200);    //set the PWM control speed of A motor to 200
+
+    //right
+    delay(2000);                //delay in 2s
+    analogWrite(ML_PWM,0);      //set the PWM control speed of B motor to 0
+    analogWrite(MR_PWM,0);      //set the PWM control speed of A motor to 0
+
+    //stop
+    delay(2000);                //delay in 2s
+}
+```
+
+**7. Test Result**
+
+Hook up by connection diagram, upload code and power on, smart car goes forward and back for 2s, turns left and right for 2s, and stops for 2s alternately.
+
+**8. Code Explanation**
+
+**digitalWrite(ML_Ctrl,LOW):** the rotation direction of motor is decided by the high/low level and and the pins that decide rotation direction are digital pins.
+
+**analogWrite(ML_PWM,200):** the speed of motor is regulated by PWM, and the pins that decide the speed of motor must be PWM pins.
+
+**9. Extension Practice**
+
+Adjust the speed that PWM controls the motor, hook up in same way
+
+![](media/62e032c5de8b0e1e44218fcc6afee0fa.png)
+
+```c++
+/*
+keyestudio 4wd BT Car V2.0
+lesson 5.2
+motor driver
+http://www.keyestudio.com
+*/ 
+#define ML_Ctrl 4     //define the direction control pin of B motor
+#define ML_PWM 5   //define the PWM control pin of B motor
+#define MR_Ctrl 2    //define the direction control pin of A motor
+#define MR_PWM 6   //define the PWM control pin of A motor
+void setup()
+{
+    pinMode(ML_Ctrl, OUTPUT);//set direction control pin of B motor to OUTPUT
+    pinMode(ML_PWM, OUTPUT);//set the PWM control pin of B motor to OUTPUT 
+    pinMode(MR_Ctrl, OUTPUT);//set the direction control pin of A motor to OUTPUT
+    pinMode(MR_PWM, OUTPUT);//set PWM control pin of A motor to OUTPUT
+}
+void loop()
+{ 
+    digitalWrite(ML_Ctrl,HIGH);//set direction control pin of B motor to HIGH level
+    analogWrite(ML_PWM,250);//Set PWM control speed of B motor to 100
+    digitalWrite(MR_Ctrl,HIGH);//set direction control pin of A motor to HIGH level
+    analogWrite(MR_PWM,250);//Set PWM control speed of A motor to 100
+    //front
+    delay(2000);//delay in 2s
+    digitalWrite(ML_Ctrl,LOW);//set direction control pin of B motor to LOW
+    analogWrite(ML_PWM,250);//Set PWM control speed of B motor to 100
+    digitalWrite(MR_Ctrl,LOW);//set direction control pin of A motor to LOW
+    analogWrite(MR_PWM,250);//Set PWM control speed of A motor to 100
+    //back
+    delay(2000);//delay in 2s
+    digitalWrite(ML_Ctrl,LOW);//set direction control pin of B motor to LOW
+    analogWrite(ML_PWM,250);//Set PWM control speed of B motor to 100
+    digitalWrite(MR_Ctrl,HIGH);//set direction control pin of A motor to HIGH level
+    analogWrite(MR_PWM,250);//Set PWM control speed of A motor to 100
+    //left
+    delay(2000);//delay in 2s
+    digitalWrite(ML_Ctrl,HIGH);//set direction control pin of B motor to HIGH level
+    analogWrite(ML_PWM,250);//Set PWM control speed of B motor to 100
+    digitalWrite(MR_Ctrl,LOW);//set direction control pin of A motor to LOW
+    analogWrite(MR_PWM,250);//Set PWM control speed of A motor to 100
+    //right
+    delay(2000);//delay in 2s
+    analogWrite(ML_PWM,0);//set PWM control speed of B motor to 0
+    analogWrite(MR_PWM,0);//set PWM control speed of A motor to 0
+    //stop
+    delay(2000);//delay in 2s
+}
+```
+
+After uploading the code successfully, do you find the motors rotate faster?
+
+## Project 6 : Line Tracking Sensor
+
+**1. Description：**
+
+![](media/5197ae74be688b1fab5c7a3b743897ce.png)
+
+The tracking sensor is actually an infrared sensor. The component used here is the TCRT5000 infrared tube.
+
+Its working principle is to use different reflectivity of infrared light to colors, then convert the strength of the reflected signal into a current signal.
+
+During the process of detection, black is active at HIGH level while white is active at LOW level. The detection height is 0-3 cm.
+
+Keyestudio 3-channel line tracking module has integrated 3 sets of TCRT5000 infrared tube on a single board, which is more convenient for wiring and control.
+
+By rotating the adjustable potentiometer on the sensor, it can adjust the detection sensitivity of the sensor.
+
+**2. Specification：**
+
+Operating Voltage: 3.3-5V (DC)
+
+Interface: 5PIN
+
+Output Signal: Digital signal
+
+Detection Height: 0-3 cm
+
+**3. What You Need：**  
+![](media/c05a014b6b896575b13f25f3a498d0ff.png)  
+![](media/e35bb3ba12c3165880ee4dab813884a3.jpeg)
+
+Special note: before testing, turn the potentiometer on the sensor to adjust the detection sensitivity. When adjust the LED at the threshold between ON and OFF, the sensitivity is the best.
+
+![](media/6fd60d4c5fe435f1fdffcbebda6c64fd.png)
+
+**4. Connection Diagram：**
+
+![](media/7df0575e4332d9af5b2601e8cb20337b.png)
+
+**5. Test Code：**
+
+```c++
+/*
+keyestudio 4wd BT Car V2
+lesson 6.1
+    Line Track sensor
+    http://www.keyestudio.com
+*/
+int L_pin = 11;  //pins of  left line tracking sensor
+int M_pin = 7;  //pins of  middle line tracking sensor
+int R_pin = 8;  //pins of  right  line tracking sensor
+int val_L,val_R,val_M;// define these variables
+void setup()
+{
+    Serial.begin(9600); // initialize serial communication at 9600 bits per second
+    pinMode(L_pin,INPUT); // make the L_pin as an input
+    pinMode(M_pin,INPUT); // make the M_pin as an input
+    pinMode(R_pin,INPUT); // make the R_pin as an input
+}
+void loop() 
+{ 
+    val_L = digitalRead(L_pin);//read the L_pin:
+    val_R = digitalRead(R_pin);//read the R_pin:
+    val_M = digitalRead(M_pin);//read the M_pin:
+    Serial.print("left:");
+    Serial.print(val_L);
+    Serial.print(" middle:");
+    Serial.print(val_M);
+    Serial.print(" right:");
+    Serial.println(val_R);
+    delay(500);// delay in between reads for stability
+}
+```
+
+**6. Test Result：**
+
+Upload the code on development board, open serial monitor to check line tracking sensors. And the displayed value is 1(high level) when no signals are received. The value shifts into 0 when the sensor is covered with paper.
+
+![](media/cbf84d96326071244835b2e691770a97.png)  
+![](media/2fd58c7a9f95fb9f694edf03e755042f.png)
+
+**7. Code Explanation**
+
+**Serial.begin(9600)**- Initialize serial port, set baud rate to 9600
+
+**pinMode-** Define the pin as input or output mode
+
+xxdigitalRead-xxRead the state of pin, which are generally HIGH and LOW level
+
+**8. Extension Practice**
+
+After knowing its working principle, you can connect an LED to D3. so as to control LED by line tracking sensor.
+
+![](media/69b6b560721b1fe6643c9e9909d2fff5.png)
+
+Test Code
+
+```c++
+/*
+keyestudio 4wd BT Car V2
+lesson 6.2
+    Line Track sensor
+    http://www.keyestudio.com
+*/
+int L_pin = 11;  //pins of  left line tracking sensor
+int M_pin = 7;  //pins of  middle line tracking sensor
+int R_pin = 8;  //pins of  right  line tracking sensor
+int val_L,val_R,val_M;// define the variables of three sensors 
+void setup()
+{
+    Serial.begin(9600); // initialize serial communication at 9600 bits per second
+    pinMode(L_pin,INPUT); // make the L_pin as an input
+    pinMode(M_pin,INPUT); // make the M_pin as an input
+    pinMode(R_pin,INPUT); // make the R_pin as an input
+    pinMode(9, OUTPUT);
+}
+void loop() 
+{ 
+    val_L = digitalRead(L_pin);//read the L_pin:
+    val_R = digitalRead(R_pin);//read the R_pin:
+    val_M = digitalRead(M_pin);//read the M_pin:
+    Serial.print("left:");
+    Serial.print(val_L);
+    Serial.print(" middle:");
+    Serial.print(val_M);
+    Serial.print(" right:");
+    Serial.println(val_R);
+
+    if (val_L == HIGH)//if left line tracking sensor detects signals
+    { 
+    digitalWrite(9, LOW);//LED is off
+    } 
+    else//if left line tracking sensor doesn’t detect signals
+    { 
+    digitalWrite(9, HIGH);//LED lights up
+    delay(2000); 
+    }
+    
+    if (val_R == HIGH)//if right line tracking sensor detects signals
+    {
+    digitalWrite(9, LOW);//LED is off
+    }
+    else//if right line tracking sensor doesn’t detect signals
+    {
+    digitalWrite(9, HIGH);//LED lights up
+    delay(2000); 
+    }
+    
+    if (val_M == HIGH)//if middle line tracking sensor detects signals
+    {
+    digitalWrite(9, LOW);//LED is off
+    }
+    else//if middle line tracking sensor doesn’t detect signals
+    {
+    digitalWrite(9, HIGH);//LED lights up
+    delay(2000); 
+    }
+}
+```
+
+Upload the code to development board, we could observe the brightness of LED when covering the line tracking sensor or getting close to it by hand.
+
+## Project 7: Line Tracking Robot
+
+![](media/cf222160aecb2f3ddac3c0878d095fc8.jpeg)
+
+**1. Description**
+
+The previous projects are inclusive of the knowledge of multiple sensors and modules. Next, we will work on a little challenging task.
+
+Based on the working principle of the line tracking sensor we could make a line tracking car.
+
+Line tracking robot car:  
+![](media/7262225cc87c8356034fd457b7e17b1b.png)  
+![](media/8c593647a86125d527d4f50099dad31a.png)
+
+Flow Chart
+
+![](media/df89430364acfb3f4f1b998ffa45eb61.png)
+
+**2. Connection Diagram**
+
+![](media/ead32863847988218418fce80429f2c0.png)
+
+**3. Test Code**
+
+```c++
+/*
+keyestudio 4wd BT Car V2.0
+lesson 7
 Line Tracking Robot
 http://www.keyestudio.com
 */ 
@@ -1997,49 +1620,239 @@ void Stop()//define the state of stop
     analogWrite(ML_PWM,0);//set PWM control speed of B motor to 0
     analogWrite(MR_PWM,0);//set PWM control speed of A motor to 0
 }
-
 ```
-**4. Test Result**  
 
-Upload the code on the keyestudio V4.0 board successfully. Stack the expansion board on the keyestudio V4.0 board and wire it according to connection diagram. After power-on, the DIP switch will be dialed to the “ON” end, and the smart car can walk along the black line.  
+**4. Test Result**
 
-## Project 11: Ultrasonic Follow Robot
+Upload the code on the keyestudio V4.0 board successfully. Stack the expansion board on the keyestudio V4.0 board and wire it according to connection diagram. After power-on, the DIP switch will be dialed to the “ON” end, and the smart car can walk along the black line.
 
-![](media/c0304f731522e9765457cc777c43bd4c.jpeg)  
+## Project 8: Ultrasonic Sensor
 
-**1. Description**  
+**1. Description**
 
-We can combine the hardware knowledge of various sensors, modules, motor drives to build an ultrasonic following robot car!  
+![](media/0180b169a1c3b228394b43df704fac32.png)
 
-In the circuit process, we can make use of ultrasonic sensors to detect the distance between a robot car and obstacles so as to control the robot car to move by the measured distance . And dot matrix shows a smile facial pattern.  
+The HC-SR04 ultrasonic sensor uses sonar to determine distance to an object like what bats do. It offers excellent non-contact range detection with high accuracy and stable readings in an easy-to-use package. It comes complete with ultrasonic transmitter and receiver modules.
 
-The specific logic of ultrasonic follow robot car is shown below:  
+The HC-SR04 or the ultrasonic sensor is being used in a wide range of electronics projects for creating obstacle detection and distance measuring application as well as various other applications. Here we have brought the simple method to measure the distance with arduino and ultrasonic sensor and how to use ultrasonic sensor with arduino.
+
+**2. Specification**
+
+Power Supply :+5V DC
+
+Quiescent Current : \< 2mA
+
+Working Current: 15mA
+
+Effectual Angle: \< 15°
+
+Ranging Distance : 2cm – 400 cm
+
+Resolution : 0.3 cm
+
+Measuring Angle: 30 degree
+
+Trigger Input Pulse width: 10uS
+
+**3. What You Need**
+
+**4. The principle of ultrasonic sensor**
+
+As the above picture shown, it is like two eyes. One is transmitting end, the other is receiving end.
+
+The ultrasonic module will emit the ultrasonic waves after triggering a signal. When the ultrasonic waves encounter the object and are reflected back, the module outputs an echo signal, so it can determine the distance of the object from the time difference between the trigger signal and echo signal.
+
+The t is the time that emitting signal meets obstacle and returns. And the propagation speed of sound in the air is about 343m/s, and distance = speed x time. However, the ultrasonic wave emits and comes back, which is 2 times of distance.
+
+Therefore, it needs to be divided by 2, the distance measured by ultrasonic wave = (speed x time)/2
+
+1.  Use method and timing chart of ultrasonic module:
+2.  Setting the delay time of Trig pin of SR04 to 10μs at least, which can trigger it to detect distance.
+3.  After triggering, the module will automatically send eight 40KHz ultrasonic pulses and detect whether there is a signal return. This step will be completed automatically by the module.
+4.  If the signal returns, the Echo pin will output a high level, and the duration of the high level is the time from the transmission of the ultrasonic wave to the return.
+
+![](media/ced724d9dbe551cc7b2d48678ba99ef8.png)
+
+Circuit diagram of ultrasonic sensor:
+
+![](media/261dcb575ca721949f397f96f10be70f.jpeg)
+
+**5. Connection Diagram**
+
+![](media/fd6065d6c50aaed775b68d8c947ca7fb.png)
+
+Wiring guide:
+
+Ultrasonic sensor keyestudio V5 Sensor Shield
+
+VCC → 5v(V)
+
+Trig → 12(S)
+
+Echo → 13(S)
+
+Gnd → Gnd(G)
+
+**6. Test Code**
+
+```c++
+/*
+    keyestudio 4wd BT Car V2
+    lesson 8.1
+    Ultrasonic sensor
+    http://www.keyestudio.com
+*/ 
+int trigPin = 12;    // Trigger
+int echoPin = 13;    // Echo
+long duration, cm, inches;
+    void setup() {
+    //Serial Port begin
+    Serial.begin (9600);
+    //Define inputs and outputs
+    pinMode(trigPin, OUTPUT);
+    pinMode(echoPin, INPUT);
+}
+void loop() {
+    // The sensor is triggered by a HIGH pulse of 10 or more microseconds.
+    // Give a short LOW pulse beforehand to ensure a clean HIGH pulse:
+    digitalWrite(trigPin, LOW);
+    delayMicroseconds(2);
+    digitalWrite(trigPin, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(trigPin, LOW);
+    // Read the signal from the sensor: a HIGH pulse whose
+    // duration is the time (in microseconds) from the sending
+    // of the ping to the reception of its echo off of an object.
+    duration = pulseIn(echoPin, HIGH);
+    // Convert the time into a distance
+    cm = (duration/2) / 29.1;     // Divide by 29.1 or multiply by 0.0343
+    inches = (duration/2) / 74;   // Divide by 74 or multiply by 0.0135
+    Serial.print(inches);
+    Serial.print("in, ");
+    Serial.print(cm);
+    Serial.print("cm");
+    Serial.println();
+    delay(50);
+}   
+```
+
+**7. Test Result**
+
+Upload test code on the development board, open serial monitor and set baud rate to 9600. The detected distance will be displayed, and the unit is cm and inch. Hinder the ultrasonic sensor by hand, the displayed distance value gets smaller.
+
+![](media/db57c5b23e2d6dd41ad70d6331297262.png)
+
+**8. Code Explanation**
+
+**int trigPin-** this pin is defined to transmit ultrasonic waves, generally output.
+
+**int echoPin -** this is defined as the pin of reception, generally input
+
+cm = (duration/2) / 29.1-unit is cm
+
+inches = (duration/2) / 74-unit is inch
+
+We can calculate the distance by using the following formula:
+
+distance = (traveltime/2) x speed of sound
+
+The speed of sound is: 343m/s = 0.0343 cm/uS = 1/29.1 cm/uS
+
+Or in inches: 13503.9in/s = 0.0135in/uS = 1/74in/uS
+
+We need to divide the traveltime by 2 because we have to take into account that the wave was sent, hit the object, and then returned back to the sensor.
+
+**9. Extension Practice:**
+
+We have just measured the distance displayed by the ultrasonic. How about controlling the LED with the measured distance? Let's try it and connect an LED light module to the D3 pin.
+
+![](media/66f531988b11ab8931439c4a3fdf3002.png)
+
+```c++
+/*
+    keyestudio 4wd BT Car V2
+    lesson 8.2
+    Ultrasonic LED
+    http://www.keyestudio.com
+*/ 
+int trigPin = 12;    // Trigger
+int echoPin = 13;    // Echo
+long duration, cm, inches;
+void setup() {
+    Serial.begin (9600);       //Serial Port begin
+    pinMode(trigPin, OUTPUT);  //Define inputs and outputs
+    pinMode(echoPin, INPUT);
+    pinMode(9, OUTPUT);
+}
+    void loop() 
+{
+    // The sensor is triggered by a HIGH pulse of 10 or more microseconds.
+    // Give a short LOW pulse beforehand to ensure a clean HIGH pulse:
+    digitalWrite(trigPin, LOW);
+    delayMicroseconds(2);
+    digitalWrite(trigPin, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(trigPin, LOW);
+    // Read the signal from the sensor: a HIGH pulse whose
+    // duration is the time (in microseconds) from the sending
+    // of the ping to the reception of its echo off of an object.
+    duration = pulseIn(echoPin, HIGH);
+    // Convert the time into a distance
+    cm = (duration/2) / 29.1;     // Divide by 29.1 or multiply by 0.0343
+    inches = (duration/2) / 74;   // Divide by 74 or multiply by 0.0135
+    Serial.print(inches);
+    Serial.print("in, ");
+    Serial.print(cm);
+    Serial.print("cm");
+    Serial.println();
+    delay(50);
+if (cm>=2 && cm<=10)
+digitalWrite(9, HIGH);
+else digitalWrite(9, LOW);
+}
+```
+
+Upload test code to development board and block ultrasonic sensor by hand, then check if LED is on.
+
+## Project 9: Ultrasonic Follow Robot
+
+![](media/5c6dfc28415d6edd9608704916917308.jpeg)
+
+**1. Description**
+
+We can combine the hardware knowledge of various sensors, modules, motor drives to build an ultrasonic following robot car!
+
+In the circuit process, we can make use of ultrasonic sensors to detect the distance between a robot car and obstacles so as to control the robot car to move by the measured distance . And dot matrix shows a smile facial pattern.
+
+The specific logic of ultrasonic follow robot car is shown below:
 
 | Detection | Measured distance of front obstacles |
-| --------- | ------------------------------------ |
-| Condition | Distance＜8                          |        
-| Status    | Go back（PWM set to 100）            |                   
-| Condition | distance≥8 and distance＜13          |                   
-| Status    | Stop                                 |                   
-| Condition | distance≥13 and distance＜35         |                   
-| Status    | Go front（PWM set to 100）           |                   
-| Condition | distance≥35                          |                   
-| Status    | stop                                 |                   
-Distance（unit：cm）  
+|-----------|--------------------------------------|
+| Condition | Distance＜8                          |
+| Status    | Go back（PWM set to 100）            |
+| Condition | distance≥8 and distance＜13          |
+| Status    | Stop                                 |
+| Condition | distance≥13 and distance＜35         |
+| Status    | Go front（PWM set to 100）           |
+| Condition | distance≥35                          |
+| Status    | stop                                 |
 
-**2. Flow Chart**  
+Distance（unit：cm）
 
-![](media/dacd34550927c0957906e6d087fe075f.png)  
+**2. Flow Chart**
 
-**3. Hook-up Diagram**  
+![](media/1da292cec152218e6e78f85a65cdc821.png)
 
-![](media/1ce2cc5e192906709a753c98322d1c77.png)
+**3. Hook-up Diagram**
 
-**4. Test Code**  
+![](media/10e3586ff2866dc39e8749fa1f17b8b4.png)
+
+**4. Test Code**
+
 ```c++
 /*
 keyestudio 4wd BT Car V2.0
-lesson 11
+lesson 9
 Ultrasonic Follow Robot
 http://www.keyestudio.com
 */ 
@@ -2102,35 +1915,32 @@ void Stop()//stop
 }
 ```
 
-**5. Test Result**  
+**5. Test Result**
 
-Uploading the code to the development board, and plugging in, dot matrix will display a smile facial pattern and follow the obstacle to move.  
+Uploading the code to the development board, and plugging in, dot matrix will display a smile facial pattern and follow the obstacle to move.
 
-## Project 12: Ultrasonic Avoiding Robot
+## Project 10: Ultrasonic Avoiding Robot
 
- ![](media/d1dbb527157f94f736ee0c56087a48bb.jpeg)  
+![](media/6c8f6fbf3b29ad2ecb7382274493ee1a.jpeg)
 
 **1. Description**  
-We combine the hardware knowledge -- LED matrix, motor drive, ultrasonic and servo, to build an ultrasonic avoiding robot!
-In the circuit process, we can make use of ultrasonic sensor to detect the distance between robot and front obstacles. Control the motor rotating by measured data, thus control the robot motion and show the running state by dot matrix.
-The ultrasonic avoiding capability is almost the same as the ultrasonic following function. We only need to change the source code.
-The specific logic of ultrasonic avoiding smart car is as shown below:
-![](media/t11.png)  
-![](media/t12.png)  
+We combine the hardware knowledge -- LED matrix, motor drive, ultrasonic and servo, to build an ultrasonic avoiding robot! In the circuit process, we can make use of ultrasonic sensor to detect the distance between robot and front obstacles. Control the motor rotating by measured data, thus control the robot motion and show the running state by dot matrix. The ultrasonic avoiding capability is almost the same as the ultrasonic following function. We only need to change the source code. The specific logic of ultrasonic avoiding smart car is as shown below: ![](media/1ec770900b654fccb832e1477173e02b.png)  
+![](media/b2fb58640cf1ec79f250d4ec4e93437b.png)
 
-Flow Chart  
+Flow Chart
 
-![](media/3747393f7352175d9ec7c7d1f1e34177.jpeg)  
+![](media/3cb8ccd90bc202c5459e14a2e06c05e3.jpeg)
 
-**2. Connection Diagram**  
+**2. Connection Diagram**
 
-![](media/21d16ea0ebea198daed72de2a805e573.png)  
+![](media/293c8e150dd5b0065b0f64bf1649abf5.png)
 
-**3. Test Code**  
+**3. Test Code**
+
 ```c++
 /*
 keyestudio 4wd BT Car V2.0
-lesson 12
+lesson 10
 ultrasonic avoiding robot
 http://www.keyestudio.com
 */ 
@@ -2320,31 +2130,164 @@ void IIC_end()
 
 **4. Test Result**
 
-Upload the code on the keyestudio V4.0 board and wire according to connection diagram. After the DIP switch is dialed to the right end, the smart car can automatically avoid obstacles.  
+Upload the code on the keyestudio V4.0 board and wire according to connection diagram. After the DIP switch is dialed to the right end, the smart car can automatically avoid obstacles.
 
-## Project 13: IR Remote Control Robot
+## Project 11: IR remote control
 
-![](media/c2a1fc96d1e5412db2ed7beb2530bd6b.jpeg)  
+**1. Description**
 
-**1. Description**  
+There is no doubt that infrared remote control is ubiquitous in daily life. It is used to control various household appliances, such as TVs, stereos, video recorders and satellite signal receivers. Infrared remote control is composed of infrared transmitting and infrared receiving systems, that is, an infrared remote control and infrared receiving module and a single-chip microcomputer capable of decoding.​
 
-We combine the hardware knowledge -- sensors, motor drive, and IR receiver, to build an infrared remote control robot car! In the IR receiver section, we’ve listed out each key value of remote control. In this circuit design, we can set the key value in the code to navigate the robot car movement. The corresponding state pattern is displayed on the 8*16 LED matrix.
+![](media/e0644987f70b38cdabde382b27858604.png)  
+The 38K infrared carrier signal emitted by remote controller is encoded by the encoding chip in the remote controller. It is composed of a section of pilot code, user code, user inverse code, data code, and data inverse code. The time interval of the pulse is used to distinguish whether it is a 0 or 1 signal and the encoding is made up of these 0, 1 signals.
+
+The user code of the same remote control is unchanged while the data code can distinguish the key.
+
+When the remote control button is pressed, the remote control sends out an infrared carrier signal. When the IR receiver receives the signal, the program will decode the carrier signal and determines which key is pressed. The MCU decodes the received 01 signal, thereby judging what key is pressed by the remote control.
+
+Infrared receiver we use is an infrared receiver module. Mainly composed of an infrared receiver head, which is a device that integrates reception, amplification, and demodulation. Its internal IC has completed demodulation, and can achieve from infrared reception to output and be compatible with TTL signals. Additionally, it is suitable for infrared remote control and infrared data transmission. The infrared receiving module made by the receiver has only three pins, signal line, VCC and GND. It is very convenient to communicate with arduino and other microcontrollers.
+
+**2. Specification**
+
+![](media/dce6a373b4c3ef6734e0f813a4d40ee5.png)  
+![](media/bde6c475e15dc65996e95ed327ca1412.png)
+
+Operating Voltage: 3.3-5V（DC）
+
+Interface: 3PIN
+
+Output Signal: Digital signal
+
+Receiving Angle: 90 degrees
+
+Frequency: 38khz
+
+Receiving Distance: 10m
+
+**3. What You Need**  
+![](media/fcefc7776ef3c057cf71f1a041edaa70.png)
+
+**4. Connection Diagram**
+
+![](media/13d2de5402540cc305abf311d6e81ff2.png)
+
+Respectively link“-”,“+”and S of IR receiver module with G(GND）, V（VCC）and A0 of keyestudio development board.
+
+Attention: On the condition that digital ports are not available, analog ports can be regarded as digital ports. A0 equals to D14, A1 is equivalent to digital 15.
+
+**5. Test Code**
+
+Firstly import library file of IR receiver module(refer to how to import Arduino library file) before designing code.
+
+```c++
+/*
+    keyestudio 4wd BT Car V2
+    lesson 11.1
+    IRremote
+    http://www.keyestudio.com
+*/ 
+#include <IRremote.h>           // IRremote library statement
+int RECV_PIN = 3;               //define the pins of IR receiver as 3
+IRrecv irrecv(RECV_PIN);   
+decode_results results;         // decode results exist in the“result” of “decode results”
+void setup()  
+{  
+    Serial.begin(9600);  
+    irrecv.enableIRIn();        // Enable receiver
+}  
+void loop() {  
+if (irrecv.decode(&results))    //decode successfully, receive a set of infrared signals
+{  
+    Serial.println(results.value, HEX);//Wrap word in 16 HEX to output and receive code 
+    irrecv.resume();            // Receive the next value
+}  
+delay(100);  
+} 
+```
+
+**6. Test Result**
+
+Upload test code, open serial monitor and set baud rate to 9600, point remote control to IR receiver and the corresponding value will be shown. If pressing too long, the error codes will appear.
+
+![](media/92887b989e103ef082569bbb34817852.png)
+
+Below we have listed out each button value of keyestudio remote control. So you can keep it for reference.
+
+![](media/ebcf0cb2055f7784505f76ceeaef9f47.jpeg)
+
+**7. Code Explanation**
+
+**irrecv.enableIRIn():** after enabling IR decoding, the IR signals will be received, then function“decode()”will check continuously if decode successfully.
+
+**irrecv.decode(&results):** after decoding successfully, this function will come back to “true”, and keep result in “results”. After decoding a IR signals, run the resume()function and receive the next signal.
+
+**8. Extension Practice**
+
+We decoded the key value of IR remote control. How about controlling LED by the measured value? We could design an experiment.
+
+Attach an LED to D3, then press the keys of remote control to make LED light on and off.
+
+![](media/196055a688024f4d64307f68020283bc.png)
+
+```c++
+/* keyestudio 4wd BT Car V2
+lesson 11.2
+IRremote
+http://www.keyestudio.com
+*/ 
+#include <IRremote.h>
+int RECV_PIN = 3;               //define the pin of IR receiver as 3
+int LED_PIN=9;                  // define the pin of LED as pin 9
+int a=0;
+IRrecv irrecv(RECV_PIN);
+decode_results results;
+void setup()
+{Serial.begin(9600);
+    irrecv.enableIRIn();       //  Initialize the IR receiver 
+    pinMode(LED_PIN,OUTPUT);   //set pin 3 of LED to OUTPUT
+}
+void loop() {
+    if (irrecv.decode(&results)) {
+    if(results.value==0xFF02FD &a==0) //according to the above key value, press“OK”on remote control , LED will be controlled
+    {digitalWrite(LED_PIN,HIGH);      //LED will be on
+    a=1;
+    }
+    else if(results.value==0xFF02FD &a==1) //press again
+    {
+    digitalWrite(LED_PIN,LOW);             //LED will go off
+    a=0;
+    }
+    irrecv.resume();                   // receive the next value
+    }
+}
+```
+
+Upload code to development board, press“OK”key on remote control to make LED on and off.
+
+## Project 12: IR Remote Control Robot
+
+![](media/fa8376a528a6b6dec7dffeabb417708e.jpeg)
+
+**1. Description**
+
+We combine the hardware knowledge -- sensors, motor drive, and IR receiver, to build an infrared remote control robot car! In the IR receiver section, we’ve listed out each key value of remote control. In this circuit design, we can set the key value in the code to navigate the robot car movement. The corresponding state pattern is displayed on the 8\*16 LED matrix.
 
 The specific logic of infrared remote control robot car is shown below:  
-![](media/t13.png)  
+![](media/e0576c46b28f9c938519a0767d24b0e2.png)
 
 Based on the circuit design, we can start building our own remote control robot.  
-![](media/3bf0b51993625597e26b1a776c1ad65e.png)  
+![](media/5c06643ca1f677071c6b1a0b16db0d33.png)
 
-**2. Hook-up Diagram**  
+**2. Hook-up Diagram**
 
-![](media/312d03eab27d1f8839d78305e8e154f9.png)  
+![](media/7ab504e08af04d74ce3d1037964a381a.png)
 
-**3. Test Code**  
+**3. Test Code**
+
 ```c++
 /*
 keyestudio 4wd BT Car V2.0
-lesson 13
+lesson 12
 remote control robot
 http://www.keyestudio.com
 */ 
@@ -2496,21 +2439,215 @@ void IIC_end()
 
 **4. Test Result**
 
-Upload the code successfully on the keyestudio V4.0 board and then wire according to the connection diagram. After DIP switch is dialed to the right end, we can use the infrared remote control to control the movement of the smart car . At the same time, the 8X16 LED light board displays the corresponding state pattern.  
+Upload the code successfully on the keyestudio V4.0 board and then wire according to the connection diagram. After DIP switch is dialed to the right end, we can use the infrared remote control to control the movement of the smart car . At the same time, the 8X16 LED light board displays the corresponding state pattern.
 
-## Project 14: Bluetooth Remote Control
+## Project 13: Bluetooth
 
-![](media/4cde06efb2694232042823050f425225.png)  
+**1. Description**
 
-**1. Description**  
+Bluetooth, a simple wireless communication module, has went viral since the last few decades and been used in most of the battery-powered devices for its easy-to-use function.
 
-We’ve learned the basic knowledge of Bluetooth. And in this lesson, we will make a Bluetooth remote smart car. In this experiment, we default the HM-10 Bluetooth module as a Slave and the cellphone as a Host.  
+![](media/25e3e05cd00cde04b81f9aa375026c09.png)  
+Over the past years, there have been many upgrades of Bluetooth standard to fulfil the demands of customers and the development of technology as well as to follow the trend of time.
 
-keyes BT car is an APP rolled out by keyestudio team. You can control the robot car by it readily.  
+Over the few years, there are many things changed including data transmission rate, power consumption with wearable and IoT Devices and Security System.
 
-**2. Test APP**  
+Here are we going to learn about HM-10 BLE 4.0 with Arduino Board? The HM-10 is a readily available Bluetooth 4.0 module. This module is used for establishing wireless data communication. The module is designed by using the Texas Instruments CC2540 or CC2541 Bluetooth low energy (BLE) System on Chip (SoC).
 
-Special note: before uploading the test code, you need to remove the Bluetooth module. Otherwise, the test code will fail to upload. You can reconnect the Bluetooth module when the code is uploaded successfully.  
+**2. Specification**
+
+Bluetooth protocol: Bluetooth Specification V4.0 BLE
+
+No byte limit in serial port Transceiving
+
+In open environment, realize 100m ultra-distance communication with iphone4s
+
+Working frequency: 2.4GHz ISM band
+
+Modulation method: GFSK(Gaussian Frequency Shift Keying)
+
+Transmission power: -23dbm, -6dbm, 0dbm, 6dbm, can be modified by AT command.
+
+Sensitivity: ≤-84dBm at 0.1% BER
+
+Transmission rate: Asynchronous: 6K bytes ; Synchronous: 6k Bytes
+
+Security feature: Authentication and encryption
+
+Supporting service: Central & Peripheral UUID FFE0, FFE1
+
+Power consumption: Auto sleep mode, stand by current 400uA\~800uA, 8.5mA during transmission.
+
+Power supply: 5V DC
+
+Working temperature: –5 to +65 Centigrade
+
+**3. What You Need**  
+![](media/a858ee4b6872d8e19fce3bcfd53b211c.png)  
+**4. Connection Diagram**
+
+**STATE:** *state test pins, connected to internal LED, generally keep it unconnected.*
+
+**RXD:** *serial interface, receiving terminal.*
+
+**TXD:** *serial interface, transmitting terminal.*
+
+**GND:** *Ground.*
+
+**VCC:** *positive pole of the power source.*
+
+**EN/BRK:** *break connect, it means breaking the Bluetooth connection, generally, keep it unconnected.*
+
+![](media/66f8dcfe533211cafc30ac07e144588e.png)
+
+**Pay attention to the pin direction when inserting Bluetooth module, and don’t insert it before uploading test code.**
+
+**5. Test Code**
+
+```c++
+/*
+keyestudio 4wd BT Car V2.0
+lesson 13.1
+bluetooth 
+http://www.keyestudio.com
+*/
+
+char ble_val; //character variable, used to save the value received by Bluetooth 
+
+void setup() {
+    Serial.begin(9600);
+}
+void loop() {
+    if(Serial.available() > 0)  //make sure if there is data in serial buffer
+    {
+    ble_val = Serial.read();  //Read data from serial buffer
+    Serial.println(ble_val);  //Print
+    }
+}
+```
+
+**(There will be contradiction between serial communication of code and communication of Bluetooth when uploading code. Therefore, don’t link Bluetooth module before uploading code.)**
+
+**After uploading code on development board, then insert Bluetooth module and wait for the command from your cellphone.**
+
+**6. Download APP**
+
+The code is for reading the received signal, and we also need a device to send signals. In this project, we send signals to control robot car via a cellphone. Therefore, we need to download the APP.
+
+**7. For iOS system**
+
+**Note: Allow APP to access“location”in settings of your cellphone when connecting to Bluetooth module; otherwise, Bluetooth may not be connected.**
+
+Enter APP STORE to search **BLE Scanner 4.0, then download it.**
+
+![](media/6f9b980a2024062d7bbe3ab242a5df14.png)
+
+**8. For Android system**
+
+Enter [Google Play](https://developer.android.google.cn/distribute?hl=zh-cn) to find out **BLE Scanner, then download.**
+
+**And allow APP to access“location”, you could enable“location”in settings of your cellphone.**
+
+![](media/cf5e6cd8b98346d3e90faf4a10e92dc1.png)
+
+1.  After installation, open App and enable“Location and Bluetooth” permission.
+2.  Open App, the name of Bluetooth module is HMSoft.
+
+Then click “connect” to link it with Bluetooth
+
+![](media/cc2ad4236eb001676ae447e8033edd2f.png)
+
+After connecting to HMSoft, click it to get multiple options, such as device information, access permission, general and custom service. Choose “CUSTOM SERVICE”
+
+![](media/55d4135167e2eadde1595cc4c81ff13d.jpeg)
+
+Then the following page pops up.
+
+![](media/f74e64f9f29e0813db44971d2896d7f2.png)
+
+Click（Read,Notify,WriteWithoutResponse)to enter the following page
+
+![](media/c769ffa7b68eb36516a429147d5f65b6.png)
+
+Click **Write Value to enter HEX or Text.**
+
+![](media/d8afcda78947d9fc25d41cc16a182369.png)
+
+Open the serial monitor on Arduino，enter a 0 or other characters on Text interface.
+
+![](media/5f3ce29e3fa59b2aae6c85c103aa2fe0.png)
+
+Then click“Write”, open serial monitor to view if there is a“0”signal
+
+![](media/5254b35b30451fc6dbf7de998cf5e16b.png)
+
+**9. Code Explanation**
+
+**Serial.available()** : The current rest characters when return to buffer area. Generally, this function is used to judge if there is data in buffer. When Serial.available()\>0, it means that receives the data and can be read.
+
+xxSerial.read()：xxRead a data of a Byte in buffer of serial port, for instance, device sends data to Arduino via serial port, then we could read data by “Serial.read()”.
+
+**10. Extension Practice**
+
+We could send a command via Bluetooth to turn a LED on and off.
+
+D3 is connected to a LED, as shown below:
+
+![](media/7151b372899ce5e941dd66dce9ba1061.png)
+
+```c++
+/*
+keyestudio 4wd BT Car V2.0
+lesson 13.2
+Bluetooth 
+http://www.keyestudio.com
+*/ 
+int ledpin=9;
+void setup()
+{
+    Serial.begin(9600);
+    pinMode(ledpin,OUTPUT);
+}
+void loop()
+{
+    int i;
+    if (Serial.available())
+    {
+    i=Serial.read();
+    Serial.println("DATA RECEIVED:");
+    if(i=='1')
+    {
+        digitalWrite(ledpin,1);
+        Serial.println("led on");
+    }
+    if(i=='0')
+    {
+        digitalWrite(ledpin,0);
+        Serial.println("led off");
+    }
+    }
+}
+```
+
+![](media/f6088ac1921dfb67f4fc949dac719e41.png)  
+![2](media/5f3ce29e3fa59b2aae6c85c103aa2fe0.png)
+
+Click“Write”on APP, when you enter 1, LED will be on;when you input 0, it will be off. **(Remember to remove the Bluetooth module after finishing experiment. Otherwise, burning code will be affected)**
+
+## Project 14: Bluetooth Control Robot
+
+![](media/c79474e0dc26f1b62801777e1e6f0879.png)
+
+**1. Description**
+
+We’ve learned the basic knowledge of Bluetooth. And in this lesson, we will make a Bluetooth remote smart car. In this experiment, we default the HM-10 Bluetooth module as a Slave and the cellphone as a Host.
+
+keyes BT car is an APP rolled out by keyestudio team. You can control the robot car by it readily.
+
+**2. Test APP**
+
+**Special note: before uploading the test code, you need to remove the Bluetooth module. Otherwise, the test code will fail to upload. You can reconnect the Bluetooth module when the code is uploaded successfully.**
+
 ```c++
 /*
 keyestudio 4WD BT Car V2.0
@@ -2533,55 +2670,64 @@ void loop()
 }
 ```
 
-Upload test code on V4.0 development board and insert the Bluetooth module. Then we need to download the APP.  
+Upload test code on V4.0 development board and insert the Bluetooth module. Then we need to download the APP.
 
-For iOS system  
+**Download the app and connect Bluetooth**
 
-Search keyes BT car in App store  
+**iOS System**
 
-![](media/88e6e4c36ef199aa72000a457d3ee640.png)  
+1.  Open the App Store, search for and download Keyes BT Car.
 
-After installation, enter its interface.  
+![](media/88e6e4c36ef199aa72000a457d3ee640.png)
 
-![](media/b88387f98039ed5c16f9669f7ed5dda7.png)  
+2.After installation is complete, an application icon will appear on the desktop.
 
-Click “Connect”to search and pair it with Bluetooth. After connecting well, click ![](media/eed0b9b238bf7d23f89dbf963d7d0fbc.png)to enter the main page of 4WD smart car.  
+![](media/ae278f2b8175ccffd07fd034c4603ba9.png)
 
-![](media/d60ef62ef01e38d30842dabab26b0340.png)  
+3\. Turn on your phone's Bluetooth and location services, and allow Keyes BT Car to access Bluetooth.
 
-For Android System**   
+![](media/0391a1c0012372aca6a318c28a6b1c5e.png)
 
-Enter Google play store to search for keyes 4wd  
+4\. Open the Keyes BT car app, tap the Bluetooth button in the top right corner to scan for devices, find the Bluetooth name, and connect.
 
-![](media/66cce2fc4a3ae3f88db1b56a5b341fac.png)  
+![](media/8132c5bcf8601d5392694dd233973f29.png)
 
-Its interface is shown below:  
+5.After the Bluetooth connection is complete, select "4WD Robot".![](media/258b55a57a34a0f098459734ccbb5f94.png)**。**
 
-![](media/b28d7bcf6455edc6e8cc110965696e32.png)  
+6\. If the LED on the Bluetooth module stops flashing and stays lit, it means the connection is successful. The image below shows the interface of the app.**![05a82d93bff800230c2c347d82131cc2](media/8ed71f368328673c4f5ea01769822408.jpeg)**
 
-Click on APPicon to search Bluetooth.  
+**Android System**
 
-![](media/fb1c6ba889c1208b5438547ad3dcfbc3.png)  
+1.  Search for "Keyes 4wd car" on Google Play or download it via the provided link.
 
-Click“connect”below HMSoft, then the Bluetooth will be connected and its LED indicator will be always on.  
+![](media/66cce2fc4a3ae3f88db1b56a5b341fac.png)
 
-![](media/44cc8687e73f3be9d6da414bcffe55f0.png)  
+2\. Turn on your phone's Bluetooth and location services, and enable location and nearby device permissions for the app in the settings.
 
-After successful connection, press the button of the Bluetooth APP, and the corresponding characters are displayed as shown below:  
+![](media/efd490bdd4ba7b0de90f0e9cb43b4857.png)
 
-**3. Flow Chart**  
+3\. Open the Keyes BT Car app and tap the connect button in the top right corner.![](media/75571c0baaa1c6d0de7aa02636d057ac.png)
 
-![](media/599ed500a72310376de208f18c4d5295.png)    
+4.Find the Bluetooth name and connect.
 
-**4. Hook-up Diagram**  
+![](media/a0ce05ea5830e269bc3e706030ef6990.png)
 
-![](media/149f17c8873526267283bee62351c40c.png)    
+5\. The LED on the Bluetooth module stops flashing and stays solid, indicating a successful connection.
 
-**5. Test Code**    
+**3. Flow Chart**
+
+![](media/a674b7c7392f76c4c23f7ec441ed574a.png)
+
+**4. Hook-up Diagram**
+
+![](media/e5ed1cd9a289d77e8f9367ab1348dde1.png)
+
+**5. Test Code**
+
 ```c++
 /*
 keyestudio 4wd BT Car V2.0
-lesson 14
+lesson 14.2
 Bluetooth Remote Control
 http://www.keyestudio.com
 */ 
@@ -2728,193 +2874,27 @@ void IIC_end()
 
 **6. Test Result**
 
-Upload the code on the V4.0 board. And then we stack the expansion board on it and wire them according to the connection diagram. After power-on, the DIP switch will be dialed to the“ON”end. And after connecting Bluetooth successfully, we can use the APP to control the smart car to move.    
+Upload the code on the V4.0 board. **After uploading code on development board, then insert Bluetooth module and wait for the command from your cellphone.**
 
-## Assembly Guide
-
-**Note: Peel the plastic film off the board first when installing the smart car.**  
-
-**Step 1: Mount the Bottom PCB**
-
-Prepare the parts as follows:  
-
-1. Gear Motor x4  
-
-2. Fixed Part x4  
-
-3. M3 Nickel Plated Nut x10  
-
-4. 3x6mm Round-head Screw x14  
-
-5. 4WD Bottom PCB x1  
-
-6. Tracking Sensor x1  
-
-7. Wheel x4  
-
-8. 5P Dupont Wire x1  
-
-9. M3x40mm Copper Pillarx6  
-
-10. M3x30m Round-head Screw x8  
-
-11. M3x8mm Round-head Screw x2  
-
-![](media/844097e35f95d61f6615721195c5bb11.png)  
-![](media/203fae8eb1c4c3c0de069c6be0b524b6.png)  
-![](media/e57feed72a66b4490674f77ec2c35a69.png)  
-![](media/7a24e3bbeacad6b81e8cb8f06f4fccf5.png)  
-![](media/d495a2067ecb5574601c20bb9ed147df.jpeg)  
-![](media/322632dc1b2b68141ce0032999f287ed.jpeg)  
-
-**Step 2: Install Dot Matrix**  
-
-1. Prepare the parts as follows:  
-
-2. 8X16 LED Panel x1  
-
-3. 4WD Baffle  
-
-4. 4P Wire x1  
-
-5. M2x8mm Round-head Screw x4  
-
-6. M2 Nut x4  
-
-![](media/b3eff797f6993199671558e69d63ba4d.png)  
-![](media/c8bf3b074f441f58683384fe4695be97.png)  
-
-**Step 3: Install the Plastic Platform of Servo**     
-
-- Prepare the parts as follows:  
-
-1. Servo x1  
-
-2. M2x4 Screw x1  
-
-3. Black Cable Tiex2  
-
-4. Ultrasonic Sensorx1  
-
-5. Black Plastic Platform x1  
-
-6. M1.2x4 Tapping Screw x4  
-
-7. M2x8 Tapping Screw x2  
-
-![](media/b86186c2d44737305a389a887da27ac7.png)  
-
-You can find M1.2x4 screws inside the bag of the servo platform  
-
-![](media/bf0388c9dad49671aba90f30229d928b.png)  
-
-![](media/6246bf8c9de981303761b60fe5dfb44b.png)    
-
-```c++
-/*
-Set the 90-degree code,Copy the code and upload it to the development board. The
-steering gear connected to port D9 will rotate to 90 °
-*/
-#define servoPin 9 //servo Pin
-int pos; //the angle variable of servo
-int pulsewidth; // pulse width variable of servo
-void setup() {
-pinMode(servoPin, OUTPUT); //set servo pin to OUTPUT
-procedure(0); //set the angle of servo to 0°
-}
-void loop() {
-procedure(90); // tell servo to go to position in variable 90°
-}
-// function to control servo
-void procedure(int myangle) {
-pulsewidth = myangle x 11 + 500; //calculate the value of pulse width
-digitalWrite(servoPin,HIGH);
-delayMicroseconds(pulsewidth); //The duration of high level is pulse width
-digitalWrite(servoPin,LOW);
-delay((20 - pulsewidth / 1000)); // the cycle is 20ms, the low level last for
-the rest of time
-}
-```
-
-![](media/3311f103f869ac9a889cdca0e2c95092.png)  
-![](media/8040617db413660fce1fa198e9d55fb6.png)  
-
-**Step 4: Assemble Battery Holder**  
-
-Prepare the parts as follows:  
-
-1. Top PCB x1  
-
-2. M3 Nut x3  
-
-3. Motor Driver Board x1  
-
-4. Control Board x1  
-
-5. IR Receiver Module x1  
-
-6. M3x10mm Copper Pillar x8  
-
-7. M3x8mm Round-head Screw x1  
-
-8. M3x6mm Round-head Screw x16  
-
-9. M3x10mm Flat-head Screw x2  
-
-10. 6 AA Battery Holder x1  
-
-![](media/ec3a41b4aac22880546b5daf94b41528.png)  
-![](media/c62c0c411242b1fd2e91e09251a41d87.png)  
-
-![](media/07cc493126354de3183d52207146a3bb.png)  
-![](media/4498a936be382b036939ae9dfda90e38.png)  
-![](media/f13c77fc3f962cdac2cc3a4576b68953.png)  
-
-**Step 5: Mount the Top PCB**  
-
-Prepare the parts as follows:  
-
-Bluetooth Module x1  
-
-M3x6MM Round-head Screw x6  
-
-Jumper Capx8  
-
-![](media/84a90512abefa00026e56aed45dc2634.png)  
-![](media/aadc76c26e9a0ab58c5b489a8cfbe817.png)  
-![](media/e8938aabe40608b0758c5f9a486a2dd4.png)  
-![](media/b2a0e51863d03a2a33942744d435c682.jpeg)  
-
-**Step 6: Hook-up Guide**  
-
-![](media/1feb6b2d1e8980dfcaede0a033a8975e.png)  
-
-![](media/e822af8fafcef23ccc79d78e89788394.png)  
-
-![](media/1c596b883ed770ab09b1e01eb392b435.png)  
-![](media/abf52c065c9df72ac19e796112d1c7df.png)  
-![](media/a5f5b7aa1933a265847fe5716dd73589.png)  
-![](media/5677eb49ccc74577bc9eb759c788bf85.jpeg)  
-
-
+After power-on, the DIP switch will be dialed to the“ON”end. And after connecting Bluetooth successfully, we can use the APP to control the smart car to move.
 
 ## Project 15: Multi-purpose Bluetooth Robot
 
-![](media/46414c9b978c52160b6a2cfb3a729114.jpeg)  
+![](media/996ebaeeacc3eee8205c9f4a5d73f295.jpeg)
 
-**Description**  
+**Description**
 
-In previous projects, the robot car only performs a single function. However, in this lesson, we will integrate all of its functions via Bluetooth control.  
+In previous projects, the robot car only performs a single function. However, in this lesson, we will integrate all of its functions via Bluetooth control.
 
-Here is a simple flow chart of multi-purpose robot car for your reference.  
+Here is a simple flow chart of multi-purpose robot car for your reference.
 
-![](media/350df6f452683134aca3b5b1a1fcf576.jpeg)  
+![](media/c8536255ef66b4d92eb53a3456c75e81.jpeg)
 
-**Connection Diagram**  
+**Connection Diagram**
 
-![](media/451fb2a74f78543fc685f64087583dec.png)  
+![](media/b7eaf2dc06e2c807b07fc4c19343ab1e.png)
 
-**Test Code**  
+**Test Code**
 
 ```c++
 /*
@@ -3234,17 +3214,94 @@ void IIC_end()
     digitalWrite(SDA_Pin,HIGH);
     delayMicroseconds(3);
 }
-
 ```
- 
-**Test Result**  
 
-Uploading code to development board, plugging in and turning on it , the 4WD robot can not only go forward and back but turn left and right. Moreover, it is known that the mobile APP, connected to Bluetooth successfully, can be used to control the movement of the robot.  
+**Test Result**
 
-# 8. Resources
+**Special note: before uploading the test code, you need to remove the Bluetooth module. Otherwise, the test code will fail to upload. You can reconnect the Bluetooth module when the code is uploaded successfully**
 
-Wiki page: <https://wiki.keyestudio.com/Main_Page>  
+Uploading code to development board, plugging in and turning on it , the 4WD robot can not only go forward and back but turn left and right. Moreover, it is known that the mobile APP, connected to Bluetooth successfully, can be used to control the movement of the robot.
 
-Official website: <https://keyestudio.com/>  
+# 9.Common Troubleshooting
 
-Assembly Video Link: <http://video.keyestudio.com/ks0470/>  
+## 1. Robot Car Unresponsive
+
+A: 1. Please use battery power and check whether it is sufficient, and turn the switch of the motor driver board to ON.
+
+2\. Please check whether the wiring is correct.
+
+Note: Before the control board leaves the factory, there is no program related to robot car. You need to upload corresponding programs to realize the function.
+
+## 2 .Computer Does Not Recognize USB Port
+
+A: 1. Please make sure you have installed the development board driver referring to: **6. Install Arduino IDE and Driver**
+
+![](media/e3477b7bfcf93df7f698ea05b3078a11.png)
+
+1.  Please check whether USB cable is in good condition.
+
+## 3. Program Compilation Error
+
+A: Has the library file been added? For how to add, please refer to: **7. How to Add Libraries?**
+
+![](media/108aebf6bcd2fcd3e14c784521ffa1ef.png)
+
+If you have Arduino IDE 2.0, please refer to the following methods to add library files：
+
+Click Sketch----\>Include Library—\>Add.ZIP Library，then Then navigate to the library file you downloaded and click "open."(File compressed to ZIP format)
+
+![](media/62cdfbd17c41cbbab8daf726b57af370.png)
+
+## 4 .Program Fails to Upload
+
+A: 1. Unplug the Bluetooth module before uploading the program, otherwise it cannot be uploaded. Please just plug the Bluetooth in after the upload is complete;
+
+2\. Please select the correct development board and port:![](media/e605dd7606e707c6558d9ecac252f269.png). You may check the port corresponding to the development board on the device manager of your computer.
+
+## 5. Servo is Hot or Shaking Violently
+
+A: Do please reset the steering gear to 90 degrees before installing, avoiding servo being blocked and burnt when the it executes the routine program. For specific operations, please refer to **Servo Installation** in the installation steps.
+
+## 6 .APP Disabled or Unresponsive Connection to Bluetooth
+
+A: 1. Please open your the positioning if your phone is Android system.
+
+2\. APP does not respond when controlling robot car: make sure that the functional program controlled by APP has been uploaded. Separate courses for each sensor are provided in the course. So when you find that one sensor does not respond, you may refer to the course to have a check and test. For example, when using APP to control the robot car without response, please refer to **Project 14: Bluetooth Control Robot** to test the Bluetooth module to see if the Bluetooth module receives data normally.
+
+## 7. One-side Wheel of Mini Car Is Moving After Uploading Motor Test Program
+
+A: 1. Please check the model of the driver board of the motor. This will happen if you download and use a wrong file. You may upload **Lesson 5 Program** to test whether the motor is in good condition.
+
+![](media/5ac09d3b0d87f7bb7444b72841b55130.png)
+
+2\. Please check whether jumper caps of the motor drive board are inserted backwards. Please correct them if so.
+
+![](media/d469543e7e878fe37e13902a8fc47aff.png)
+
+## 8. Dot matrix Is Unable to bright
+
+A: Please check whether the wiring is correct, referring to **Lesson 4 Test Program**
+
+![](media/43e8c9d5a23dac793286611e50c72923.png)
+
+# 10. Resources
+
+**Wiki page:** [**https://docs.keyestudio.com/projects/KS0470/en/latest/**](https://docs.keyestudio.com/projects/KS0470/en/latest/)**,**
+
+**Official website:** [**https://keyestudio.com/**](https://keyestudio.com/)**,**
+
+**Assembly Video Link:** [**https://www.youtube.com/watch?v=zEuQCwIVQIs**](https://www.youtube.com/watch?v=zEuQCwIVQIs)**,**
+
+**Download the APP, Code and library :** [**https://fs.keyestudio.com/KS0470**](https://fs.keyestudio.com/KS0470)
+
+**11.Contact Us**
+
+We sincerely thank those who have purchased our products and our loyal users who continue to follow and support us. It is your companionship and feedback that drive us to keep improving.
+
+Your valuable suggestions and user experiences play a crucial role in helping us deliver high-quality products, enabling us to make ongoing improvements to meet the practical needs of more users.
+
+If you encounter any issues while using our products or have any suggestions for improvement, please don’t hesitate to contact us at Amazon: service@keyestudio.com  
+AliExpress: tivon@keyestudio.com  
+Other Channels: sunny@keyestudio.com
+
+Every piece of feedback from you is the foundation of our growth.We promise to repay your trust with even better products!
