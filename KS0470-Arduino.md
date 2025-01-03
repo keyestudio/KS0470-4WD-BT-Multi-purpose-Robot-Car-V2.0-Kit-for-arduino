@@ -940,7 +940,7 @@ The code that shows smile face
 ```c++
 /*
 keyestudio 4wd BT Car V2.0
-lesson 4.
+lesson 4.1
 matrix
 http://www.keyestudio.com
 */ 
@@ -1068,7 +1068,7 @@ The code that the multiple patterns shift:
 ```c++
 /*
 keyestudio 4WD Robot v2.0
-lesson 9.2
+lesson 4.2
 matrix
 http://www.keyestudio.com
 */ 
