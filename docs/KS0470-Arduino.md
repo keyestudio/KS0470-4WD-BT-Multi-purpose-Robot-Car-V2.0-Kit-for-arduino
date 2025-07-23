@@ -1201,6 +1201,12 @@ The driver of motor driver shield is in parallel connection. You could control t
 
 From the above diagram, it is known that the direction pin of B motor is D4; speed pin is D5; D2 is the direction pin of A motor; and D9 is speed pin.
 
+**<span style="color: rgb(255, 76, 65);">Special Note: </span> **
+
+**1.The control pins of the motor cannot be modified during programming, otherwise the development board will not be able to control the motor.** 
+
+**2.Note that the red and blue 8 jumper caps must all be installed on the expansion board.** 
+
 PWM decides 2 motors to rotate so as to drive robot car. The PWM value is in the range of 0-255. The larger the number, the faster the rotation of the motor.
 
 | **4WD** **Robot** | **Motor (A)**      | **Motor (B)**      |
@@ -3283,6 +3289,12 @@ A: 1. Please check the model of the driver board of the motor. This will happen 
 A: Please check whether the wiring is correct, referring to **Lesson 4 Test Program**
 
 ![](media/43e8c9d5a23dac793286611e50c72923.png)
+
+## 9. Motor does not run after uploading code containing motor control
+
+1.The direction pin is D4 and the speed pin is D5 for motor B, and the direction pin is D2 and the speed pin is D9 for motor A. It cannot be changed to any other pin when writing the motor code.
+
+2.Note that the red and blue 8 jumper caps must all be installed on the expansion board.
 
 # 10. Resources
 
