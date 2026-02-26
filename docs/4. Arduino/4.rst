@@ -4,8 +4,8 @@
 4.1 Resource download
 ---------------------
 
-Arduino information contains library files、project code and APP ,please
-click to download for follow-up study.
+Arduino information contains library files and project code,please click
+to download for follow-up study.
 
 Data download: :download:`Arduino <./Arduino.7z>`
 
@@ -101,7 +101,7 @@ learning about electronics and mechanical concepts. I bet you’re already
 eager to give it a try. So, let’s get started!
 
 **Note: (G), marked on each sensor and module, is the negative pole and
-connected to “G”, ”-”or “GND”on the sensor shield or control board ; (V)
+connected to “G”, “-”or “GND”on the sensor shield or control board ; (V)
 is the positive pole and linked with V , VCC, + or 5V on the sensor
 shield or control board.**
 
